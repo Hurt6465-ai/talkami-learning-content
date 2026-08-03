@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "version": 100,
+  "updated_at": "2026-08-03T00:00:00Z",
+  "courses": [
+    {
+      "id": "zh_beginner",
+      "title": "零基础中文",
+      "title_en": "Beginner Chinese",
+      "title_my": "အခြေခံ တရုတ်ဘာသာ",
+      "subtitle": "GitHub Releases 远程课程示例",
+      "subtitle_en": "Remote course demo from GitHub Releases",
+      "subtitle_my": "GitHub Releases မှ အဝေးသင်သင်ခန်းစာ နမူနာ",
+      "version": 100,
+      "min_app_version": 0,
+      "accent": "#F59E8B",
+      "units": [
+        {
+          "id": "unit_greetings",
+          "order": 1,
+          "title": "问候与介绍",
+          "title_en": "Greetings and Introductions",
+          "title_my": "နှုတ်ဆက်ခြင်းနှင့် မိတ်ဆက်ခြင်း",
+          "subtitle": "你好、谢谢、再见",
+          "subtitle_en": "Hello, thank you, and goodbye",
+          "subtitle_my": "မင်္ဂလာပါ၊ ကျေးဇူးတင်ပါတယ်၊ နှုတ်ဆက်ပါတယ်",
+          "lessons": [
+            {
+              "id": "greeting_hello_demo",
+              "title": "基本问候",
+              "title_en": "Basic Greetings",
+              "title_my": "အခြေခံနှုတ်ဆက်ခြင်း",
+              "subtitle": "听力、选择、排序和图片题",
+              "subtitle_en": "Listening, choices, ordering, and images",
+              "subtitle_my": "နားထောင်၊ ရွေးချယ်၊ စီခြင်းနှင့် ပုံမေးခွန်း",
+              "type": "normal",
+              "position": "center",
+              "icon": "你",
+              "exercise_count": 5,
+              "minutes": 4,
+              "required_lessons": [],
+              "package_id": "zh_beginner_unit_greetings",
+              "package_version": 1,
+              "lesson_file": "lessons/greeting_hello_demo.json"
+            },
+            {
+              "id": "greeting_intro_demo",
+              "title": "自我介绍",
+              "title_en": "Introduce Yourself",
+              "title_my": "ကိုယ့်ကိုယ်ကို မိတ်ဆက်ခြင်း",
+              "subtitle": "我叫…… / 我是……",
+              "subtitle_en": "My name is… / I am…",
+              "subtitle_my": "ကျွန်ုပ်နာမည်… / ကျွန်ုပ်သည်…",
+              "type": "normal",
+              "position": "right",
+              "icon": "我",
+              "exercise_count": 4,
+              "minutes": 4,
+              "required_lessons": ["greeting_hello_demo"],
+              "package_id": "zh_beginner_unit_greetings",
+              "package_version": 1,
+              "lesson_file": "lessons/greeting_intro_demo.json"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

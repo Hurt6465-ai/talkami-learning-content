@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "lesson_id": "greeting_intro_demo",
+  "title": "自我介绍",
+  "title_en": "Introduce Yourself",
+  "title_my": "ကိုယ့်ကိုယ်ကို မိတ်ဆက်ခြင်း",
+  "subtitle": "远程课程示例",
+  "exercises": [
+    {
+      "id": "intro_choice_1",
+      "type": "single_choice",
+      "question": "“My name is Amy” 应该怎么说？",
+      "question_en": "How do you say “My name is Amy”?",
+      "question_my": "“My name is Amy” ကို ဘယ်လိုပြောမလဲ？",
+      "options": ["我叫 Amy", "你好 Amy", "谢谢 Amy"],
+      "answer": "我叫 Amy",
+      "explanation": "介绍名字时可以使用“我叫……”。"
+    },
+    {
+      "id": "intro_order_1",
+      "type": "word_order",
+      "question": "排列成正确句子",
+      "question_en": "Put the sentence in the correct order",
+      "question_my": "ဝါကျကို မှန်ကန်စွာ စီပါ",
+      "words": ["小明", "叫", "我"],
+      "answer": ["我", "叫", "小明"],
+      "explanation": "正确句子是“我叫小明”。"
+    },
+    {
+      "id": "intro_fill_1",
+      "type": "fill_blank",
+      "question": "填写：我___小明",
+      "question_en": "Complete: 我___小明",
+      "question_my": "ဖြည့်ပါ：我___小明",
+      "pinyin": "jiào",
+      "placeholder": "根据拼音填写汉字",
+      "answer": "叫",
+      "explanation": "介绍名字时使用“叫”。"
+    },
+    {
+      "id": "intro_listen_1",
+      "type": "listen_choice",
+      "question": "播放的是哪一句？",
+      "question_en": "Which sentence is being played?",
+      "question_my": "ဘယ်ဝါကျကို ဖွင့်ထားသလဲ？",
+      "audio_text": "我叫小明",
+      "options": ["我叫小明", "你好小明", "谢谢小明"],
+      "answer": "我叫小明",
+      "explanation": "“我叫小明”表示“My name is Xiaoming”。"
+    }
+  ],
+  "max_retries": 2
+}
