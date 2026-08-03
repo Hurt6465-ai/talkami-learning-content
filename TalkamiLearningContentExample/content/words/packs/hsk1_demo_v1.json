@@ -1,0 +1,74 @@
+{
+  "categoryId": "hsk1_demo",
+  "title": "HSK 1 远程示例词包",
+  "version": 1,
+  "updatedAt": "2026-08-03",
+  "language": "zh-CN+en-US+my-MM",
+  "items": [
+    {
+      "id": "demo_0001",
+      "order": 1,
+      "word": "爱",
+      "pinyin_override": "ài",
+      "tts_pinyin_override": "ài",
+      "phonetic_my": "အိုင်",
+      "part_of_speech": "v.",
+      "meaning_my": "ချစ်သည်၊ နှစ်သက်သည်",
+      "example": "我爱学习中文。",
+      "example_pinyin_override": "wǒ ài xué xí zhōng wén。",
+      "example_my": "ကျွန်တော် တရုတ်စာလေ့လာရတာ ကြိုက်တယ်။"
+    },
+    {
+      "id": "demo_0002",
+      "order": 2,
+      "word": "你好",
+      "pinyin_override": "nǐ hǎo",
+      "tts_pinyin_override": "nǐ hǎo",
+      "phonetic_my": "နီ ဟောက်",
+      "part_of_speech": "phrase",
+      "meaning_my": "မင်္ဂလာပါ",
+      "example": "你好，很高兴认识你。",
+      "example_pinyin_override": "nǐ hǎo，hěn gāo xìng rèn shi nǐ。",
+      "example_my": "မင်္ဂလာပါ၊ တွေ့ရတာ ဝမ်းသာပါတယ်။"
+    },
+    {
+      "id": "demo_0003",
+      "order": 3,
+      "word": "学习",
+      "pinyin_override": "xué xí",
+      "tts_pinyin_override": "xué xí",
+      "phonetic_my": "ရွယ် ရှီ",
+      "part_of_speech": "v.",
+      "meaning_my": "လေ့လာသည်",
+      "example": "我每天学习中文。",
+      "example_pinyin_override": "wǒ měi tiān xué xí zhōng wén。",
+      "example_my": "ကျွန်တော် နေ့တိုင်း တရုတ်စာလေ့လာတယ်။"
+    },
+    {
+      "id": "demo_0004",
+      "order": 4,
+      "word": "谢谢",
+      "pinyin_override": "xiè xie",
+      "tts_pinyin_override": "xiè xie",
+      "phonetic_my": "ရှဲ့ ရှဲ့",
+      "part_of_speech": "phrase",
+      "meaning_my": "ကျေးဇူးတင်ပါတယ်",
+      "example": "谢谢你的帮助。",
+      "example_pinyin_override": "xiè xie nǐ de bāng zhù。",
+      "example_my": "ကူညီပေးတာ ကျေးဇူးတင်ပါတယ်။"
+    },
+    {
+      "id": "demo_0005",
+      "order": 5,
+      "word": "再见",
+      "pinyin_override": "zài jiàn",
+      "tts_pinyin_override": "zài jiàn",
+      "phonetic_my": "ဇိုင် ကျန်",
+      "part_of_speech": "phrase",
+      "meaning_my": "နှုတ်ဆက်ပါတယ်၊ ပြန်တွေ့မယ်",
+      "example": "明天见，再见。",
+      "example_pinyin_override": "míng tiān jiàn，zài jiàn。",
+      "example_my": "မနက်ဖြန်တွေ့မယ်၊ နှုတ်ဆက်ပါတယ်။"
+    }
+  ]
+}

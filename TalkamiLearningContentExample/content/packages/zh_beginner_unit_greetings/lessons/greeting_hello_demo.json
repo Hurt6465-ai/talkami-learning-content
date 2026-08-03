@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "lesson_id": "greeting_hello_demo",
+  "title": "基本问候",
+  "title_en": "Basic Greetings",
+  "title_my": "အခြေခံနှုတ်ဆက်ခြင်း",
+  "subtitle": "远程课程示例",
+  "exercises": [
+    {
+      "id": "hello_listen_1",
+      "type": "listen_choice",
+      "question": "你听到了什么？",
+      "question_en": "What did you hear?",
+      "question_my": "ဘာကို ကြားခဲ့သလဲ？",
+      "audio_text": "你好",
+      "options": ["你好", "谢谢", "再见"],
+      "answer": "你好",
+      "explanation": "“你好”是最常用的见面问候语。"
+    },
+    {
+      "id": "hello_choice_1",
+      "type": "single_choice",
+      "question": "第一次见面，应该说什么？",
+      "question_en": "What should you say when meeting someone?",
+      "question_my": "ပထမဆုံးတွေ့ချိန် ဘာပြောသင့်သလဲ？",
+      "options": ["你好", "晚安", "没关系"],
+      "answer": "你好",
+      "explanation": "见面时可以说“你好”。"
+    },
+    {
+      "id": "hello_order_1",
+      "type": "word_order",
+      "question": "排列成正确的问候语",
+      "question_en": "Put the greeting in the correct order",
+      "question_my": "နှုတ်ဆက်စကားကို မှန်ကန်စွာ စီပါ",
+      "words": ["好", "你"],
+      "answer": ["你", "好"],
+      "explanation": "正确顺序是“你好”。"
+    },
+    {
+      "id": "hello_fill_1",
+      "type": "fill_blank",
+      "question": "填写：你___",
+      "question_en": "Complete: 你___",
+      "question_my": "ဖြည့်ပါ：你___",
+      "pinyin": "hǎo",
+      "placeholder": "根据拼音填写汉字",
+      "answer": "好",
+      "accepted_answers": ["好！"],
+      "explanation": "完整表达是“你好”。"
+    },
+    {
+      "id": "hello_image_1",
+      "type": "image_choice",
+      "question": "选择表示“你好”的图片",
+      "question_en": "Choose the image for “hello”",
+      "question_my": "“你好” ကို ဖော်ပြသောပုံကို ရွေးပါ",
+      "options": [
+        {
+          "text": "你好",
+          "value": "hello",
+          "image": "media/hello.webp",
+          "content_description": "两个人友好地挥手"
+        },
+        {
+          "text": "再见",
+          "value": "goodbye",
+          "image": "media/goodbye.webp",
+          "content_description": "一个人转身离开"
+        }
+      ],
+      "answer": "hello",
+      "explanation": "挥手见面可以表示“你好”。"
+    }
+  ],
+  "max_retries": 2
+}

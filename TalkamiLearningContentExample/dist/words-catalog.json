@@ -1,0 +1,22 @@
+{
+  "type": "words",
+  "title": "单词库",
+  "subtitle": "GitHub Releases 远程示例；封面和词库下载后由 App 本地缓存。",
+  "items": [
+    {
+      "id": "hsk1_demo",
+      "title": "HSK 1 示例",
+      "subtitle": "5 个示例词，确认远程更新链路",
+      "preview": "爱 / 你好 / 学习",
+      "badge": "5词",
+      "target": "word",
+      "level": "hsk1_demo",
+      "cover_url": "hsk1-demo-cover-v1.webp",
+      "cover_version": 1,
+      "data_url": "hsk1-demo-v1.json",
+      "data_version": 1,
+      "data_sha256": "f7fd2538153d2dcd722268f2c13c310ede5d0027e89acbf2f58219a288ee0f62",
+      "item_count": 5
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "release_version": "1.0.0",
+  "assets": [
+    {
+      "name": "hsk1-demo-cover-v1.webp",
+      "size": 2828,
+      "sha256": "6729d075d7aa0f02da2fd48a5859f75d885bcfcc6b17947b88b0fe501fc83a3a"
+    },
+    {
+      "name": "hsk1-demo-v1.json",
+      "size": 2854,
+      "sha256": "f7fd2538153d2dcd722268f2c13c310ede5d0027e89acbf2f58219a288ee0f62"
+    },
+    {
+      "name": "learning-path-catalog.json",
+      "size": 3395,
+      "sha256": "7329b9b1f490c72e1b52e8cf75aea3430aba7d49839093fcc0158ba6421d70d5"
+    },
+    {
+      "name": "words-catalog.json",
+      "size": 655,
+      "sha256": "bb9cd5bde64521ae0adff78c9c9ea960265f576673cfd8cae458eb297ff420f3"
+    },
+    {
+      "name": "zh_beginner_unit_greetings-v1.zip",
+      "size": 8128,
+      "sha256": "a689872deb36cc3b93e6573f763cf920cbcb8121374d173c3b1219834152e320"
+    }
+  ]
+}
