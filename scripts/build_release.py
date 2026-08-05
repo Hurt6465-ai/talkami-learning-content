@@ -41,12 +41,17 @@ def fail(message: str):
 def build_words():
     source = load_json(CONTENT / "words" / "catalog.json")
     result = copy.deepcopy(source)
-    for item in result.get("items", []):
-        source_data = ROOT / item.pop("source_data", "")
-        source_cover = ROOT / item.pop("source_cover", "")
+    for item in walk_catalog_items(result.get("items", [])):
+        source_data_value = item.pop("source_data", "")
+        source_cover_value = item.pop("source_cover", "")
+        # Group nodes may only contain children and do not need their own data/cover files.
+        if not source_data_value:
+            continue
+        source_data = ROOT / source_data_value
+        source_cover = ROOT / source_cover_value
         if not source_data.is_file():
             fail(f"Missing word pack: {source_data}")
-        if not source_cover.is_file():
+        if not source_cover_value or not source_cover.is_file():
             fail(f"Missing word cover: {source_cover}")
         pack = load_json(source_data)
         items = pack.get("items")
@@ -63,6 +68,36 @@ def build_words():
         item["data_version"] = int(pack.get("version", item.get("data_version", 1)))
     write_json(DIST / "words-catalog.json", result)
 
+
+
+def walk_catalog_items(items):
+    for item in items or []:
+        yield item
+        yield from walk_catalog_items(item.get("children", []))
+
+
+def build_speaking():
+    source = load_json(CONTENT / "speaking" / "catalog.json")
+    result = copy.deepcopy(source)
+    for item in walk_catalog_items(result.get("items", [])):
+        source_value = item.pop("source_data", "")
+        if not source_value:
+            continue
+        source_data = ROOT / source_value
+        if not source_data.is_file():
+            fail(f"Missing speaking pack: {source_data}")
+        pack = load_json(source_data)
+        phrases = pack.get("phrases", pack.get("items"))
+        if not isinstance(phrases, list) or not phrases:
+            fail(f"Empty speaking pack: {source_data}")
+        if pack.get("pack_id") != item.get("id"):
+            fail(f"Speaking pack_id must equal catalog id for {item.get('id')}")
+        output_data = DIST / item["data_url"]
+        shutil.copy2(source_data, output_data)
+        item["data_sha256"] = sha256(output_data)
+        item["item_count"] = len(phrases)
+        item["data_version"] = int(pack.get("version", item.get("data_version", 1)))
+    write_json(DIST / "speaking-catalog.json", result)
 
 def package_metadata():
     packages = {}
@@ -131,6 +166,7 @@ def main():
         shutil.rmtree(DIST)
     DIST.mkdir(parents=True)
     build_words()
+    build_speaking()
     packages = package_metadata()
     build_learning_path(packages)
     metadata = {
