@@ -1,26 +1,110 @@
 {
+  "schema_version": 1,
+  "version": 2,
+  "updated_at": "2026-08-05T12:00:00Z",
   "type": "speaking",
   "title": "口语短句",
-  "subtitle": "GitHub Releases 远程目录示例；新增分类会自动出现在 App 中。",
+  "subtitle": "按场景下载到本地，支持断网继续学习。",
   "items": [
     {
-      "id": "speaking_remote",
-      "title": "远程新增",
-      "subtitle": "用于确认 GitHub 口语目录和短句包更新链路",
-      "badge": "在线更新",
+      "id": "speaking_basic",
+      "title": "基础交流",
+      "subtitle": "问候、介绍和基本沟通",
+      "badge": "15句",
+      "children": [
+        {
+          "id": "speak_daily",
+          "title": "日常交流",
+          "subtitle": "15 句问候与基本沟通",
+          "badge": "15句",
+          "target": "study",
+          "asset": "",
+          "data_url": "speak-daily-v1.json",
+          "data_version": 1,
+          "data_sha256": "",
+          "item_count": 15,
+          "source_data": "content/speaking/packs/speak_daily_v1.json"
+        }
+      ]
+    },
+    {
+      "id": "speaking_travel",
+      "title": "旅行出行",
+      "subtitle": "问路、交通和酒店",
+      "badge": "32句",
       "children": [
         {
           "id": "speak_remote_demo",
           "title": "旅行问路",
-          "subtitle": "3 句远程示例短句",
-          "badge": "3句",
+          "subtitle": "20 句交通与方向短句",
+          "badge": "20句",
           "target": "study",
           "asset": "",
-          "data_url": "speak-remote-demo-v1.json",
+          "data_url": "speak-directions-v2.json",
+          "data_version": 2,
+          "data_sha256": "",
+          "item_count": 20,
+          "source_data": "content/speaking/packs/speak_directions_v2.json"
+        },
+        {
+          "id": "speak_hotel",
+          "title": "酒店入住",
+          "subtitle": "12 句预订与客房短句",
+          "badge": "12句",
+          "target": "study",
+          "asset": "",
+          "data_url": "speak-hotel-v1.json",
           "data_version": 1,
           "data_sha256": "",
-          "item_count": 3,
-          "source_data": "content/speaking/packs/speak_remote_demo_v1.json"
+          "item_count": 12,
+          "source_data": "content/speaking/packs/speak_hotel_v1.json"
+        }
+      ]
+    },
+    {
+      "id": "speaking_life",
+      "title": "生活服务",
+      "subtitle": "餐饮、购物和紧急求助",
+      "badge": "34句",
+      "children": [
+        {
+          "id": "speak_restaurant",
+          "title": "餐厅点餐",
+          "subtitle": "12 句点餐与结账短句",
+          "badge": "12句",
+          "target": "study",
+          "asset": "",
+          "data_url": "speak-restaurant-v1.json",
+          "data_version": 1,
+          "data_sha256": "",
+          "item_count": 12,
+          "source_data": "content/speaking/packs/speak_restaurant_v1.json"
+        },
+        {
+          "id": "speak_shopping",
+          "title": "购物付款",
+          "subtitle": "12 句价格与支付短句",
+          "badge": "12句",
+          "target": "study",
+          "asset": "",
+          "data_url": "speak-shopping-v1.json",
+          "data_version": 1,
+          "data_sha256": "",
+          "item_count": 12,
+          "source_data": "content/speaking/packs/speak_shopping_v1.json"
+        },
+        {
+          "id": "speak_emergency",
+          "title": "紧急求助",
+          "subtitle": "10 句报警与医疗求助",
+          "badge": "10句",
+          "target": "study",
+          "asset": "",
+          "data_url": "speak-emergency-v1.json",
+          "data_version": 1,
+          "data_sha256": "",
+          "item_count": 10,
+          "source_data": "content/speaking/packs/speak_emergency_v1.json"
         }
       ]
     }
