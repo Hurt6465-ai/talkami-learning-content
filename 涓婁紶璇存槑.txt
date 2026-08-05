@@ -1,0 +1,13 @@
+把本压缩包解压后，上传到 talkami-learning-content 仓库根目录并覆盖同名文件。
+
+上传后：
+1. 打开 Actions。
+2. 运行 Publish learning content。
+3. 版本填写一个新值，例如 1.0.1（不能重复使用 1.0.0）。
+4. 工作流会生成 speaking-catalog.json 和 speak-remote-demo-v1.json，并创建新的 Release。
+
+发布成功后，安装了 Android 远程读取补丁的 App：
+- 单词页会读取 words-catalog.json。
+- 口语页会读取 speaking-catalog.json。
+- 口语页会新增“远程新增 → 旅行问路”。
+- 打开“旅行问路”时下载 3 句示例，保存到手机本地。
