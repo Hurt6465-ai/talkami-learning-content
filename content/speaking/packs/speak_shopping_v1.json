@@ -1,0 +1,143 @@
+{
+  "pack_id": "speak_shopping",
+  "title": "购物付款",
+  "title_en": "Shopping and payment",
+  "title_my": "စျေးဝယ်ခြင်း",
+  "subtitle": "价格、尺码和支付",
+  "version": 1,
+  "updated_at": "2026-08-05T12:00:00Z",
+  "phrases": [
+    {
+      "id": "shopping_001",
+      "text": "这个多少钱？",
+      "pinyin": "zhè ge duō shao qián",
+      "tts_pinyin": "zhè ge duō shao qián",
+      "meaning_my": "ဒါ ဘယ်လောက်ကျလဲ။",
+      "meaning_en": "How much is this?",
+      "scene": "询问价格。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "shopping_002",
+      "text": "有便宜一点的吗？",
+      "pinyin": "yǒu pián yi yì diǎn de ma",
+      "tts_pinyin": "yǒu pián yi yì diǎn de ma",
+      "meaning_my": "ပိုသက်သာတာ ရှိလား။",
+      "meaning_en": "Do you have a cheaper one?",
+      "scene": "寻找更便宜的商品。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "shopping_003",
+      "text": "可以便宜一点吗？",
+      "pinyin": "kě yǐ pián yi yì diǎn ma",
+      "tts_pinyin": "kě yǐ pián yi yì diǎn ma",
+      "meaning_my": "ဈေးနည်းနည်းလျှော့လို့ရမလား။",
+      "meaning_en": "Can it be a little cheaper?",
+      "scene": "礼貌议价。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "shopping_004",
+      "text": "我可以试一下吗？",
+      "pinyin": "wǒ kě yǐ shì yí xià ma",
+      "tts_pinyin": "wǒ kě yǐ shì yí xià ma",
+      "meaning_my": "စမ်းကြည့်လို့ရမလား။",
+      "meaning_en": "Can I try it?",
+      "scene": "试穿或试用商品。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "shopping_005",
+      "text": "有大一号的吗？",
+      "pinyin": "yǒu dà yí hào de ma",
+      "tts_pinyin": "yǒu dà yí hào de ma",
+      "meaning_my": "တစ်ဆိုဒ်ကြီးတာ ရှိလား။",
+      "meaning_en": "Do you have one size larger?",
+      "scene": "询问更大尺码。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "shopping_006",
+      "text": "有小一号的吗？",
+      "pinyin": "yǒu xiǎo yí hào de ma",
+      "tts_pinyin": "yǒu xiǎo yí hào de ma",
+      "meaning_my": "တစ်ဆိုဒ်သေးတာ ရှိလား။",
+      "meaning_en": "Do you have one size smaller?",
+      "scene": "询问更小尺码。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "shopping_007",
+      "text": "我想要黑色的。",
+      "pinyin": "wǒ xiǎng yào hēi sè de",
+      "tts_pinyin": "wǒ xiǎng yào hēi sè de",
+      "meaning_my": "အနက်ရောင် လိုချင်ပါတယ်။",
+      "meaning_en": "I'd like the black one.",
+      "scene": "选择颜色。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "shopping_008",
+      "text": "这个有别的颜色吗？",
+      "pinyin": "zhè ge yǒu bié de yán sè ma",
+      "tts_pinyin": "zhè ge yǒu bié de yán sè ma",
+      "meaning_my": "ဒါ အခြားအရောင်ရှိလား။",
+      "meaning_en": "Does this come in another color?",
+      "scene": "询问其他颜色。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "shopping_009",
+      "text": "我只看看，谢谢。",
+      "pinyin": "wǒ zhǐ kàn kan，xiè xie",
+      "tts_pinyin": "wǒ zhǐ kàn kan，xiè xie",
+      "meaning_my": "ကြည့်ရုံပါ၊ ကျေးဇူးတင်ပါတယ်။",
+      "meaning_en": "I'm just looking, thank you.",
+      "scene": "暂时不需要导购帮助。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "shopping_010",
+      "text": "我买这个。",
+      "pinyin": "wǒ mǎi zhè ge",
+      "tts_pinyin": "wǒ mǎi zhè ge",
+      "meaning_my": "ဒါကို ဝယ်မယ်။",
+      "meaning_en": "I'll buy this.",
+      "scene": "确认购买。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "shopping_011",
+      "text": "可以刷卡吗？",
+      "pinyin": "kě yǐ shuā kǎ ma",
+      "tts_pinyin": "kě yǐ shuā kǎ ma",
+      "meaning_my": "ကတ်နဲ့ ငွေရှင်းလို့ရမလား။",
+      "meaning_en": "Can I pay by card?",
+      "scene": "询问银行卡支付。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "shopping_012",
+      "text": "可以给我一个袋子吗？",
+      "pinyin": "kě yǐ gěi wǒ yí ge dài zi ma",
+      "tts_pinyin": "kě yǐ gěi wǒ yí ge dài zi ma",
+      "meaning_my": "အိတ်တစ်လုံး ပေးလို့ရမလား။",
+      "meaning_en": "Can you give me a bag?",
+      "scene": "索要购物袋。",
+      "scene_my": "",
+      "scene_en": ""
+    }
+  ]
+}

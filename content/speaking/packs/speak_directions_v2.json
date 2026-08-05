@@ -1,0 +1,231 @@
+{
+  "pack_id": "speak_remote_demo",
+  "title": "旅行问路",
+  "title_en": "Asking for directions",
+  "title_my": "လမ်းမေးခြင်း",
+  "subtitle": "交通、方向和位置确认",
+  "version": 2,
+  "updated_at": "2026-08-05T12:00:00Z",
+  "phrases": [
+    {
+      "id": "remote_direction_001",
+      "text": "请问，地铁站在哪里？",
+      "pinyin": "qǐng wèn，dì tiě zhàn zài nǎ lǐ",
+      "tts_pinyin": "qǐng wèn，dì tiě zhàn zài nǎ lǐ",
+      "meaning_my": "မေးပါရစေ၊ မြေအောက်ရထားဘူတာ ဘယ်မှာလဲ။",
+      "meaning_en": "Excuse me, where is the subway station?",
+      "scene": "询问地铁站位置。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "remote_direction_002",
+      "text": "从这里走路要多久？",
+      "pinyin": "cóng zhè lǐ zǒu lù yào duō jiǔ",
+      "tts_pinyin": "cóng zhè lǐ zǒu lù yào duō jiǔ",
+      "meaning_my": "ဒီကနေ လမ်းလျှောက်ရင် ဘယ်လောက်ကြာမလဲ။",
+      "meaning_en": "How long does it take to walk from here?",
+      "scene": "询问步行时间。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "remote_direction_003",
+      "text": "可以在地图上指给我看吗？",
+      "pinyin": "kě yǐ zài dì tú shàng zhǐ gěi wǒ kàn ma",
+      "tts_pinyin": "kě yǐ zài dì tú shàng zhǐ gěi wǒ kàn ma",
+      "meaning_my": "မြေပုံပေါ်မှာ ပြပေးလို့ရမလား။",
+      "meaning_en": "Could you show me on the map?",
+      "scene": "请对方在地图上指出位置。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "remote_direction_004",
+      "text": "这班公交车去火车站吗？",
+      "pinyin": "zhè bān gōng jiāo chē qù huǒ chē zhàn ma",
+      "tts_pinyin": "zhè bān gōng jiāo chē qù huǒ chē zhàn ma",
+      "meaning_my": "ဒီဘတ်စ်ကား မီးရထားဘူတာကို သွားလား။",
+      "meaning_en": "Does this bus go to the train station?",
+      "scene": "确认公交路线。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "remote_direction_005",
+      "text": "我应该在哪一站下车？",
+      "pinyin": "wǒ yīng gāi zài nǎ yí zhàn xià chē",
+      "tts_pinyin": "wǒ yīng gāi zài nǎ yí zhàn xià chē",
+      "meaning_my": "ဘယ်ဘူတာမှာ ဆင်းရမလဲ။",
+      "meaning_en": "Which stop should I get off at?",
+      "scene": "询问下车站点。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "remote_direction_006",
+      "text": "这附近有洗手间吗？",
+      "pinyin": "zhè fù jìn yǒu xǐ shǒu jiān ma",
+      "tts_pinyin": "zhè fù jìn yǒu xǐ shǒu jiān ma",
+      "meaning_my": "ဒီအနီးမှာ အိမ်သာရှိလား။",
+      "meaning_en": "Is there a restroom nearby?",
+      "scene": "寻找公共卫生间。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "remote_direction_007",
+      "text": "我迷路了，你能帮我吗？",
+      "pinyin": "wǒ mí lù le，nǐ néng bāng wǒ ma",
+      "tts_pinyin": "wǒ mí lù le，nǐ néng bāng wǒ ma",
+      "meaning_my": "လမ်းမှားနေတယ်၊ ကူညီပေးနိုင်မလား။",
+      "meaning_en": "I'm lost. Can you help me?",
+      "scene": "迷路时求助。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "remote_direction_008",
+      "text": "我应该往左转还是往右转？",
+      "pinyin": "wǒ yīng gāi wǎng zuǒ zhuǎn hái shì wǎng yòu zhuǎn",
+      "tts_pinyin": "wǒ yīng gāi wǎng zuǒ zhuǎn hái shì wǎng yòu zhuǎn",
+      "meaning_my": "ဘယ်ဘက်ကွေ့ရမလား ညာဘက်ကွေ့ရမလား။",
+      "meaning_en": "Should I turn left or right?",
+      "scene": "在路口确认方向。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "remote_direction_009",
+      "text": "走过去大概需要几分钟？",
+      "pinyin": "zǒu guò qù dà gài xū yào jǐ fēn zhōng",
+      "tts_pinyin": "zǒu guò qù dà gài xū yào jǐ fēn zhōng",
+      "meaning_my": "လမ်းလျှောက်သွားရင် မိနစ်ဘယ်လောက်ကြာမလဲ။",
+      "meaning_en": "About how many minutes does it take to walk there?",
+      "scene": "询问步行分钟数。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "remote_direction_010",
+      "text": "能告诉我附近的地标吗？",
+      "pinyin": "néng gào su wǒ fù jìn de dì biāo ma",
+      "tts_pinyin": "néng gào su wǒ fù jìn de dì biāo ma",
+      "meaning_my": "အနီးက ထင်ရှားတဲ့နေရာကို ပြောပြနိုင်မလား။",
+      "meaning_en": "Can you tell me a nearby landmark?",
+      "scene": "用地标辅助定位。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "remote_direction_011",
+      "text": "请问，去故宫怎么走？",
+      "pinyin": "qǐng wèn，qù gù gōng zěn me zǒu",
+      "tts_pinyin": "qǐng wèn，qù gù gōng zěn me zǒu",
+      "meaning_my": "မေးပါရစေ၊ Forbidden City ကို ဘယ်လိုသွားရမလဲ။",
+      "meaning_en": "Excuse me, how do I get to the Forbidden City?",
+      "scene": "询问去景点的路线。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "remote_direction_012",
+      "text": "从这里步行能到吗？",
+      "pinyin": "cóng zhè lǐ bù xíng néng dào ma",
+      "tts_pinyin": "cóng zhè lǐ bù xíng néng dào ma",
+      "meaning_my": "ဒီကနေ လမ်းလျှောက်သွားလို့ရမလား။",
+      "meaning_en": "Can I get there on foot from here?",
+      "scene": "确认是否步行可达。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "remote_direction_013",
+      "text": "打车去那里大概多少钱？",
+      "pinyin": "dǎ chē qù nà lǐ dà gài duō shao qián",
+      "tts_pinyin": "dǎ chē qù nà lǐ dà gài duō shao qián",
+      "meaning_my": "အဲဒီကို တက္ကစီစီးရင် ဘယ်လောက်ကုန်မလဲ။",
+      "meaning_en": "About how much is a taxi there?",
+      "scene": "估算出租车费用。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "remote_direction_014",
+      "text": "一直往前走，然后呢？",
+      "pinyin": "yì zhí wǎng qián zǒu，rán hòu ne",
+      "tts_pinyin": "yì zhí wǎng qián zǒu，rán hòu ne",
+      "meaning_my": "ရှေ့တည့်တည့်သွားပြီးရင် ဘာလုပ်ရမလဲ။",
+      "meaning_en": "Go straight, and then what?",
+      "scene": "追问下一步路线。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "remote_direction_015",
+      "text": "我该在哪个路口转弯？",
+      "pinyin": "wǒ gāi zài nǎ ge lù kǒu zhuǎn wān",
+      "tts_pinyin": "wǒ gāi zài nǎ ge lù kǒu zhuǎn wān",
+      "meaning_my": "ဘယ်လမ်းဆုံမှာ ကွေ့ရမလဲ။",
+      "meaning_en": "At which intersection should I turn?",
+      "scene": "询问转弯路口。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "remote_direction_016",
+      "text": "这里离市中心远吗？",
+      "pinyin": "zhè lǐ lí shì zhōng xīn yuǎn ma",
+      "tts_pinyin": "zhè lǐ lí shì zhōng xīn yuǎn ma",
+      "meaning_my": "ဒီကနေ မြို့လယ်နဲ့ ဝေးလား။",
+      "meaning_en": "Is it far from here to downtown?",
+      "scene": "询问距离。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "remote_direction_017",
+      "text": "要过马路吗？",
+      "pinyin": "yào guò mǎ lù ma",
+      "tts_pinyin": "yào guò mǎ lù ma",
+      "meaning_my": "လမ်းဖြတ်ကူးရမလား။",
+      "meaning_en": "Do I need to cross the street?",
+      "scene": "确认是否过马路。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "remote_direction_018",
+      "text": "有没有更近的路？",
+      "pinyin": "yǒu méi yǒu gèng jìn de lù",
+      "tts_pinyin": "yǒu méi yǒu gèng jìn de lù",
+      "meaning_my": "ပိုနီးတဲ့လမ်းရှိလား။",
+      "meaning_en": "Is there a shorter way?",
+      "scene": "寻找更近路线。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "remote_direction_019",
+      "text": "这条街叫什么名字？",
+      "pinyin": "zhè tiáo jiē jiào shén me míng zi",
+      "tts_pinyin": "zhè tiáo jiē jiào shén me míng zi",
+      "meaning_my": "ဒီလမ်း နာမည်ဘယ်လိုခေါ်လဲ။",
+      "meaning_en": "What's the name of this street?",
+      "scene": "询问街道名称。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "remote_direction_020",
+      "text": "这个方向对吗？",
+      "pinyin": "zhè ge fāng xiàng duì ma",
+      "tts_pinyin": "zhè ge fāng xiàng duì ma",
+      "meaning_my": "ဒီဦးတည်ချက် မှန်လား။",
+      "meaning_en": "Is this the right direction?",
+      "scene": "确认行进方向。",
+      "scene_my": "",
+      "scene_en": ""
+    }
+  ]
+}

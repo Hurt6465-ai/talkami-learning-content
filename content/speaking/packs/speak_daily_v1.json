@@ -1,0 +1,176 @@
+{
+  "pack_id": "speak_daily",
+  "title": "日常交流",
+  "title_en": "Daily conversation",
+  "title_my": "နေ့စဉ်စကားပြော",
+  "subtitle": "问候、介绍和基本沟通",
+  "version": 1,
+  "updated_at": "2026-08-05T12:00:00Z",
+  "phrases": [
+    {
+      "id": "daily_001",
+      "text": "你好，我叫安娜。",
+      "pinyin": "nǐ hǎo，wǒ jiào ān nà",
+      "tts_pinyin": "nǐ hǎo，wǒ jiào ān nà",
+      "meaning_my": "မင်္ဂလာပါ၊ ကျွန်မနာမည် အန်နာပါ။",
+      "meaning_en": "Hello, my name is Anna.",
+      "scene": "第一次见面时自我介绍。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "daily_002",
+      "text": "很高兴认识你。",
+      "pinyin": "hěn gāo xìng rèn shi nǐ",
+      "tts_pinyin": "hěn gāo xìng rèn shi nǐ",
+      "meaning_my": "တွေ့ရတာ ဝမ်းသာပါတယ်။",
+      "meaning_en": "Nice to meet you.",
+      "scene": "初次见面时表达友好。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "daily_003",
+      "text": "你来自哪里？",
+      "pinyin": "nǐ lái zì nǎ lǐ",
+      "tts_pinyin": "nǐ lái zì nǎ lǐ",
+      "meaning_my": "မင်း ဘယ်ကလာတာလဲ။",
+      "meaning_en": "Where are you from?",
+      "scene": "询问对方来自哪里。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "daily_004",
+      "text": "我来自缅甸。",
+      "pinyin": "wǒ lái zì miǎn diàn",
+      "tts_pinyin": "wǒ lái zì miǎn diàn",
+      "meaning_my": "ကျွန်တော် မြန်မာနိုင်ငံကလာပါတယ်။",
+      "meaning_en": "I come from Myanmar.",
+      "scene": "说明自己的国家。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "daily_005",
+      "text": "你会说中文吗？",
+      "pinyin": "nǐ huì shuō zhōng wén ma",
+      "tts_pinyin": "nǐ huì shuō zhōng wén ma",
+      "meaning_my": "မင်း တရုတ်လို ပြောတတ်လား။",
+      "meaning_en": "Can you speak Chinese?",
+      "scene": "询问语言能力。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "daily_006",
+      "text": "我会说一点中文。",
+      "pinyin": "wǒ huì shuō yì diǎn zhōng wén",
+      "tts_pinyin": "wǒ huì shuō yì diǎn zhōng wén",
+      "meaning_my": "ကျွန်တော် တရုတ်လို နည်းနည်းပြောတတ်တယ်။",
+      "meaning_en": "I can speak a little Chinese.",
+      "scene": "说明自己会一点中文。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "daily_007",
+      "text": "我没听懂。",
+      "pinyin": "wǒ méi tīng dǒng",
+      "tts_pinyin": "wǒ méi tīng dǒng",
+      "meaning_my": "ကျွန်တော် နားမလည်ဘူး။",
+      "meaning_en": "I didn't understand.",
+      "scene": "没有听懂时使用。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "daily_008",
+      "text": "请再说一遍。",
+      "pinyin": "qǐng zài shuō yí biàn",
+      "tts_pinyin": "qǐng zài shuō yí biàn",
+      "meaning_my": "ထပ်ပြောပေးပါ။",
+      "meaning_en": "Please say it again.",
+      "scene": "请对方重复。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "daily_009",
+      "text": "请说慢一点。",
+      "pinyin": "qǐng shuō màn yì diǎn",
+      "tts_pinyin": "qǐng shuō màn yì diǎn",
+      "meaning_my": "ဖြည်းဖြည်းပြောပေးပါ။",
+      "meaning_en": "Please speak more slowly.",
+      "scene": "请对方放慢语速。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "daily_010",
+      "text": "谢谢你的帮助。",
+      "pinyin": "xiè xie nǐ de bāng zhù",
+      "tts_pinyin": "xiè xie nǐ de bāng zhù",
+      "meaning_my": "ကူညီပေးတာ ကျေးဇူးတင်ပါတယ်။",
+      "meaning_en": "Thank you for your help.",
+      "scene": "感谢对方帮助。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "daily_011",
+      "text": "不客气。",
+      "pinyin": "bú kè qi",
+      "tts_pinyin": "bú kè qi",
+      "meaning_my": "ရပါတယ်။",
+      "meaning_en": "You're welcome.",
+      "scene": "回应感谢。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "daily_012",
+      "text": "对不起，我来晚了。",
+      "pinyin": "duì bu qǐ，wǒ lái wǎn le",
+      "tts_pinyin": "duì bu qǐ，wǒ lái wǎn le",
+      "meaning_my": "တောင်းပန်ပါတယ်၊ ကျွန်တော် နောက်ကျသွားတယ်။",
+      "meaning_en": "Sorry, I'm late.",
+      "scene": "为迟到道歉。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "daily_013",
+      "text": "没关系。",
+      "pinyin": "méi guān xi",
+      "tts_pinyin": "méi guān xi",
+      "meaning_my": "ကိစ္စမရှိပါဘူး။",
+      "meaning_en": "It's okay.",
+      "scene": "回应道歉。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "daily_014",
+      "text": "你现在有空吗？",
+      "pinyin": "nǐ xiàn zài yǒu kòng ma",
+      "tts_pinyin": "nǐ xiàn zài yǒu kòng ma",
+      "meaning_my": "အခု အားလား။",
+      "meaning_en": "Are you free now?",
+      "scene": "询问对方是否有时间。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "daily_015",
+      "text": "我们明天见。",
+      "pinyin": "wǒ men míng tiān jiàn",
+      "tts_pinyin": "wǒ men míng tiān jiàn",
+      "meaning_my": "မနက်ဖြန် တွေ့ကြမယ်။",
+      "meaning_en": "See you tomorrow.",
+      "scene": "约好下次见面。",
+      "scene_my": "",
+      "scene_en": ""
+    }
+  ]
+}

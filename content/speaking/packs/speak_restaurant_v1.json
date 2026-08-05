@@ -1,0 +1,143 @@
+{
+  "pack_id": "speak_restaurant",
+  "title": "餐厅点餐",
+  "title_en": "At a restaurant",
+  "title_my": "စားသောက်ဆိုင်",
+  "subtitle": "点餐、口味和结账",
+  "version": 1,
+  "updated_at": "2026-08-05T12:00:00Z",
+  "phrases": [
+    {
+      "id": "restaurant_001",
+      "text": "请给我看一下菜单。",
+      "pinyin": "qǐng gěi wǒ kàn yí xià cài dān",
+      "tts_pinyin": "qǐng gěi wǒ kàn yí xià cài dān",
+      "meaning_my": "မီနူးကို ကြည့်ပါရစေ။",
+      "meaning_en": "May I see the menu?",
+      "scene": "请服务员提供菜单。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "restaurant_002",
+      "text": "你们有什么推荐？",
+      "pinyin": "nǐ men yǒu shén me tuī jiàn",
+      "tts_pinyin": "nǐ men yǒu shén me tuī jiàn",
+      "meaning_my": "ဘာဟင်းအကြံပြုမလဲ။",
+      "meaning_en": "What do you recommend?",
+      "scene": "询问推荐菜。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "restaurant_003",
+      "text": "我要一份这个。",
+      "pinyin": "wǒ yào yí fèn zhè ge",
+      "tts_pinyin": "wǒ yào yí fèn zhè ge",
+      "meaning_my": "ဒါတစ်ပွဲ လိုချင်ပါတယ်။",
+      "meaning_en": "I'd like one serving of this.",
+      "scene": "指着菜单点餐。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "restaurant_004",
+      "text": "这个菜辣吗？",
+      "pinyin": "zhè ge cài là ma",
+      "tts_pinyin": "zhè ge cài là ma",
+      "meaning_my": "ဒီဟင်း စပ်လား။",
+      "meaning_en": "Is this dish spicy?",
+      "scene": "询问辣度。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "restaurant_005",
+      "text": "请不要放辣椒。",
+      "pinyin": "qǐng bú yào fàng là jiāo",
+      "tts_pinyin": "qǐng bú yào fàng là jiāo",
+      "meaning_my": "ငရုတ်သီး မထည့်ပါနဲ့။",
+      "meaning_en": "Please don't add chili.",
+      "scene": "提出不辣要求。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "restaurant_006",
+      "text": "我不吃牛肉。",
+      "pinyin": "wǒ bù chī niú ròu",
+      "tts_pinyin": "wǒ bù chī niú ròu",
+      "meaning_my": "ကျွန်တော် အမဲသားမစားဘူး။",
+      "meaning_en": "I don't eat beef.",
+      "scene": "说明饮食限制。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "restaurant_007",
+      "text": "请给我一杯水。",
+      "pinyin": "qǐng gěi wǒ yì bēi shuǐ",
+      "tts_pinyin": "qǐng gěi wǒ yì bēi shuǐ",
+      "meaning_my": "ရေတစ်ခွက် ပေးပါ။",
+      "meaning_en": "Please give me a glass of water.",
+      "scene": "索要饮用水。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "restaurant_008",
+      "text": "还需要等多久？",
+      "pinyin": "hái xū yào děng duō jiǔ",
+      "tts_pinyin": "hái xū yào děng duō jiǔ",
+      "meaning_my": "ဘယ်လောက်ထပ်စောင့်ရမလဲ။",
+      "meaning_en": "How much longer do we need to wait?",
+      "scene": "询问上菜时间。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "restaurant_009",
+      "text": "这个不是我点的。",
+      "pinyin": "zhè ge bú shì wǒ diǎn de",
+      "tts_pinyin": "zhè ge bú shì wǒ diǎn de",
+      "meaning_my": "ဒါ ကျွန်တော်မှာထားတာ မဟုတ်ဘူး။",
+      "meaning_en": "This isn't what I ordered.",
+      "scene": "上错菜时说明。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "restaurant_010",
+      "text": "请再给我一双筷子。",
+      "pinyin": "qǐng zài gěi wǒ yì shuāng kuài zi",
+      "tts_pinyin": "qǐng zài gěi wǒ yì shuāng kuài zi",
+      "meaning_my": "တူတစ်စုံ ထပ်ပေးပါ။",
+      "meaning_en": "Please give me another pair of chopsticks.",
+      "scene": "需要额外餐具。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "restaurant_011",
+      "text": "服务员，请买单。",
+      "pinyin": "fú wù yuán，qǐng mǎi dān",
+      "tts_pinyin": "fú wù yuán，qǐng mǎi dān",
+      "meaning_my": "စားပွဲထိုး၊ ငွေရှင်းပေးပါ။",
+      "meaning_en": "Waiter, the bill please.",
+      "scene": "准备结账。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "restaurant_012",
+      "text": "可以用手机支付吗？",
+      "pinyin": "kě yǐ yòng shǒu jī zhī fù ma",
+      "tts_pinyin": "kě yǐ yòng shǒu jī zhī fù ma",
+      "meaning_my": "ဖုန်းနဲ့ ငွေပေးလို့ရမလား။",
+      "meaning_en": "Can I pay by mobile phone?",
+      "scene": "询问支付方式。",
+      "scene_my": "",
+      "scene_en": ""
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "pack_id": "speak_emergency",
+  "title": "紧急求助",
+  "title_en": "Emergency help",
+  "title_my": "အရေးပေါ်အကူအညီ",
+  "subtitle": "报警、就医和失物求助",
+  "version": 1,
+  "updated_at": "2026-08-05T12:00:00Z",
+  "phrases": [
+    {
+      "id": "emergency_001",
+      "text": "救命！",
+      "pinyin": "jiù mìng",
+      "tts_pinyin": "jiù mìng",
+      "meaning_my": "ကယ်ပါ။",
+      "meaning_en": "Help!",
+      "scene": "遇到紧急危险时呼救。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "emergency_002",
+      "text": "请帮我报警。",
+      "pinyin": "qǐng bāng wǒ bào jǐng",
+      "tts_pinyin": "qǐng bāng wǒ bào jǐng",
+      "meaning_my": "ရဲကို ဖုန်းခေါ်ပေးပါ။",
+      "meaning_en": "Please call the police for me.",
+      "scene": "请求他人报警。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "emergency_003",
+      "text": "请叫救护车。",
+      "pinyin": "qǐng jiào jiù hù chē",
+      "tts_pinyin": "qǐng jiào jiù hù chē",
+      "meaning_my": "လူနာတင်ယာဉ် ခေါ်ပေးပါ။",
+      "meaning_en": "Please call an ambulance.",
+      "scene": "请求医疗急救。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "emergency_004",
+      "text": "最近的医院在哪里？",
+      "pinyin": "zuì jìn de yī yuàn zài nǎ lǐ",
+      "tts_pinyin": "zuì jìn de yī yuàn zài nǎ lǐ",
+      "meaning_my": "အနီးဆုံးဆေးရုံ ဘယ်မှာလဲ။",
+      "meaning_en": "Where is the nearest hospital?",
+      "scene": "寻找医院。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "emergency_005",
+      "text": "我不舒服。",
+      "pinyin": "wǒ bù shū fu",
+      "tts_pinyin": "wǒ bù shū fu",
+      "meaning_my": "နေမကောင်းဘူး။",
+      "meaning_en": "I don't feel well.",
+      "scene": "说明身体不适。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "emergency_006",
+      "text": "我的钱包丢了。",
+      "pinyin": "wǒ de qián bāo diū le",
+      "tts_pinyin": "wǒ de qián bāo diū le",
+      "meaning_my": "ပိုက်ဆံအိတ် ပျောက်သွားတယ်။",
+      "meaning_en": "I lost my wallet.",
+      "scene": "报告钱包丢失。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "emergency_007",
+      "text": "我的手机被偷了。",
+      "pinyin": "wǒ de shǒu jī bèi tōu le",
+      "tts_pinyin": "wǒ de shǒu jī bèi tōu le",
+      "meaning_my": "ဖုန်း အခိုးခံရတယ်။",
+      "meaning_en": "My phone was stolen.",
+      "scene": "报告手机被盗。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "emergency_008",
+      "text": "我找不到我的孩子。",
+      "pinyin": "wǒ zhǎo bú dào wǒ de hái zi",
+      "tts_pinyin": "wǒ zhǎo bú dào wǒ de hái zi",
+      "meaning_my": "ကလေးကို ရှာမတွေ့ဘူး။",
+      "meaning_en": "I can't find my child.",
+      "scene": "孩子走失时求助。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "emergency_009",
+      "text": "这里安全吗？",
+      "pinyin": "zhè lǐ ān quán ma",
+      "tts_pinyin": "zhè lǐ ān quán ma",
+      "meaning_my": "ဒီနေရာ လုံခြုံလား။",
+      "meaning_en": "Is it safe here?",
+      "scene": "询问环境安全。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "emergency_010",
+      "text": "请联系我的家人。",
+      "pinyin": "qǐng lián xì wǒ de jiā rén",
+      "tts_pinyin": "qǐng lián xì wǒ de jiā rén",
+      "meaning_my": "မိသားစုကို ဆက်သွယ်ပေးပါ။",
+      "meaning_en": "Please contact my family.",
+      "scene": "请他人联系家人。",
+      "scene_my": "",
+      "scene_en": ""
+    }
+  ]
+}

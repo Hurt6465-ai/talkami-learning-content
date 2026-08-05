@@ -1,0 +1,143 @@
+{
+  "pack_id": "speak_hotel",
+  "title": "酒店入住",
+  "title_en": "Hotel check-in",
+  "title_my": "ဟိုတယ်ဝင်ခြင်း",
+  "subtitle": "预订、入住和客房服务",
+  "version": 1,
+  "updated_at": "2026-08-05T12:00:00Z",
+  "phrases": [
+    {
+      "id": "hotel_001",
+      "text": "我预订了一个房间。",
+      "pinyin": "wǒ yù dìng le yí ge fáng jiān",
+      "tts_pinyin": "wǒ yù dìng le yí ge fáng jiān",
+      "meaning_my": "အခန်းတစ်ခန်း ကြိုတင်မှာထားပါတယ်။",
+      "meaning_en": "I have reserved a room.",
+      "scene": "办理入住时说明已有预订。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "hotel_002",
+      "text": "预订人是李明。",
+      "pinyin": "yù dìng rén shì lǐ míng",
+      "tts_pinyin": "yù dìng rén shì lǐ míng",
+      "meaning_my": "ကြိုတင်မှာထားသူနာမည် လီမင်ပါ။",
+      "meaning_en": "The reservation is under Li Ming.",
+      "scene": "提供预订姓名。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "hotel_003",
+      "text": "我想办理入住。",
+      "pinyin": "wǒ xiǎng bàn lǐ rù zhù",
+      "tts_pinyin": "wǒ xiǎng bàn lǐ rù zhù",
+      "meaning_my": "ဟိုတယ်ဝင်စာရင်းလုပ်ချင်ပါတယ်။",
+      "meaning_en": "I'd like to check in.",
+      "scene": "在前台办理入住。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "hotel_004",
+      "text": "请问几点退房？",
+      "pinyin": "qǐng wèn jǐ diǎn tuì fáng",
+      "tts_pinyin": "qǐng wèn jǐ diǎn tuì fáng",
+      "meaning_my": "ဘယ်နှနာရီ အခန်းအပ်ရမလဲ။",
+      "meaning_en": "What time is check-out?",
+      "scene": "询问退房时间。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "hotel_005",
+      "text": "早餐在哪里？",
+      "pinyin": "zǎo cān zài nǎ lǐ",
+      "tts_pinyin": "zǎo cān zài nǎ lǐ",
+      "meaning_my": "မနက်စာ ဘယ်မှာစားရမလဲ။",
+      "meaning_en": "Where is breakfast served?",
+      "scene": "询问早餐地点。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "hotel_006",
+      "text": "早餐几点开始？",
+      "pinyin": "zǎo cān jǐ diǎn kāi shǐ",
+      "tts_pinyin": "zǎo cān jǐ diǎn kāi shǐ",
+      "meaning_my": "မနက်စာ ဘယ်နှနာရီ စတင်လဲ။",
+      "meaning_en": "What time does breakfast start?",
+      "scene": "询问早餐时间。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "hotel_007",
+      "text": "房间里没有热水。",
+      "pinyin": "fáng jiān lǐ méi yǒu rè shuǐ",
+      "tts_pinyin": "fáng jiān lǐ méi yǒu rè shuǐ",
+      "meaning_my": "အခန်းထဲ ရေပူမရှိဘူး။",
+      "meaning_en": "There is no hot water in the room.",
+      "scene": "向前台报告问题。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "hotel_008",
+      "text": "空调不能用。",
+      "pinyin": "kōng tiáo bù néng yòng",
+      "tts_pinyin": "kōng tiáo bù néng yòng",
+      "meaning_my": "လေအေးပေးစက် သုံးလို့မရဘူး။",
+      "meaning_en": "The air conditioner doesn't work.",
+      "scene": "报告空调故障。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "hotel_009",
+      "text": "可以换一个房间吗？",
+      "pinyin": "kě yǐ huàn yí ge fáng jiān ma",
+      "tts_pinyin": "kě yǐ huàn yí ge fáng jiān ma",
+      "meaning_my": "အခန်းပြောင်းလို့ရမလား။",
+      "meaning_en": "Can I change rooms?",
+      "scene": "申请换房。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "hotel_010",
+      "text": "请给我一张房卡。",
+      "pinyin": "qǐng gěi wǒ yì zhāng fáng kǎ",
+      "tts_pinyin": "qǐng gěi wǒ yì zhāng fáng kǎ",
+      "meaning_my": "အခန်းကတ်တစ်ကတ် ပေးပါ။",
+      "meaning_en": "Please give me a room key card.",
+      "scene": "索取房卡。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "hotel_011",
+      "text": "可以帮我保管行李吗？",
+      "pinyin": "kě yǐ bāng wǒ bǎo guǎn xíng li ma",
+      "tts_pinyin": "kě yǐ bāng wǒ bǎo guǎn xíng li ma",
+      "meaning_my": "ခရီးဆောင်အိတ်ကို သိမ်းပေးလို့ရမလား။",
+      "meaning_en": "Can you store my luggage?",
+      "scene": "退房前后寄存行李。",
+      "scene_my": "",
+      "scene_en": ""
+    },
+    {
+      "id": "hotel_012",
+      "text": "我想延住一晚。",
+      "pinyin": "wǒ xiǎng yán zhù yì wǎn",
+      "tts_pinyin": "wǒ xiǎng yán zhù yì wǎn",
+      "meaning_my": "တစ်ည ထပ်နေရချင်ပါတယ်။",
+      "meaning_en": "I'd like to stay one more night.",
+      "scene": "申请延长住宿。",
+      "scene_my": "",
+      "scene_en": ""
+    }
+  ]
+}
