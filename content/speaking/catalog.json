@@ -1,0 +1,28 @@
+{
+  "type": "speaking",
+  "title": "口语短句",
+  "subtitle": "GitHub Releases 远程目录示例；新增分类会自动出现在 App 中。",
+  "items": [
+    {
+      "id": "speaking_remote",
+      "title": "远程新增",
+      "subtitle": "用于确认 GitHub 口语目录和短句包更新链路",
+      "badge": "在线更新",
+      "children": [
+        {
+          "id": "speak_remote_demo",
+          "title": "旅行问路",
+          "subtitle": "3 句远程示例短句",
+          "badge": "3句",
+          "target": "study",
+          "asset": "",
+          "data_url": "speak-remote-demo-v1.json",
+          "data_version": 1,
+          "data_sha256": "",
+          "item_count": 3,
+          "source_data": "content/speaking/packs/speak_remote_demo_v1.json"
+        }
+      ]
+    }
+  ]
+}
