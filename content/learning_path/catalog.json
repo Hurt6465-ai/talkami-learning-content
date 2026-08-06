@@ -1,50 +1,51 @@
 {
   "schema_version": 1,
-  "version": 100,
-  "updated_at": "2026-08-03T00:00:00Z",
+  "version": 130,
+  "updated_at": "2026-08-05T16:35:00Z",
   "courses": [
     {
       "id": "zh_beginner",
       "title": "零基础中文",
       "title_en": "Beginner Chinese",
       "title_my": "အခြေခံ တရုတ်ဘာသာ",
-      "subtitle": "GitHub Releases 远程课程示例",
-      "subtitle_en": "Remote course demo from GitHub Releases",
-      "subtitle_my": "GitHub Releases မှ အဝေးသင်သင်ခန်းစာ နမူနာ",
-      "version": 100,
+      "subtitle": "互动听、读、写、排序和配对练习，可从 GitHub 在线更新。",
+      "subtitle_en": "Interactive listening, reading, writing, ordering, and matching lessons updated from GitHub.",
+      "subtitle_my": "နားထောင်၊ ဖတ်၊ ရေး၊ စီစဉ်နှင့် တွဲဖက်လေ့ကျင့်ခန်းများကို GitHub မှ အွန်လိုင်းအပ်ဒိတ်လုပ်နိုင်သည်။",
+      "version": 130,
       "min_app_version": 0,
-      "accent": "#F59E8B",
+      "accent": "#6C63FF",
       "units": [
         {
           "id": "unit_greetings",
           "order": 1,
-          "title": "问候与介绍",
-          "title_en": "Greetings and Introductions",
-          "title_my": "နှုတ်ဆက်ခြင်းနှင့် မိတ်ဆက်ခြင်း",
-          "subtitle": "你好、谢谢、再见",
-          "subtitle_en": "Hello, thank you, and goodbye",
-          "subtitle_my": "မင်္ဂလာပါ၊ ကျေးဇူးတင်ပါတယ်၊ နှုတ်ဆက်ပါတယ်",
+          "title": "第 1 单元 · 认识新朋友",
+          "title_en": "Unit 1 · Meet New People",
+          "title_my": "အခန်း ၁ · လူသစ်များနှင့် မိတ်ဆက်ခြင်း",
+          "subtitle": "问候、自我介绍和礼貌表达",
+          "subtitle_en": "Greetings, introductions, and polite expressions",
+          "subtitle_my": "နှုတ်ဆက်ခြင်း၊ မိတ်ဆက်ခြင်းနှင့် ယဉ်ကျေးစကားများ",
           "lessons": [
             {
-              "id": "greeting_hello_demo",
-              "title": "基本问候",
-              "title_en": "Basic Greetings",
-              "title_my": "အခြေခံနှုတ်ဆက်ခြင်း",
-              "subtitle": "听力、选择、排序和图片题",
-              "subtitle_en": "Listening, choices, ordering, and images",
-              "subtitle_my": "နားထောင်၊ ရွေးချယ်၊ စီခြင်းနှင့် ပုံမေးခွန်း",
+              "id": "greeting_hello",
+              "title": "你好",
+              "title_en": "Hello",
+              "title_my": "မင်္ဂလာပါ",
+              "subtitle": "听懂并使用基本问候",
+              "subtitle_en": "Understand and use basic greetings",
+              "subtitle_my": "အခြေခံနှုတ်ဆက်စကားကို နားလည်အသုံးပြုပါ",
               "type": "normal",
               "position": "center",
               "icon": "你",
-              "exercise_count": 5,
+              "exercise_count": 7,
               "minutes": 4,
               "required_lessons": [],
+              "bundled_lesson_asset": "learning/path/lessons/greeting_hello.json",
               "package_id": "zh_beginner_unit_greetings",
-              "package_version": 1,
-              "lesson_file": "lessons/greeting_hello_demo.json"
+              "package_version": 2,
+              "lesson_file": "lessons/greeting_hello.json"
             },
             {
-              "id": "greeting_intro_demo",
+              "id": "greeting_intro",
               "title": "自我介绍",
               "title_en": "Introduce Yourself",
               "title_my": "ကိုယ့်ကိုယ်ကို မိတ်ဆက်ခြင်း",
@@ -54,12 +55,355 @@
               "type": "normal",
               "position": "right",
               "icon": "我",
-              "exercise_count": 4,
-              "minutes": 4,
-              "required_lessons": ["greeting_hello_demo"],
+              "exercise_count": 6,
+              "minutes": 5,
+              "required_lessons": [
+                "greeting_hello"
+              ],
+              "bundled_lesson_asset": "learning/path/lessons/greeting_intro.json",
               "package_id": "zh_beginner_unit_greetings",
+              "package_version": 2,
+              "lesson_file": "lessons/greeting_intro.json"
+            },
+            {
+              "id": "greeting_polite",
+              "title": "礼貌表达",
+              "title_en": "Polite Expressions",
+              "title_my": "ယဉ်ကျေးစကားများ",
+              "subtitle": "请、谢谢、对不起和没关系",
+              "subtitle_en": "Please, thank you, sorry, and it is okay",
+              "subtitle_my": "ကျေးဇူးပြု၍၊ ကျေးဇူးတင်ပါတယ်၊ တောင်းပန်ပါတယ်နှင့် ရပါတယ်",
+              "type": "normal",
+              "position": "left",
+              "icon": "请",
+              "exercise_count": 5,
+              "minutes": 4,
+              "required_lessons": [
+                "greeting_intro"
+              ],
+              "bundled_lesson_asset": "learning/path/lessons/greeting_polite.json",
+              "package_id": "zh_beginner_unit_greetings",
+              "package_version": 2,
+              "lesson_file": "lessons/greeting_polite.json"
+            },
+            {
+              "id": "greeting_story",
+              "title": "故事：新同学",
+              "title_en": "Story: A New Classmate",
+              "title_my": "ပုံပြင်：အတန်းဖော်အသစ်",
+              "subtitle": "在短对话中使用问候和介绍",
+              "subtitle_en": "Use greetings and introductions in a short dialogue",
+              "subtitle_my": "စကားပြောတိုတစ်ခုတွင် နှုတ်ဆက်ခြင်းနှင့် မိတ်ဆက်ခြင်းကို အသုံးပြုပါ",
+              "type": "story",
+              "position": "center",
+              "icon": "书",
+              "exercise_count": 5,
+              "minutes": 5,
+              "required_lessons": [
+                "greeting_polite"
+              ],
+              "bundled_lesson_asset": "learning/path/lessons/greeting_story.json",
+              "package_id": "zh_beginner_unit_greetings",
+              "package_version": 2,
+              "lesson_file": "lessons/greeting_story.json"
+            },
+            {
+              "id": "greeting_review",
+              "title": "问候练习",
+              "title_en": "Greeting Practice",
+              "title_my": "နှုတ်ဆက် လေ့ကျင့်ခန်း",
+              "subtitle": "换一种题型再次确认",
+              "subtitle_en": "Confirm the same knowledge with new question types",
+              "subtitle_my": "မေးခွန်းပုံစံအသစ်ဖြင့် ထပ်မံအတည်ပြုပါ",
+              "type": "review",
+              "position": "center",
+              "icon": "↻",
+              "exercise_count": 5,
+              "minutes": 4,
+              "required_lessons": [
+                "greeting_story"
+              ],
+              "bundled_lesson_asset": "learning/path/lessons/greeting_review.json",
+              "package_id": "zh_beginner_unit_greetings",
+              "package_version": 2,
+              "lesson_file": "lessons/greeting_review.json"
+            },
+            {
+              "id": "greeting_test",
+              "title": "单元测试",
+              "title_en": "Unit Test",
+              "title_my": "အခန်း စမ်းသပ်မှု",
+              "subtitle": "综合检查本单元内容",
+              "subtitle_en": "Check everything from this unit",
+              "subtitle_my": "ဤအခန်း၏ အကြောင်းအရာအားလုံးကို စစ်ဆေးပါ",
+              "type": "test",
+              "position": "left",
+              "icon": "★",
+              "exercise_count": 7,
+              "minutes": 6,
+              "required_lessons": [
+                "greeting_review"
+              ],
+              "bundled_lesson_asset": "learning/path/lessons/greeting_test.json",
+              "package_id": "zh_beginner_unit_greetings",
+              "package_version": 2,
+              "lesson_file": "lessons/greeting_test.json"
+            }
+          ],
+          "accent": "#FF7A59",
+          "character": "mei"
+        },
+        {
+          "id": "unit_daily",
+          "order": 2,
+          "title": "第 2 单元 · 日常生活",
+          "title_en": "Unit 2 · Daily Life",
+          "title_my": "အခန်း ၂ · နေ့စဉ်ဘဝ",
+          "subtitle": "数字、时间和常见物品",
+          "subtitle_en": "Numbers, time, and common objects",
+          "subtitle_my": "ဂဏန်း၊ အချိန်နှင့် နေ့စဉ်ပစ္စည်းများ",
+          "lessons": [
+            {
+              "id": "daily_numbers",
+              "title": "数字 1–10",
+              "title_en": "Numbers 1–10",
+              "title_my": "ဂဏန်း ၁–၁၀",
+              "subtitle": "听音、排序和配对",
+              "subtitle_en": "Listening, ordering, and matching",
+              "subtitle_my": "နားထောင်၊ စီခြင်းနှင့် တွဲစပ်ခြင်း",
+              "type": "listening",
+              "position": "center",
+              "icon": "十",
+              "exercise_count": 6,
+              "minutes": 5,
+              "required_lessons": [
+                "greeting_test"
+              ],
+              "bundled_lesson_asset": "learning/path/lessons/daily_numbers.json",
+              "package_id": "zh_beginner_unit_daily",
               "package_version": 1,
-              "lesson_file": "lessons/greeting_intro_demo.json"
+              "lesson_file": "lessons/daily_numbers.json"
+            },
+            {
+              "id": "daily_time",
+              "title": "现在几点？",
+              "title_en": "What Time Is It?",
+              "title_my": "အခု ဘယ်နှနာရီလဲ？",
+              "subtitle": "询问和表达时间",
+              "subtitle_en": "Ask for and tell the time",
+              "subtitle_my": "အချိန်မေးခြင်းနှင့် ပြောခြင်း",
+              "type": "normal",
+              "position": "right",
+              "icon": "时",
+              "exercise_count": 6,
+              "minutes": 5,
+              "required_lessons": [
+                "daily_numbers"
+              ],
+              "bundled_lesson_asset": "learning/path/lessons/daily_time.json",
+              "package_id": "zh_beginner_unit_daily",
+              "package_version": 1,
+              "lesson_file": "lessons/daily_time.json"
+            },
+            {
+              "id": "daily_schedule",
+              "title": "一天的安排",
+              "title_en": "Daily Schedule",
+              "title_my": "တစ်နေ့တာ အစီအစဉ်",
+              "subtitle": "早上、下午、晚上和日程表达",
+              "subtitle_en": "Morning, afternoon, evening, and daily schedules",
+              "subtitle_my": "မနက်၊ နေ့လယ်၊ ညနှင့် နေ့စဉ်အစီအစဉ်များ",
+              "type": "normal",
+              "position": "left",
+              "icon": "日",
+              "exercise_count": 5,
+              "minutes": 5,
+              "required_lessons": [
+                "daily_time"
+              ],
+              "bundled_lesson_asset": "learning/path/lessons/daily_schedule.json",
+              "package_id": "zh_beginner_unit_daily",
+              "package_version": 1,
+              "lesson_file": "lessons/daily_schedule.json"
+            },
+            {
+              "id": "daily_story",
+              "title": "故事：准时见面",
+              "title_en": "Story: Meet on Time",
+              "title_my": "ပုံပြင်：အချိန်မီတွေ့မယ်",
+              "subtitle": "在短对话中使用数字和时间",
+              "subtitle_en": "Use numbers and time in a short dialogue",
+              "subtitle_my": "စကားပြောတိုတစ်ခုတွင် ဂဏန်းနှင့် အချိန်ကို အသုံးပြုပါ",
+              "type": "story",
+              "position": "center",
+              "icon": "书",
+              "exercise_count": 5,
+              "minutes": 5,
+              "required_lessons": [
+                "daily_schedule"
+              ],
+              "bundled_lesson_asset": "learning/path/lessons/daily_story.json",
+              "package_id": "zh_beginner_unit_daily",
+              "package_version": 1,
+              "lesson_file": "lessons/daily_story.json"
+            },
+            {
+              "id": "daily_practice",
+              "title": "数字与时间练习",
+              "title_en": "Numbers & Time Practice",
+              "title_my": "ဂဏန်းနှင့် အချိန် လေ့ကျင့်ခန်း",
+              "subtitle": "混合复习数字、时间和日程表达",
+              "subtitle_en": "Mixed practice for numbers, time, and schedules",
+              "subtitle_my": "ဂဏန်း၊ အချိန်နှင့် အချိန်ဇယား စကားများကို ပေါင်းစပ်လေ့ကျင့်ပါ",
+              "type": "practice",
+              "position": "left",
+              "icon": "练",
+              "exercise_count": 6,
+              "minutes": 5,
+              "required_lessons": [
+                "daily_story"
+              ],
+              "bundled_lesson_asset": "learning/path/lessons/daily_practice.json",
+              "package_id": "zh_beginner_unit_daily",
+              "package_version": 1,
+              "lesson_file": "lessons/daily_practice.json"
+            },
+            {
+              "id": "daily_checkpoint",
+              "title": "单元测验",
+              "title_en": "Unit Checkpoint",
+              "title_my": "အခန်း စစ်ဆေးမှု",
+              "subtitle": "综合检查数字和时间",
+              "subtitle_en": "Check numbers, time, and schedules together",
+              "subtitle_my": "ဂဏန်း၊ အချိန်နှင့် အစီအစဉ်များကို ပေါင်းစပ်စစ်ဆေးပါ",
+              "type": "checkpoint",
+              "position": "right",
+              "icon": "测",
+              "exercise_count": 7,
+              "minutes": 6,
+              "required_lessons": [
+                "daily_practice"
+              ],
+              "bundled_lesson_asset": "learning/path/lessons/daily_checkpoint.json",
+              "package_id": "zh_beginner_unit_daily",
+              "package_version": 1,
+              "lesson_file": "lessons/daily_checkpoint.json"
+            }
+          ],
+          "accent": "#1CB0F6",
+          "character": "bo"
+        },
+        {
+          "id": "unit_travel",
+          "order": 3,
+          "title": "第 3 单元 · 旅行与问路",
+          "title_en": "Unit 3 · Travel and Directions",
+          "title_my": "အခန်း ၃ · ခရီးသွားခြင်းနှင့် လမ်းမေးခြင်း",
+          "subtitle": "问路、交通、距离和旅行对话",
+          "subtitle_en": "Directions, transport, distance, and travel dialogues",
+          "subtitle_my": "လမ်းမေးခြင်း၊ သယ်ယူပို့ဆောင်ရေး၊ အကွာအဝေးနှင့် ခရီးသွားစကားပြော",
+          "accent": "#1CB0F6",
+          "character": "kai",
+          "lessons": [
+            {
+              "id": "travel_directions",
+              "title": "问路基础",
+              "title_en": "Asking for Directions",
+              "title_my": "လမ်းမေးခြင်း အခြေခံ",
+              "subtitle": "哪里、左转、右转和一直走",
+              "subtitle_en": "Where, turn left, turn right, and go straight",
+              "subtitle_my": "ဘယ်မှာ၊ ဘယ်ကွေ့၊ ညာကွေ့နှင့် တည့်တည့်သွားခြင်း",
+              "type": "normal",
+              "position": "center",
+              "icon": "问",
+              "exercise_count": 7,
+              "minutes": 6,
+              "required_lessons": [
+                "daily_checkpoint"
+              ],
+              "package_id": "zh_beginner_unit_travel",
+              "package_version": 1,
+              "lesson_file": "lessons/travel_directions.json"
+            },
+            {
+              "id": "travel_transport",
+              "title": "公交和地铁",
+              "title_en": "Bus and Subway",
+              "title_my": "ဘတ်စ်ကားနှင့် မြေအောက်ရထား",
+              "subtitle": "上车、下车、车站和换乘",
+              "subtitle_en": "Boarding, getting off, stations, and transfers",
+              "subtitle_my": "တက်ခြင်း၊ ဆင်းခြင်း၊ ဘူတာနှင့် ပြောင်းစီးခြင်း",
+              "type": "listening",
+              "position": "right",
+              "icon": "车",
+              "exercise_count": 6,
+              "minutes": 5,
+              "required_lessons": [
+                "travel_directions"
+              ],
+              "package_id": "zh_beginner_unit_travel",
+              "package_version": 1,
+              "lesson_file": "lessons/travel_transport.json"
+            },
+            {
+              "id": "travel_distance",
+              "title": "距离和时间",
+              "title_en": "Distance and Time",
+              "title_my": "အကွာအဝေးနှင့် အချိန်",
+              "subtitle": "远不远、多久和几分钟",
+              "subtitle_en": "How far, how long, and how many minutes",
+              "subtitle_my": "ဝေးမဝေး၊ ဘယ်လောက်ကြာနှင့် မိနစ်ဘယ်လောက်",
+              "type": "normal",
+              "position": "left",
+              "icon": "远",
+              "exercise_count": 6,
+              "minutes": 5,
+              "required_lessons": [
+                "travel_transport"
+              ],
+              "package_id": "zh_beginner_unit_travel",
+              "package_version": 1,
+              "lesson_file": "lessons/travel_distance.json"
+            },
+            {
+              "id": "travel_story",
+              "title": "故事：找到车站",
+              "title_en": "Story: Finding the Station",
+              "title_my": "ပုံပြင်：ဘူတာကို ရှာခြင်း",
+              "subtitle": "在短对话里完成一次问路",
+              "subtitle_en": "Complete a short directions dialogue",
+              "subtitle_my": "စကားပြောတိုအတွင်း လမ်းမေးခြင်းကို ပြီးမြောက်ပါ",
+              "type": "story",
+              "position": "center",
+              "icon": "书",
+              "exercise_count": 6,
+              "minutes": 5,
+              "required_lessons": [
+                "travel_distance"
+              ],
+              "package_id": "zh_beginner_unit_travel",
+              "package_version": 1,
+              "lesson_file": "lessons/travel_story.json"
+            },
+            {
+              "id": "travel_checkpoint",
+              "title": "旅行检查点",
+              "title_en": "Travel Checkpoint",
+              "title_my": "ခရီးသွား စစ်ဆေးချက်",
+              "subtitle": "综合检查问路和交通表达",
+              "subtitle_en": "Review directions and transport expressions",
+              "subtitle_my": "လမ်းမေးခြင်းနှင့် သယ်ယူပို့ဆောင်ရေး စကားများကို ပြန်လည်စစ်ဆေးပါ",
+              "type": "test",
+              "position": "left",
+              "icon": "★",
+              "exercise_count": 7,
+              "minutes": 6,
+              "required_lessons": [
+                "travel_story"
+              ],
+              "package_id": "zh_beginner_unit_travel",
+              "package_version": 1,
+              "lesson_file": "lessons/travel_checkpoint.json"
             }
           ]
         }
