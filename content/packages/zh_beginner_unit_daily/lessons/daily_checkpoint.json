@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "lesson_id": "daily_checkpoint",
+  "title": "单元测验",
+  "title_en": "Unit Checkpoint",
+  "title_my": "အခန်း စစ်ဆေးမှု",
+  "subtitle": "综合检查数字和时间",
+  "passing_score": 75,
+  "max_retries": 2,
+  "exercises": [
+    {
+      "id": "dcheck_listen_1",
+      "type": "listen_choice",
+      "question": "选择听到的时间",
+      "question_en": "Choose the time you hear",
+      "question_my": "ကြားသောအချိန်ကို ရွေးပါ",
+      "audio_text": "七点一刻",
+      "options": [
+        "七点",
+        "七点一刻",
+        "七点半",
+        "八点一刻"
+      ],
+      "answer": "七点一刻",
+      "explanation": "“一刻”表示十五分钟。"
+    },
+    {
+      "id": "dcheck_choice_1",
+      "type": "single_choice",
+      "question": "数字 6 的中文是什么？",
+      "question_en": "What is the Chinese word for 6?",
+      "question_my": "၆ ကို တရုတ်လို ဘယ်လိုပြောမလဲ？",
+      "options": [
+        "五",
+        "六",
+        "七",
+        "八"
+      ],
+      "answer": "六",
+      "explanation": "6 是“六”，读 liù。"
+    },
+    {
+      "id": "dcheck_order_1",
+      "type": "word_order",
+      "question": "排列成正确句子",
+      "question_en": "Put the sentence in the correct order",
+      "question_my": "ဝါကျကို မှန်ကန်စွာ စီပါ",
+      "words": [
+        "现在",
+        "八点",
+        "半"
+      ],
+      "answer": [
+        "现在",
+        "八点",
+        "半"
+      ],
+      "explanation": "完整表达是“现在八点半”。"
+    },
+    {
+      "id": "dcheck_fill_1",
+      "type": "fill_blank",
+      "question": "填写：一、二、三、___、五。",
+      "question_en": "Complete: 一、二、三、___、五。",
+      "question_my": "ဖြည့်ပါ：一、二、三、___、五。",
+      "answer": "四",
+      "explanation": "三和五之间是四。",
+      "pinyin": "sì"
+    },
+    {
+      "id": "dcheck_match_1",
+      "type": "matching",
+      "question": "把中文时间与数字时间配对",
+      "question_en": "Match Chinese time phrases with digital times",
+      "question_my": "တရုတ်အချိန်စကားနှင့် ဒစ်ဂျစ်တယ်အချိန်ကို တွဲပါ",
+      "pairs": [
+        {
+          "left": "两点",
+          "right": "2:00"
+        },
+        {
+          "left": "四点半",
+          "right": "4:30"
+        },
+        {
+          "left": "六点一刻",
+          "right": "6:15"
+        }
+      ],
+      "answer": "全部配对",
+      "explanation": "先识别数字，再判断“半”和“一刻”。"
+    },
+    {
+      "id": "dcheck_dictation_1",
+      "type": "dictation",
+      "question": "听音写出完整句子",
+      "question_en": "Listen and type the full sentence",
+      "question_my": "နားထောင်ပြီး ဝါကျအပြည့် ရေးပါ",
+      "audio_text": "现在九点半",
+      "answer": "现在九点半",
+      "accepted_answers": [
+        "现在 九点半"
+      ],
+      "explanation": "听到的是“现在九点半”。",
+      "pinyin": "xiàn zài jiǔ diǎn bàn"
+    },
+    {
+      "id": "dcheck_true_1",
+      "type": "true_false",
+      "question": "“下午三点”表示 3:00 AM。",
+      "question_en": "“下午三点” means 3:00 AM.",
+      "question_my": "“下午三点” သည် မနက် 3:00 ကို ဆိုလိုသည်။",
+      "answer_boolean": false,
+      "explanation": "错误，“下午三点”是 3:00 PM。"
+    }
+  ]
+}
