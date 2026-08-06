@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "lesson_id": "greeting_polite",
+  "title": "礼貌表达",
+  "title_en": "Polite Expressions",
+  "title_my": "ယဉ်ကျေးစကားများ",
+  "subtitle": "请、谢谢、对不起和没关系",
+  "passing_score": 70,
+  "exercises": [
+    {
+      "id": "gpolite_listen_1",
+      "type": "listen_choice",
+      "question": "选择听到的礼貌表达",
+      "question_en": "Choose the polite expression you hear",
+      "question_my": "ကြားရသော ယဉ်ကျေးစကားကို ရွေးပါ",
+      "audio_text": "谢谢你",
+      "options": [
+        "谢谢你",
+        "对不起",
+        "没关系",
+        "请坐"
+      ],
+      "answer": "谢谢你",
+      "explanation": "“谢谢你”用于表达感谢。"
+    },
+    {
+      "id": "gpolite_choice_1",
+      "type": "single_choice",
+      "question": "别人向你道歉时，可以怎样回答？",
+      "question_en": "How can you reply when someone apologizes?",
+      "question_my": "တစ်ယောက်ယောက် တောင်းပန်လျှင် ဘယ်လိုဖြေမလဲ？",
+      "options": [
+        "没关系",
+        "你叫什么",
+        "早上好",
+        "再见"
+      ],
+      "answer": "没关系",
+      "explanation": "“没关系”表示你接受对方的道歉。"
+    },
+    {
+      "id": "gpolite_order_1",
+      "type": "word_order",
+      "question": "排列成礼貌请求",
+      "question_en": "Order the words into a polite request",
+      "question_my": "ယဉ်ကျေးသော တောင်းဆိုချက်အဖြစ် စီပါ",
+      "words": [
+        "请",
+        "坐"
+      ],
+      "answer": [
+        "请",
+        "坐"
+      ],
+      "explanation": "“请坐”是邀请别人坐下的礼貌表达。"
+    },
+    {
+      "id": "gpolite_fill_1",
+      "type": "fill_blank",
+      "question": "填写：___不起。",
+      "question_en": "Complete: ___不起。",
+      "question_my": "ဖြည့်ပါ：___不起。",
+      "answer": "对",
+      "explanation": "完整表达是“对不起”。",
+      "pinyin": "duì"
+    },
+    {
+      "id": "gpolite_match_1",
+      "type": "matching",
+      "question": "把礼貌表达和用途配对",
+      "question_en": "Match each polite expression with its use",
+      "question_my": "ယဉ်ကျေးစကားနှင့် အသုံးကို တွဲပါ",
+      "pairs": [
+        {
+          "left": "谢谢",
+          "right": "表达感谢"
+        },
+        {
+          "left": "对不起",
+          "right": "表示道歉"
+        },
+        {
+          "left": "请",
+          "right": "礼貌请求"
+        }
+      ],
+      "answer": "全部配对",
+      "explanation": "礼貌词在不同情境中有不同用途。"
+    }
+  ]
+}

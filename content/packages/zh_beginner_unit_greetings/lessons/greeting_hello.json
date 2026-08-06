@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "lesson_id": "greeting_hello",
+  "title": "你好",
+  "title_en": "Hello",
+  "title_my": "မင်္ဂလာပါ",
+  "subtitle": "基本问候",
+  "exercises": [
+    {
+      "id": "hello_listen_1",
+      "type": "listen_choice",
+      "question": "你听到了什么？",
+      "question_en": "What did you hear?",
+      "question_my": "ဘာကို ကြားခဲ့သလဲ？",
+      "audio_text": "你好",
+      "options": [
+        "你好",
+        "谢谢",
+        "再见",
+        "对不起"
+      ],
+      "answer": "你好",
+      "explanation": "“你好”是最常用的见面问候语。"
+    },
+    {
+      "id": "hello_choice_1",
+      "type": "single_choice",
+      "question": "第一次见面，应该说什么？",
+      "question_en": "What should you say when meeting someone?",
+      "question_my": "ပထမဆုံးတွေ့ချိန် ဘာပြောသင့်သလဲ？",
+      "options": [
+        "你好",
+        "晚安",
+        "不客气",
+        "没关系"
+      ],
+      "answer": "你好",
+      "explanation": "见面时可以说“你好”。"
+    },
+    {
+      "id": "hello_match_1",
+      "type": "matching",
+      "question": "把中文和意思配对",
+      "question_en": "Match each Chinese phrase with its meaning",
+      "question_my": "တရုတ်စကားနှင့် အဓိပ္ပာယ်ကို တွဲပါ",
+      "pairs": [
+        {
+          "left": "你好",
+          "right": "Hello"
+        },
+        {
+          "left": "谢谢",
+          "right": "Thank you"
+        },
+        {
+          "left": "再见",
+          "right": "Goodbye"
+        }
+      ],
+      "answer": "全部配对",
+      "explanation": "这些是最常见的基础礼貌表达。"
+    },
+    {
+      "id": "hello_order_1",
+      "type": "word_order",
+      "question": "排列成自然的问候语",
+      "question_en": "Put the greeting in natural order",
+      "question_my": "နှုတ်ဆက်ဝါကျကို မှန်ကန်စွာ စီပါ",
+      "words": [
+        "你",
+        "好"
+      ],
+      "answer": [
+        "你",
+        "好"
+      ],
+      "explanation": "“你好”由“你”和“好”组成。"
+    },
+    {
+      "id": "hello_fill_1",
+      "type": "fill_blank",
+      "question": "填写：你___",
+      "question_en": "Complete: 你___",
+      "question_my": "ဖြည့်ပါ：你___",
+      "answer": "好",
+      "accepted_answers": [
+        "好！"
+      ],
+      "explanation": "完整表达是“你好”。",
+      "pinyin": "hǎo"
+    },
+    {
+      "id": "hello_judge_1",
+      "type": "true_false",
+      "question": "“你好”可以用于见面问候。",
+      "question_en": "“你好” can be used as a greeting.",
+      "question_my": "“你好” ကို တွေ့ဆုံချိန် နှုတ်ဆက်ရန် သုံးနိုင်သည်။",
+      "options": [
+        {
+          "value": "true",
+          "text": "正确",
+          "text_en": "True",
+          "text_my": "မှန်"
+        },
+        {
+          "value": "false",
+          "text": "错误",
+          "text_en": "False",
+          "text_my": "မှား"
+        }
+      ],
+      "answer": "true",
+      "explanation": "这是最常用的中文问候语之一。"
+    },
+    {
+      "id": "hello_image_1",
+      "type": "image_choice",
+      "question": "选择表示“你好”的图片",
+      "question_en": "Choose the image that shows “hello”",
+      "question_my": "“你好” ကို ဖော်ပြသောပုံကို ရွေးပါ",
+      "options": [
+        {
+          "text": "你好",
+          "text_en": "Hello",
+          "text_my": "မင်္ဂလာပါ",
+          "value": "hello",
+          "image": "media/hello.webp",
+          "content_description": "两个人友好地挥手",
+          "content_description_en": "Two people waving hello"
+        },
+        {
+          "text": "再见",
+          "text_en": "Goodbye",
+          "text_my": "နှုတ်ဆက်ပါတယ်",
+          "value": "goodbye",
+          "image": "media/goodbye.webp",
+          "content_description": "一个人挥手离开",
+          "content_description_en": "A person waving goodbye"
+        }
+      ],
+      "answer": "hello",
+      "explanation": "见面挥手通常表示“你好”。",
+      "explanation_en": "Waving when meeting someone usually means hello."
+    }
+  ],
+  "max_retries": 2
+}

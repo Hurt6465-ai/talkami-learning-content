@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "lesson_id": "greeting_test",
+  "title": "单元测试",
+  "title_en": "Unit Test",
+  "title_my": "အခန်း စမ်းသပ်မှု",
+  "subtitle": "综合检查第 1 单元",
+  "exercises": [
+    {
+      "id": "test_listen_1",
+      "type": "listen_choice",
+      "question": "选择听到的句子",
+      "question_en": "Choose the sentence you hear",
+      "question_my": "ကြားသောဝါကျကို ရွေးပါ",
+      "audio_text": "很高兴认识你",
+      "options": [
+        "很高兴认识你",
+        "你叫什么名字",
+        "我不是老师",
+        "明天见"
+      ],
+      "answer": "很高兴认识你",
+      "explanation": "“很高兴认识你”用于第一次认识对方。"
+    },
+    {
+      "id": "test_choice_1",
+      "type": "single_choice",
+      "question": "别人问“你叫什么名字？”，应该怎样回答？",
+      "question_en": "How should you answer “你叫什么名字？”",
+      "question_my": "“你叫什么名字？” ကို ဘယ်လိုဖြေမလဲ？",
+      "options": [
+        "我叫小美",
+        "我很好",
+        "我是学生吗",
+        "再见"
+      ],
+      "answer": "我叫小美",
+      "explanation": "问题询问姓名，所以回答“我叫 + 名字”。"
+    },
+    {
+      "id": "test_order_1",
+      "type": "word_order",
+      "question": "排列成自然句子",
+      "question_en": "Put the sentence in natural order",
+      "question_my": "ဝါကျကို သဘာဝကျစွာ စီပါ",
+      "words": [
+        "认识",
+        "很",
+        "你",
+        "高兴"
+      ],
+      "answer": [
+        "很",
+        "高兴",
+        "认识",
+        "你"
+      ],
+      "explanation": "自然表达是“很高兴认识你”。"
+    },
+    {
+      "id": "test_fill_1",
+      "type": "fill_blank",
+      "question": "填写：你___哪国人？",
+      "question_en": "Complete: 你___哪国人？",
+      "question_my": "ဖြည့်ပါ：你___哪国人？",
+      "answer": "是",
+      "explanation": "“你是哪国人？”用于询问国籍。",
+      "pinyin": "shì"
+    },
+    {
+      "id": "test_match_1",
+      "type": "matching",
+      "question": "把表达与用途配对",
+      "question_en": "Match each phrase with its use",
+      "question_my": "စကားနှင့် အသုံးပြုပုံကို တွဲပါ",
+      "pairs": [
+        {
+          "left": "你好",
+          "right": "见面问候"
+        },
+        {
+          "left": "我叫安娜",
+          "right": "介绍姓名"
+        },
+        {
+          "left": "再见",
+          "right": "告别"
+        }
+      ],
+      "answer": "全部配对",
+      "explanation": "根据交流场景判断用途。"
+    },
+    {
+      "id": "test_judge_1",
+      "type": "true_false",
+      "question": "“你是哪国人？”是在询问年龄。",
+      "question_en": "“你是哪国人？” asks someone’s age.",
+      "question_my": "“你是哪国人？” သည် အသက်မေးခြင်းဖြစ်သည်။",
+      "options": [
+        {
+          "value": "true",
+          "text": "正确",
+          "text_en": "True",
+          "text_my": "မှန်"
+        },
+        {
+          "value": "false",
+          "text": "错误",
+          "text_en": "False",
+          "text_my": "မှား"
+        }
+      ],
+      "answer": "false",
+      "explanation": "这句话询问的是国籍，不是年龄。"
+    },
+    {
+      "id": "test_dictation_1",
+      "type": "dictation",
+      "question": "听音写句子",
+      "question_en": "Listen and type the sentence",
+      "question_my": "နားထောင်ပြီး ဝါကျရေးပါ",
+      "audio_text": "我叫安娜",
+      "answer": "我叫安娜",
+      "explanation": "注意“我叫 + 名字”的结构。",
+      "pinyin": "wǒ jiào ān nà"
+    }
+  ],
+  "max_retries": 2,
+  "passing_score": 60
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "lesson_id": "greeting_intro",
+  "title": "自我介绍",
+  "title_en": "Introduce Yourself",
+  "title_my": "ကိုယ့်ကိုယ်ကို မိတ်ဆက်ခြင်း",
+  "subtitle": "我叫…… / 我是……",
+  "exercises": [
+    {
+      "id": "intro_choice_1",
+      "type": "single_choice",
+      "question": "“My name is Li Ming”怎么说？",
+      "question_en": "How do you say “My name is Li Ming”?",
+      "question_my": "“ကျွန်ုပ်နာမည် Li Ming” ကို ဘယ်လိုပြောမလဲ？",
+      "options": [
+        "我叫李明",
+        "你叫李明",
+        "他是李明",
+        "你好李明"
+      ],
+      "answer": "我叫李明",
+      "explanation": "“我叫 + 名字”用于介绍自己的姓名。"
+    },
+    {
+      "id": "intro_order_1",
+      "type": "word_order",
+      "question": "排列成正确句子",
+      "question_en": "Put the sentence in the correct order",
+      "question_my": "ဝါကျကို မှန်ကန်စွာ စီပါ",
+      "words": [
+        "我",
+        "叫",
+        "小明"
+      ],
+      "answer": [
+        "我",
+        "叫",
+        "小明"
+      ],
+      "explanation": "中文通常说“我叫小明”。"
+    },
+    {
+      "id": "intro_fill_1",
+      "type": "fill_blank",
+      "question": "填写：我___安娜。",
+      "question_en": "Complete: 我___安娜。",
+      "question_my": "ဖြည့်ပါ：我___安娜。",
+      "answer": "叫",
+      "explanation": "“叫”在这里表示名字是。",
+      "pinyin": "jiào"
+    },
+    {
+      "id": "intro_listen_1",
+      "type": "listen_choice",
+      "question": "你听到的是哪一句？",
+      "question_en": "Which sentence did you hear?",
+      "question_my": "ဘယ်ဝါကျကို ကြားခဲ့သလဲ？",
+      "audio_text": "我是学生",
+      "options": [
+        "我是学生",
+        "你是老师",
+        "他叫小王",
+        "我很好"
+      ],
+      "answer": "我是学生",
+      "explanation": "“我是学生”表示 I am a student。"
+    },
+    {
+      "id": "intro_match_1",
+      "type": "matching",
+      "question": "把问句和回答配对",
+      "question_en": "Match each question with its answer",
+      "question_my": "မေးခွန်းနှင့် အဖြေကို တွဲပါ",
+      "pairs": [
+        {
+          "left": "你叫什么名字？",
+          "right": "我叫安娜。"
+        },
+        {
+          "left": "你是哪国人？",
+          "right": "我是缅甸人。"
+        },
+        {
+          "left": "你好吗？",
+          "right": "我很好。"
+        }
+      ],
+      "answer": "全部配对",
+      "explanation": "先看问句需要的是姓名、国籍还是状态。"
+    },
+    {
+      "id": "intro_judge_1",
+      "type": "true_false",
+      "question": "“我叫老师”通常表示我的名字是“老师”。",
+      "question_en": "“我叫老师” usually means my name is “Teacher.”",
+      "question_my": "“我叫老师” ဆိုသည်မှာ ပုံမှန်အားဖြင့် နာမည် “老师” ဖြစ်သည်ဟု ဆိုလိုသည်။",
+      "options": [
+        {
+          "value": "true",
+          "text": "正确",
+          "text_en": "True",
+          "text_my": "မှန်"
+        },
+        {
+          "value": "false",
+          "text": "错误",
+          "text_en": "False",
+          "text_my": "မှား"
+        }
+      ],
+      "answer": "true",
+      "explanation": "“我叫 + 名字/称呼”用于说明自己的名字或称呼。"
+    }
+  ],
+  "max_retries": 2
+}

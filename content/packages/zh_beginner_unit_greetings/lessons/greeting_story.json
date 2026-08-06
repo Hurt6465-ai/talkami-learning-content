@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "lesson_id": "greeting_story",
+  "title": "故事：新同学",
+  "title_en": "Story: A New Classmate",
+  "title_my": "ပုံပြင်：အတန်းဖော်အသစ်",
+  "subtitle": "在短对话中使用问候和介绍",
+  "passing_score": 70,
+  "exercises": [
+    {
+      "id": "gstory_listen_1",
+      "type": "listen_choice",
+      "question": "小美先说了什么？",
+      "question_en": "What did Xiaomei say first?",
+      "question_my": "Xiaomei က အရင် ဘာပြောခဲ့သလဲ？",
+      "audio_text": "你好，我叫小美。",
+      "options": [
+        "你好，我叫小美。",
+        "再见，我是老师。",
+        "谢谢，你叫什么？",
+        "晚安，我很好。"
+      ],
+      "answer": "你好，我叫小美。",
+      "explanation": "见面时先问候，再介绍名字。"
+    },
+    {
+      "id": "gstory_choice_1",
+      "type": "single_choice",
+      "question": "阿明应该怎样回答“你叫什么名字？”",
+      "question_en": "How should A-Ming answer “What is your name?”",
+      "question_my": "“你叫什么名字？” ကို A-Ming ဘယ်လိုဖြေသင့်သလဲ？",
+      "options": [
+        "我叫阿明。",
+        "我很好。",
+        "你是学生。",
+        "明天见。"
+      ],
+      "answer": "我叫阿明。",
+      "explanation": "回答姓名用“我叫 + 名字”。"
+    },
+    {
+      "id": "gstory_order_1",
+      "type": "word_order",
+      "question": "排列成自然的见面表达",
+      "question_en": "Put the greeting in natural order",
+      "question_my": "တွေ့ဆုံစကားကို မှန်ကန်စွာ စီပါ",
+      "words": [
+        "认识",
+        "很",
+        "你",
+        "高兴"
+      ],
+      "answer": [
+        "很",
+        "高兴",
+        "认识",
+        "你"
+      ],
+      "explanation": "自然表达是“很高兴认识你”。"
+    },
+    {
+      "id": "gstory_fill_1",
+      "type": "fill_blank",
+      "question": "填写：我___小美。",
+      "question_en": "Complete: 我___小美。",
+      "question_my": "ဖြည့်ပါ：我___小美。",
+      "answer": "叫",
+      "explanation": "“我叫小美”是在介绍自己的名字。",
+      "pinyin": "jiào"
+    },
+    {
+      "id": "gstory_match_1",
+      "type": "matching",
+      "question": "把故事中的问句和回答配对",
+      "question_en": "Match the questions and answers from the story",
+      "question_my": "ပုံပြင်ထဲက မေးခွန်းနှင့် အဖြေကို တွဲပါ",
+      "pairs": [
+        {
+          "left": "你叫什么名字？",
+          "right": "我叫阿明。"
+        },
+        {
+          "left": "你是哪国人？",
+          "right": "我是中国人。"
+        },
+        {
+          "left": "你好吗？",
+          "right": "我很好。"
+        }
+      ],
+      "answer": "全部配对",
+      "explanation": "先理解问题，再选择对应回答。"
+    }
+  ]
+}
