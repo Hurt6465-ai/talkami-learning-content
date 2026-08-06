@@ -5,7 +5,8 @@
   "catalogs": {
     "words": "words-catalog.json",
     "speaking": "speaking-catalog.json",
-    "learning_path": "learning-path-catalog.json"
+    "learning_path": "learning-path-catalog.json",
+    "books": "books-catalog.json"
   },
   "package_read_timeout_ms": 180000,
   "max_package_bytes": 209715200,
@@ -15,5 +16,6 @@
     "release-assets.githubusercontent.com",
     "objects.githubusercontent.com",
     "github-releases.githubusercontent.com"
-  ]
+  ],
+  "max_book_bytes": 536870912
 }
