@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "lesson_id": "daily_story",
+  "title": "故事：准时见面",
+  "title_en": "Story: Meet on Time",
+  "title_my": "ပုံပြင်：အချိန်မီတွေ့မယ်",
+  "subtitle": "在短对话中使用数字和时间",
+  "passing_score": 70,
+  "exercises": [
+    {
+      "id": "dstory_listen_1",
+      "type": "listen_choice",
+      "question": "他们几点见面？",
+      "question_en": "What time will they meet?",
+      "question_my": "သူတို့ ဘယ်နှနာရီမှာ တွေ့မလဲ？",
+      "audio_text": "我们下午三点见。",
+      "options": [
+        "下午两点",
+        "下午三点",
+        "下午四点",
+        "晚上三点"
+      ],
+      "answer": "下午三点",
+      "explanation": "对话里说“下午三点见”。"
+    },
+    {
+      "id": "dstory_choice_1",
+      "type": "single_choice",
+      "question": "现在两点半，距离三点还有多久？",
+      "question_en": "It is 2:30. How long until 3:00?",
+      "question_my": "အခု 2:30 ဖြစ်ပြီး 3:00 အထိ ဘယ်လောက်ကျန်သလဲ？",
+      "options": [
+        "十五分钟",
+        "三十分钟",
+        "一个小时",
+        "两个小时"
+      ],
+      "answer": "三十分钟",
+      "explanation": "两点半到三点是三十分钟。"
+    },
+    {
+      "id": "dstory_order_1",
+      "type": "word_order",
+      "question": "排列成约定时间的句子",
+      "question_en": "Order the words to arrange a meeting time",
+      "question_my": "တွေ့ဆုံချိန် သတ်မှတ်သည့်ဝါကျကို စီပါ",
+      "words": [
+        "三点",
+        "我们",
+        "见"
+      ],
+      "answer": [
+        "我们",
+        "三点",
+        "见"
+      ],
+      "explanation": "自然表达是“我们三点见”。"
+    },
+    {
+      "id": "dstory_fill_1",
+      "type": "fill_blank",
+      "question": "填写：别迟到，三点___。",
+      "question_en": "Complete: 别迟到，三点___。",
+      "question_my": "ဖြည့်ပါ：别迟到，三点___。",
+      "answer": "见",
+      "explanation": "“三点见”表示三点见面。",
+      "pinyin": "jiàn"
+    },
+    {
+      "id": "dstory_match_1",
+      "type": "matching",
+      "question": "把故事表达和意思配对",
+      "question_en": "Match the story phrases with their meanings",
+      "question_my": "ပုံပြင်စကားများနှင့် အဓိပ္ပာယ်ကို တွဲပါ",
+      "pairs": [
+        {
+          "left": "现在几点？",
+          "right": "询问当前时间"
+        },
+        {
+          "left": "三点见。",
+          "right": "约定见面时间"
+        },
+        {
+          "left": "别迟到。",
+          "right": "提醒准时"
+        }
+      ],
+      "answer": "全部配对",
+      "explanation": "理解句子的用途能帮助完成对话。"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "lesson_id": "daily_schedule",
+  "title": "一天的安排",
+  "title_en": "Daily Schedule",
+  "title_my": "တစ်နေ့တာ အစီအစဉ်",
+  "subtitle": "早上、下午、晚上和日程表达",
+  "passing_score": 70,
+  "exercises": [
+    {
+      "id": "dschedule_listen_1",
+      "type": "listen_choice",
+      "question": "他什么时候上课？",
+      "question_en": "When does he have class?",
+      "question_my": "သူ ဘယ်အချိန် သင်တန်းတက်သလဲ？",
+      "audio_text": "我早上八点上课",
+      "options": [
+        "早上八点",
+        "下午八点",
+        "晚上八点",
+        "中午八点"
+      ],
+      "answer": "早上八点",
+      "explanation": "句子中说的是“早上八点”。"
+    },
+    {
+      "id": "dschedule_choice_1",
+      "type": "single_choice",
+      "question": "20:00 更适合用哪个时间词？",
+      "question_en": "Which time-of-day word best fits 20:00?",
+      "question_my": "20:00 အတွက် ဘယ်အချိန်စကား သင့်တော်သလဲ？",
+      "options": [
+        "早上",
+        "上午",
+        "下午",
+        "晚上"
+      ],
+      "answer": "晚上",
+      "explanation": "20:00 通常说“晚上八点”。"
+    },
+    {
+      "id": "dschedule_order_1",
+      "type": "word_order",
+      "question": "排列成日程表达",
+      "question_en": "Order the words into a schedule sentence",
+      "question_my": "အချိန်ဇယားဝါကျအဖြစ် စီပါ",
+      "words": [
+        "我",
+        "晚上",
+        "学习",
+        "中文"
+      ],
+      "answer": [
+        "我",
+        "晚上",
+        "学习",
+        "中文"
+      ],
+      "explanation": "时间词通常放在主语之后、动作之前。"
+    },
+    {
+      "id": "dschedule_fill_1",
+      "type": "fill_blank",
+      "question": "填写：我___七点吃早饭。",
+      "question_en": "Complete: 我___七点吃早饭。",
+      "question_my": "ဖြည့်ပါ：我___七点吃早饭。",
+      "answer": "早上",
+      "explanation": "吃早饭通常使用“早上”。",
+      "pinyin": "zǎo shang"
+    },
+    {
+      "id": "dschedule_match_1",
+      "type": "matching",
+      "question": "把时间词和常见活动配对",
+      "question_en": "Match time-of-day words with common activities",
+      "question_my": "အချိန်စကားနှင့် နေ့စဉ်လုပ်ဆောင်ချက်ကို တွဲပါ",
+      "pairs": [
+        {
+          "left": "早上",
+          "right": "吃早饭"
+        },
+        {
+          "left": "中午",
+          "right": "吃午饭"
+        },
+        {
+          "left": "晚上",
+          "right": "睡觉"
+        }
+      ],
+      "answer": "全部配对",
+      "explanation": "这些是常见的一天安排。"
+    }
+  ]
+}

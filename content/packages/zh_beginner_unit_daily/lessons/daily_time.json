@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "lesson_id": "daily_time",
+  "title": "现在几点？",
+  "title_en": "What Time Is It?",
+  "title_my": "အခု ဘယ်နှနာရီလဲ？",
+  "subtitle": "询问和表达时间",
+  "exercises": [
+    {
+      "id": "time_choice_1",
+      "type": "single_choice",
+      "question": "“What time is it now?”怎么说？",
+      "question_en": "How do you say “What time is it now?”",
+      "question_my": "“အခု ဘယ်နှနာရီလဲ” ကို ဘယ်လိုပြောမလဲ？",
+      "options": [
+        "现在几点？",
+        "今天几号？",
+        "你几岁？",
+        "你去哪儿？"
+      ],
+      "answer": "现在几点？",
+      "explanation": "“几点”用于询问时间。"
+    },
+    {
+      "id": "time_listen_1",
+      "type": "listen_choice",
+      "question": "选择听到的时间",
+      "question_en": "Choose the time you hear",
+      "question_my": "ကြားသောအချိန်ကို ရွေးပါ",
+      "audio_text": "三点半",
+      "options": [
+        "两点",
+        "三点半",
+        "四点一刻",
+        "五点"
+      ],
+      "answer": "三点半",
+      "explanation": "“半”表示三十分钟。"
+    },
+    {
+      "id": "time_order_1",
+      "type": "word_order",
+      "question": "排列成询问时间的句子",
+      "question_en": "Order the words to ask the time",
+      "question_my": "အချိန်မေးသည့်ဝါကျကို စီပါ",
+      "words": [
+        "现在",
+        "几点"
+      ],
+      "answer": [
+        "现在",
+        "几点"
+      ],
+      "explanation": "完整表达是“现在几点？”"
+    },
+    {
+      "id": "time_fill_1",
+      "type": "fill_blank",
+      "question": "填写：现在三___半。",
+      "question_en": "Complete: 现在三___半。",
+      "question_my": "ဖြည့်ပါ：现在三___半。",
+      "answer": "点",
+      "explanation": "表达整点或半点要用“点”。",
+      "pinyin": "diǎn"
+    },
+    {
+      "id": "time_match_1",
+      "type": "matching",
+      "question": "把时间表达配对",
+      "question_en": "Match the time expressions",
+      "question_my": "အချိန်စကားများကို တွဲပါ",
+      "pairs": [
+        {
+          "left": "三点",
+          "right": "3:00"
+        },
+        {
+          "left": "三点半",
+          "right": "3:30"
+        },
+        {
+          "left": "四点一刻",
+          "right": "4:15"
+        }
+      ],
+      "answer": "全部配对",
+      "explanation": "半是 30 分钟，一刻是 15 分钟。"
+    },
+    {
+      "id": "time_judge_1",
+      "type": "true_false",
+      "question": "“三点半”表示 3:30。",
+      "question_en": "“三点半” means 3:30.",
+      "question_my": "“三点半” သည် ၃:၃၀ ကို ဆိုလိုသည်။",
+      "options": [
+        {
+          "value": "true",
+          "text": "正确",
+          "text_en": "True",
+          "text_my": "မှန်"
+        },
+        {
+          "value": "false",
+          "text": "错误",
+          "text_en": "False",
+          "text_my": "မှား"
+        }
+      ],
+      "answer": "true",
+      "explanation": "“半”就是半小时。"
+    }
+  ],
+  "max_retries": 2
+}

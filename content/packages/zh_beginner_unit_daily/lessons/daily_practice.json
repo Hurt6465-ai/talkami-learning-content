@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "lesson_id": "daily_practice",
+  "title": "数字与时间练习",
+  "title_en": "Numbers & Time Practice",
+  "title_my": "ဂဏန်းနှင့် အချိန် လေ့ကျင့်ခန်း",
+  "subtitle": "混合复习数字和时间",
+  "passing_score": 70,
+  "exercises": [
+    {
+      "id": "dpractice_dictation_1",
+      "type": "dictation",
+      "question": "听音写出时间",
+      "question_en": "Listen and type the time",
+      "question_my": "နားထောင်ပြီး အချိန်ကို ရေးပါ",
+      "audio_text": "八点半",
+      "answer": "八点半",
+      "accepted_answers": [
+        "八 点 半"
+      ],
+      "explanation": "“半”表示三十分钟。",
+      "pinyin": "bā diǎn bàn"
+    },
+    {
+      "id": "dpractice_choice_1",
+      "type": "single_choice",
+      "question": "9:00 应该怎样说？",
+      "question_en": "How do you say 9:00?",
+      "question_my": "9:00 ကို ဘယ်လိုပြောမလဲ？",
+      "options": [
+        "九点",
+        "九点半",
+        "十点",
+        "八点"
+      ],
+      "answer": "九点",
+      "explanation": "整点用“数字 + 点”。"
+    },
+    {
+      "id": "dpractice_order_1",
+      "type": "word_order",
+      "question": "排列成询问时间的句子",
+      "question_en": "Order the words to ask the time",
+      "question_my": "အချိန်မေးသည့်ဝါကျကို စီပါ",
+      "words": [
+        "现在",
+        "几点"
+      ],
+      "answer": [
+        "现在",
+        "几点"
+      ],
+      "explanation": "完整句子是“现在几点？”"
+    },
+    {
+      "id": "dpractice_fill_1",
+      "type": "fill_blank",
+      "question": "填写：现在四___一刻。",
+      "question_en": "Complete: 现在四___一刻。",
+      "question_my": "ဖြည့်ပါ：现在四___一刻。",
+      "answer": "点",
+      "explanation": "表达时间需要使用“点”。",
+      "pinyin": "diǎn"
+    },
+    {
+      "id": "dpractice_match_1",
+      "type": "matching",
+      "question": "把时间表达配对",
+      "question_en": "Match the time expressions",
+      "question_my": "အချိန်စကားများကို တွဲပါ",
+      "pairs": [
+        {
+          "left": "七点",
+          "right": "7:00"
+        },
+        {
+          "left": "八点半",
+          "right": "8:30"
+        },
+        {
+          "left": "九点一刻",
+          "right": "9:15"
+        }
+      ],
+      "answer": "全部配对",
+      "explanation": "“半”是 30 分，“一刻”是 15 分。"
+    },
+    {
+      "id": "dpractice_true_1",
+      "type": "true_false",
+      "question": "“十点半”表示 10:30。",
+      "question_en": "“十点半” means 10:30.",
+      "question_my": "“十点半” သည် 10:30 ကို ဆိုလိုသည်။",
+      "answer_boolean": true,
+      "explanation": "正确，“半”表示半小时。"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "lesson_id": "daily_numbers",
+  "title": "数字 1–10",
+  "title_en": "Numbers 1–10",
+  "title_my": "ဂဏန်း ၁–၁၀",
+  "subtitle": "听懂并说出基础数字",
+  "exercises": [
+    {
+      "id": "numbers_listen_1",
+      "type": "listen_choice",
+      "question": "你听到哪个数字？",
+      "question_en": "Which number did you hear?",
+      "question_my": "ဘယ်ဂဏန်းကို ကြားခဲ့သလဲ？",
+      "audio_text": "三",
+      "options": [
+        "一",
+        "二",
+        "三",
+        "四"
+      ],
+      "answer": "三",
+      "explanation": "“三”读 sān。"
+    },
+    {
+      "id": "numbers_choice_1",
+      "type": "single_choice",
+      "question": "数字 8 的中文是什么？",
+      "question_en": "What is the Chinese word for 8?",
+      "question_my": "၈ ကို တရုတ်လို ဘယ်လိုပြောမလဲ？",
+      "options": [
+        "六",
+        "七",
+        "八",
+        "九"
+      ],
+      "answer": "八",
+      "explanation": "8 是“八”，读 bā。"
+    },
+    {
+      "id": "numbers_order_1",
+      "type": "word_order",
+      "question": "按从小到大排列",
+      "question_en": "Put the numbers in ascending order",
+      "question_my": "ငယ်မှကြီး စီပါ",
+      "words": [
+        "三",
+        "一",
+        "二"
+      ],
+      "answer": [
+        "一",
+        "二",
+        "三"
+      ],
+      "keep_order": true,
+      "explanation": "正确顺序是一、二、三。"
+    },
+    {
+      "id": "numbers_fill_1",
+      "type": "fill_blank",
+      "question": "填写：一、二、___、四",
+      "question_en": "Complete: 一、二、___、四",
+      "question_my": "ဖြည့်ပါ：一、二、___、四",
+      "answer": "三",
+      "explanation": "二和四之间是三。",
+      "pinyin": "sān"
+    },
+    {
+      "id": "numbers_match_1",
+      "type": "matching",
+      "question": "把中文数字与阿拉伯数字配对",
+      "question_en": "Match Chinese numbers with digits",
+      "question_my": "တရုတ်ဂဏန်းနှင့် အာရဗီဂဏန်းကို တွဲပါ",
+      "pairs": [
+        {
+          "left": "一",
+          "right": "1"
+        },
+        {
+          "left": "五",
+          "right": "5"
+        },
+        {
+          "left": "十",
+          "right": "10"
+        }
+      ],
+      "answer": "全部配对",
+      "explanation": "记住基础数字的写法。"
+    },
+    {
+      "id": "numbers_judge_1",
+      "type": "true_false",
+      "question": "“九”表示数字 9。",
+      "question_en": "“九” means the number 9.",
+      "question_my": "“九” သည် ၉ ကို ဆိုလိုသည်။",
+      "options": [
+        {
+          "value": "true",
+          "text": "正确",
+          "text_en": "True",
+          "text_my": "မှန်"
+        },
+        {
+          "value": "false",
+          "text": "错误",
+          "text_en": "False",
+          "text_my": "မှား"
+        }
+      ],
+      "answer": "true",
+      "explanation": "九读 jiǔ。"
+    }
+  ],
+  "max_retries": 2
+}
