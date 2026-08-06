@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "lesson_id": "travel_directions",
+  "title": "问路基础",
+  "title_en": "Asking for Directions",
+  "title_my": "လမ်းမေးခြင်း အခြေခံ",
+  "subtitle": "哪里、左转、右转和一直走",
+  "subtitle_en": "Where, turn left, turn right, and go straight",
+  "exercises": [
+    {
+      "id": "tdir_listen_1",
+      "type": "listen_choice",
+      "question": "你听到了什么？",
+      "question_en": "What did you hear?",
+      "question_my": "ဘာကို ကြားခဲ့သလဲ？",
+      "audio_text": "请问，地铁站在哪里？",
+      "options": [
+        "请问，地铁站在哪里？",
+        "请问，洗手间在哪里？",
+        "请问，火车站远吗？"
+      ],
+      "answer": "请问，地铁站在哪里？",
+      "explanation": "“在哪里”用来询问地点。"
+    },
+    {
+      "id": "tdir_choice_1",
+      "type": "single_choice",
+      "question": "想礼貌地询问地点，哪一句最合适？",
+      "question_en": "Which sentence politely asks for a place?",
+      "question_my": "နေရာတစ်ခုကို ယဉ်ကျေးစွာ မေးရန် ဘယ်ဝါကျက သင့်တော်သလဲ？",
+      "options": [
+        "请问，地铁站在哪里？",
+        "地铁站很好吃。",
+        "我不坐地铁。"
+      ],
+      "answer": "请问，地铁站在哪里？",
+      "explanation": "“请问”让问路更礼貌。"
+    },
+    {
+      "id": "tdir_match_1",
+      "type": "matching",
+      "question": "把方向词和英文意思配对",
+      "question_en": "Match each direction with its meaning",
+      "question_my": "ဦးတည်ချက်စကားလုံးနှင့် အဓိပ္ပာယ်ကို တွဲပါ",
+      "pairs": [
+        {
+          "left": "左转",
+          "right": "Turn left"
+        },
+        {
+          "left": "右转",
+          "right": "Turn right"
+        },
+        {
+          "left": "一直走",
+          "right": "Go straight"
+        },
+        {
+          "left": "路口",
+          "right": "Intersection"
+        }
+      ],
+      "answer": "全部配对",
+      "explanation": "这些词常用于指路。"
+    },
+    {
+      "id": "tdir_order_1",
+      "type": "word_order",
+      "question": "排列成正确的问题",
+      "question_en": "Put the question in the correct order",
+      "question_my": "မေးခွန်းကို မှန်ကန်စွာ စီပါ",
+      "words": [
+        "地铁站",
+        "在",
+        "哪里"
+      ],
+      "answer": [
+        "地铁站",
+        "在",
+        "哪里"
+      ],
+      "explanation": "正确句子是“地铁站在哪里？”"
+    },
+    {
+      "id": "tdir_fill_1",
+      "type": "fill_blank",
+      "question": "填写：请问，地铁站在___？",
+      "question_en": "Complete: 请问，地铁站在___？",
+      "question_my": "ဖြည့်ပါ：请问，地铁站在___？",
+      "pinyin": "nǎ lǐ",
+      "placeholder": "根据拼音填写汉字",
+      "answer": "哪里",
+      "accepted_answers": [
+        "哪儿"
+      ],
+      "explanation": "询问地点可以使用“哪里”或“哪儿”。"
+    },
+    {
+      "id": "tdir_true_1",
+      "type": "true_false",
+      "question": "“一直走”表示不要转弯，继续向前。",
+      "question_en": "“一直走” means keep going straight without turning.",
+      "question_my": "“一直走” ဆိုသည်မှာ မကွေ့ဘဲ ရှေ့တည့်တည့် ဆက်သွားရန် ဆိုလိုသည်။",
+      "answer": "true",
+      "explanation": "“一直走”就是继续直走。"
+    },
+    {
+      "id": "tdir_dictation_1",
+      "type": "dictation",
+      "question": "听音写出完整句子",
+      "question_en": "Listen and type the full sentence",
+      "question_my": "နားထောင်ပြီး ဝါကျအပြည့် ရေးပါ",
+      "audio_text": "一直往前走",
+      "pinyin": "yì zhí wǎng qián zǒu",
+      "answer": "一直往前走",
+      "accepted_answers": [
+        "一直往前走。"
+      ],
+      "explanation": "这是常见的指路表达。"
+    }
+  ],
+  "passing_score": 70,
+  "max_retries": 2
+}

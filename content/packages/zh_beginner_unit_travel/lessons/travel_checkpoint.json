@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "lesson_id": "travel_checkpoint",
+  "title": "旅行检查点",
+  "title_en": "Travel Checkpoint",
+  "title_my": "ခရီးသွား စစ်ဆေးချက်",
+  "subtitle": "综合检查问路和交通表达",
+  "subtitle_en": "Review directions and transport expressions",
+  "exercises": [
+    {
+      "id": "tcheck_listen_1",
+      "type": "listen_choice",
+      "question": "选择听到的句子",
+      "question_en": "Choose the sentence you hear",
+      "question_my": "ကြားရသော ဝါကျကို ရွေးပါ",
+      "audio_text": "我应该在哪一站下车？",
+      "options": [
+        "我应该在哪一站下车？",
+        "我应该在哪一家吃饭？",
+        "我应该在哪一天出发？"
+      ],
+      "answer": "我应该在哪一站下车？",
+      "explanation": "这句话询问下车站点。"
+    },
+    {
+      "id": "tcheck_choice_1",
+      "type": "single_choice",
+      "question": "“Is it far from here to downtown?” 对应哪一句？",
+      "question_en": "Which sentence means “Is it far from here to downtown?”",
+      "question_my": "“ဒီကနေ မြို့လယ်နဲ့ ဝေးလား” နှင့် ကိုက်ညီသော ဝါကျကို ရွေးပါ",
+      "options": [
+        "这里离市中心远吗？",
+        "市中心几点开门？",
+        "这里有地铁站吗？"
+      ],
+      "answer": "这里离市中心远吗？",
+      "explanation": "“A 离 B 远吗”询问距离。"
+    },
+    {
+      "id": "tcheck_order_1",
+      "type": "word_order",
+      "question": "排列成正确句子",
+      "question_en": "Put the sentence in the correct order",
+      "question_my": "ဝါကျကို မှန်ကန်စွာ စီပါ",
+      "words": [
+        "这班",
+        "公交车",
+        "去",
+        "火车站",
+        "吗"
+      ],
+      "answer": [
+        "这班",
+        "公交车",
+        "去",
+        "火车站",
+        "吗"
+      ],
+      "explanation": "正确句子是“这班公交车去火车站吗？”"
+    },
+    {
+      "id": "tcheck_fill_1",
+      "type": "fill_blank",
+      "question": "填写：我迷路了，你能___我吗？",
+      "question_en": "Complete: 我迷路了，你能___我吗？",
+      "question_my": "ဖြည့်ပါ：我迷路了，你能___我吗？",
+      "pinyin": "bāng",
+      "placeholder": "根据拼音填写汉字",
+      "answer": "帮",
+      "explanation": "“帮我”表示 help me。"
+    },
+    {
+      "id": "tcheck_match_1",
+      "type": "matching",
+      "question": "把中文和英文配对",
+      "question_en": "Match the Chinese and English",
+      "question_my": "တရုတ်စာနှင့် အင်္ဂလိပ်အဓိပ္ပာယ်ကို တွဲပါ",
+      "pairs": [
+        {
+          "left": "我迷路了",
+          "right": "I am lost"
+        },
+        {
+          "left": "要多久？",
+          "right": "How long does it take?"
+        },
+        {
+          "left": "右转",
+          "right": "Turn right"
+        },
+        {
+          "left": "下车",
+          "right": "Get off"
+        }
+      ],
+      "answer": "全部配对",
+      "explanation": "这些都是旅行时常用的表达。"
+    },
+    {
+      "id": "tcheck_true_1",
+      "type": "true_false",
+      "question": "“有没有更近的路？”是在询问是否有更短的路线。",
+      "question_en": "“有没有更近的路？” asks whether there is a shorter route.",
+      "question_my": "“有没有更近的路？” သည် ပိုတိုသောလမ်း ရှိမရှိ မေးခြင်း ဖြစ်သည်။",
+      "answer": "true",
+      "explanation": "“更近”表示距离更短。"
+    },
+    {
+      "id": "tcheck_dictation_1",
+      "type": "dictation",
+      "question": "听音写出完整句子",
+      "question_en": "Listen and type the full sentence",
+      "question_my": "နားထောင်ပြီး ဝါကျအပြည့် ရေးပါ",
+      "audio_text": "我迷路了，你能帮我吗",
+      "pinyin": "wǒ mí lù le，nǐ néng bāng wǒ ma",
+      "answer": "我迷路了，你能帮我吗",
+      "accepted_answers": [
+        "我迷路了，你能帮我吗？"
+      ],
+      "explanation": "这是迷路时请求帮助的自然表达。"
+    }
+  ],
+  "passing_score": 70,
+  "max_retries": 2
+}

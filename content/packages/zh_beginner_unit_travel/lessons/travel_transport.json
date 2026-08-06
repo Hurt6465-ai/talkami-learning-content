@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "lesson_id": "travel_transport",
+  "title": "公交和地铁",
+  "title_en": "Bus and Subway",
+  "title_my": "ဘတ်စ်ကားနှင့် မြေအောက်ရထား",
+  "subtitle": "上车、下车、车站和换乘",
+  "subtitle_en": "Boarding, getting off, stations, and transfers",
+  "exercises": [
+    {
+      "id": "ttrans_listen_1",
+      "type": "listen_choice",
+      "question": "播放的是哪一句？",
+      "question_en": "Which sentence is being played?",
+      "question_my": "ဘယ်ဝါကျကို ဖွင့်ထားသလဲ？",
+      "audio_text": "这班公交车去火车站吗？",
+      "options": [
+        "这班公交车去火车站吗？",
+        "火车站几点关门？",
+        "我想买一张火车票。"
+      ],
+      "answer": "这班公交车去火车站吗？",
+      "explanation": "“这班公交车去……吗”可以确认路线。"
+    },
+    {
+      "id": "ttrans_choice_1",
+      "type": "single_choice",
+      "question": "想知道在哪里下车，应该怎么问？",
+      "question_en": "How do you ask where to get off?",
+      "question_my": "ဘယ်နေရာမှာ ဆင်းရမလဲ မေးရန် ဘယ်လိုပြောမလဲ？",
+      "options": [
+        "我应该在哪一站下车？",
+        "我应该几点吃饭？",
+        "我应该买几本书？"
+      ],
+      "answer": "我应该在哪一站下车？",
+      "explanation": "“下车”表示离开公交车、地铁或出租车。"
+    },
+    {
+      "id": "ttrans_match_1",
+      "type": "matching",
+      "question": "把交通词语配对",
+      "question_en": "Match the transport words",
+      "question_my": "သယ်ယူပို့ဆောင်ရေး စကားလုံးများကို တွဲပါ",
+      "pairs": [
+        {
+          "left": "公交车",
+          "right": "Bus"
+        },
+        {
+          "left": "地铁",
+          "right": "Subway"
+        },
+        {
+          "left": "火车站",
+          "right": "Train station"
+        },
+        {
+          "left": "下车",
+          "right": "Get off"
+        }
+      ],
+      "answer": "全部配对",
+      "explanation": "记住交通工具和动作。"
+    },
+    {
+      "id": "ttrans_order_1",
+      "type": "word_order",
+      "question": "排列成正确句子",
+      "question_en": "Put the sentence in the correct order",
+      "question_my": "ဝါကျကို မှန်ကန်စွာ စီပါ",
+      "words": [
+        "我",
+        "在哪一站",
+        "下车"
+      ],
+      "answer": [
+        "我",
+        "在哪一站",
+        "下车"
+      ],
+      "explanation": "完整表达是“我在哪一站下车？”"
+    },
+    {
+      "id": "ttrans_fill_1",
+      "type": "fill_blank",
+      "question": "填写：我应该在哪一站___？",
+      "question_en": "Complete: 我应该在哪一站___？",
+      "question_my": "ဖြည့်ပါ：我应该在哪一站___？",
+      "pinyin": "xià chē",
+      "placeholder": "根据拼音填写汉字",
+      "answer": "下车",
+      "explanation": "到站后离开车辆叫“下车”。"
+    },
+    {
+      "id": "ttrans_true_1",
+      "type": "true_false",
+      "question": "“换乘”表示从一种线路换到另一种线路。",
+      "question_en": "“换乘” means changing from one line to another.",
+      "question_my": "“换乘” ဆိုသည်မှာ လိုင်းတစ်ခုမှ အခြားလိုင်းတစ်ခုသို့ ပြောင်းစီးခြင်း ဖြစ်သည်။",
+      "answer": "true",
+      "explanation": "地铁和公交路线中经常需要换乘。"
+    }
+  ],
+  "passing_score": 70,
+  "max_retries": 2
+}

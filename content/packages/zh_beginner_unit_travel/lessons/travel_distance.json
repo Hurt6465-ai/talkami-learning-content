@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "lesson_id": "travel_distance",
+  "title": "距离和时间",
+  "title_en": "Distance and Time",
+  "title_my": "အကွာအဝေးနှင့် အချိန်",
+  "subtitle": "远不远、多久和几分钟",
+  "subtitle_en": "How far, how long, and how many minutes",
+  "exercises": [
+    {
+      "id": "tdist_choice_1",
+      "type": "single_choice",
+      "question": "想问步行需要多长时间，应该说什么？",
+      "question_en": "How do you ask how long the walk takes?",
+      "question_my": "လမ်းလျှောက်ချိန် ဘယ်လောက်ကြာမလဲ မေးရန် ဘယ်လိုပြောမလဲ？",
+      "options": [
+        "从这里走路要多久？",
+        "从这里吃饭要多少？",
+        "这里叫什么名字？"
+      ],
+      "answer": "从这里走路要多久？",
+      "explanation": "“多久”询问时间长度。"
+    },
+    {
+      "id": "tdist_listen_1",
+      "type": "listen_choice",
+      "question": "你听到了什么？",
+      "question_en": "What did you hear?",
+      "question_my": "ဘာကို ကြားခဲ့သလဲ？",
+      "audio_text": "走过去大概需要十分钟",
+      "options": [
+        "走过去大概需要十分钟",
+        "坐车过去需要十块钱",
+        "这里离市中心很远"
+      ],
+      "answer": "走过去大概需要十分钟",
+      "explanation": "“大概”表示估计。"
+    },
+    {
+      "id": "tdist_match_1",
+      "type": "matching",
+      "question": "把时间表达配对",
+      "question_en": "Match the time expressions",
+      "question_my": "အချိန်ဖော်ပြချက်များကို တွဲပါ",
+      "pairs": [
+        {
+          "left": "五分钟",
+          "right": "5 minutes"
+        },
+        {
+          "left": "半小时",
+          "right": "30 minutes"
+        },
+        {
+          "left": "一个小时",
+          "right": "1 hour"
+        },
+        {
+          "left": "多久",
+          "right": "How long"
+        }
+      ],
+      "answer": "全部配对",
+      "explanation": "这些表达可以描述路程所需时间。"
+    },
+    {
+      "id": "tdist_order_1",
+      "type": "word_order",
+      "question": "排列成正确问题",
+      "question_en": "Put the question in the correct order",
+      "question_my": "မေးခွန်းကို မှန်ကန်စွာ စီပါ",
+      "words": [
+        "这里",
+        "离",
+        "市中心",
+        "远吗"
+      ],
+      "answer": [
+        "这里",
+        "离",
+        "市中心",
+        "远吗"
+      ],
+      "explanation": "“A 离 B 远吗？”用来询问距离。"
+    },
+    {
+      "id": "tdist_fill_1",
+      "type": "fill_blank",
+      "question": "填写：从这里走路要___？",
+      "question_en": "Complete: 从这里走路要___？",
+      "question_my": "ဖြည့်ပါ：从这里走路要___？",
+      "pinyin": "duō jiǔ",
+      "placeholder": "根据拼音填写汉字",
+      "answer": "多久",
+      "explanation": "“多久”表示多长时间。"
+    },
+    {
+      "id": "tdist_dictation_1",
+      "type": "dictation",
+      "question": "听音写出完整句子",
+      "question_en": "Listen and type the full sentence",
+      "question_my": "နားထောင်ပြီး ဝါကျအပြည့် ရေးပါ",
+      "audio_text": "这里离市中心远吗",
+      "pinyin": "zhè lǐ lí shì zhōng xīn yuǎn ma",
+      "answer": "这里离市中心远吗",
+      "accepted_answers": [
+        "这里离市中心远吗？"
+      ],
+      "explanation": "“离”可以说明两个地点之间的距离。"
+    }
+  ],
+  "passing_score": 70,
+  "max_retries": 2
+}
