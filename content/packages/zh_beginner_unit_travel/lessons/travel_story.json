@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "lesson_id": "travel_story",
+  "title": "故事：找到车站",
+  "title_en": "Story: Finding the Station",
+  "title_my": "ပုံပြင်：ဘူတာကို ရှာခြင်း",
+  "subtitle": "在短对话里完成一次问路",
+  "subtitle_en": "Complete a short directions dialogue",
+  "exercises": [
+    {
+      "id": "tstory_listen_1",
+      "type": "listen_choice",
+      "question": "小美首先问了什么？",
+      "question_en": "What did Xiaomei ask first?",
+      "question_my": "ရှောင်မေ ပထမဆုံး ဘာမေးခဲ့သလဲ？",
+      "audio_text": "请问，地铁站在哪里？",
+      "options": [
+        "请问，地铁站在哪里？",
+        "请问，现在几点？",
+        "请问，这个多少钱？"
+      ],
+      "answer": "请问，地铁站在哪里？",
+      "explanation": "故事从问地铁站的位置开始。"
+    },
+    {
+      "id": "tstory_choice_1",
+      "type": "single_choice",
+      "question": "对方说“先一直走，再右转”。下一步应该做什么？",
+      "question_en": "After “go straight, then turn right,” what should you do second?",
+      "question_my": "“တည့်တည့်သွားပြီး ညာဘက်ကွေ့ပါ” ဟု ပြောလျှင် ဒုတိယအဆင့် ဘာလုပ်ရမလဲ？",
+      "options": [
+        "右转",
+        "左转",
+        "下车"
+      ],
+      "answer": "右转",
+      "explanation": "“再右转”表示第二步向右转。"
+    },
+    {
+      "id": "tstory_order_1",
+      "type": "word_order",
+      "question": "把问路句子排列正确",
+      "question_en": "Put the directions question in order",
+      "question_my": "လမ်းမေးဝါကျကို မှန်ကန်စွာ စီပါ",
+      "words": [
+        "去",
+        "地铁站",
+        "怎么",
+        "走"
+      ],
+      "answer": [
+        "去",
+        "地铁站",
+        "怎么",
+        "走"
+      ],
+      "explanation": "正确句子是“去地铁站怎么走？”"
+    },
+    {
+      "id": "tstory_fill_1",
+      "type": "fill_blank",
+      "question": "填写：一直走，然后___转。",
+      "question_en": "Complete: 一直走，然后___转。",
+      "question_my": "ဖြည့်ပါ：一直走，然后___转。",
+      "pinyin": "yòu",
+      "placeholder": "根据拼音填写汉字",
+      "answer": "右",
+      "explanation": "“右转”就是向右转弯。"
+    },
+    {
+      "id": "tstory_match_1",
+      "type": "matching",
+      "question": "把对话功能配对",
+      "question_en": "Match each sentence with its function",
+      "question_my": "ဝါကျနှင့် အသုံးပြုရာကို တွဲပါ",
+      "pairs": [
+        {
+          "left": "请问，地铁站在哪里？",
+          "right": "询问地点"
+        },
+        {
+          "left": "一直往前走。",
+          "right": "指示方向"
+        },
+        {
+          "left": "大概十分钟。",
+          "right": "说明时间"
+        }
+      ],
+      "answer": "全部配对",
+      "explanation": "问路对话通常包括地点、方向和时间。"
+    },
+    {
+      "id": "tstory_true_1",
+      "type": "true_false",
+      "question": "在故事中，“大概十分钟”是在说明路程所需时间。",
+      "question_en": "In the story, “about ten minutes” describes the travel time.",
+      "question_my": "ပုံပြင်တွင် “ဆယ်မိနစ်လောက်” သည် ခရီးကြာချိန်ကို ရှင်းပြခြင်း ဖြစ်သည်။",
+      "answer": "true",
+      "explanation": "“十分钟”是时间长度。"
+    }
+  ],
+  "passing_score": 70,
+  "max_retries": 2
+}
