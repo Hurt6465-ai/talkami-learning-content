@@ -1,4 +1,6 @@
-Optional old files to delete after upload:
-content/words/packs/hsk1_demo_v1.json
-content/words/covers/hsk1_demo_v1.webp
-content/speaking/packs/speak_remote_demo_v1.json
+升级到互动练习 v1.3.0 后，下面两个旧演示课程已不再被目录引用，建议从 GitHub 删除：
+
+content/packages/zh_beginner_unit_greetings/lessons/greeting_hello_demo.json
+content/packages/zh_beginner_unit_greetings/lessons/greeting_intro_demo.json
+
+不删除也不会影响 App：目录不会显示它们，构建脚本只会给出 WARNING。
