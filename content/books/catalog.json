@@ -6,7 +6,7 @@
   "items": [
     {
       "id": "book_chinese_starter",
-      "title": "中文入门：问候与自我介绍",
+      "title": "新HSK2 教材",
       "subtitle": "从“你好”到完整自我介绍",
       "author": "Talkami Learning",
       "description": "从“你好”到完整自我介绍",
@@ -21,7 +21,7 @@
       "pdf_size": 0,
       "page_count": 5,
       "source_cover": "content/books/covers/book-chinese-starter-cover-v1.webp",
-      "source_pdf": "content/books/pdfs/book-chinese-starter-v1.pdf"
+      "source_pdf": "content/books/pdfs/新HSK2 教材.pdf"
     },
     {
       "id": "book_travel_chinese",
