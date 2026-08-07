@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: "内容版本，例如 1.0.0；每次发布必须使用新版本"
+        description: "内容版本，例如 1.4.1；每次发布必须使用新版本"
         required: true
-        default: "1.3.0"
+        type: string
 
 permissions:
   contents: write
@@ -18,32 +18,283 @@ concurrency:
 jobs:
   validate-build-release:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 60
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Checkout repository with Git LFS
+        uses: actions/checkout@v6
+        with:
+          lfs: true
+          fetch-depth: 1
+
+      - name: Ensure Git LFS files are materialized
+        shell: bash
+        run: |
+          set -euo pipefail
+          git lfs install --local
+          git lfs pull
+
+          # Fail early if a large PDF is still only an LFS pointer.
+          python3 - <<'PY'
+          from pathlib import Path
+
+          pointer_prefix = b"version https://git-lfs.github.com/spec/v1"
+          bad = []
+          for path in Path("content/books").rglob("*.pdf"):
+              try:
+                  head = path.read_bytes()[:80]
+              except OSError:
+                  continue
+              if head.startswith(pointer_prefix):
+                  bad.append(str(path))
+
+          if bad:
+              raise SystemExit(
+                  "These PDF files are still Git LFS pointer files:\n- "
+                  + "\n- ".join(bad)
+              )
+          PY
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
+      - name: Install PDF tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends poppler-utils
+
+      - name: Prepare PDF metadata and automatic shelf covers
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          import re
+          import subprocess
+          from pathlib import Path
+
+          ROOT = Path.cwd()
+          CATALOG = ROOT / "content/books/catalog.json"
+
+          # No books catalog means there is nothing to prepare.
+          if not CATALOG.is_file():
+              print("No content/books/catalog.json found; skipping PDF preparation.")
+              raise SystemExit(0)
+
+          data = json.loads(CATALOG.read_text(encoding="utf-8"))
+          items = data.get("items", [])
+          if not isinstance(items, list):
+              raise SystemExit("content/books/catalog.json: items must be an array")
+
+          generated_dir = ROOT / ".generated/books/covers"
+          generated_dir.mkdir(parents=True, exist_ok=True)
+
+          seen_ids = set()
+
+          def safe_slug(book_id: str) -> str:
+              slug = re.sub(r"[^A-Za-z0-9._-]+", "-", book_id.replace("_", "-")).strip("-")
+              if not slug:
+                  raise ValueError(f"Invalid book id: {book_id!r}")
+              return slug
+
+          for index, item in enumerate(items, start=1):
+              if not isinstance(item, dict):
+                  raise SystemExit(f"Book item #{index} must be an object")
+
+              book_id = str(item.get("id", "")).strip()
+              title = str(item.get("title", "")).strip()
+              source_pdf = str(item.get("source_pdf", "")).strip()
+
+              if not book_id:
+                  raise SystemExit(f"Book item #{index} is missing id")
+              if book_id in seen_ids:
+                  raise SystemExit(f"Duplicate book id: {book_id}")
+              seen_ids.add(book_id)
+
+              if not title:
+                  raise SystemExit(f"{book_id}: missing title")
+              if not source_pdf:
+                  raise SystemExit(f"{book_id}: missing source_pdf")
+
+              pdf_path = (ROOT / source_pdf).resolve()
+              try:
+                  pdf_path.relative_to(ROOT.resolve())
+              except ValueError:
+                  raise SystemExit(f"{book_id}: source_pdf escapes repository root")
+
+              if not pdf_path.is_file():
+                  raise SystemExit(f"{book_id}: PDF not found: {source_pdf}")
+
+              with pdf_path.open("rb") as fp:
+                  header = fp.read(80)
+
+              if header.startswith(b"version https://git-lfs.github.com/spec/v1"):
+                  raise SystemExit(
+                      f"{book_id}: {source_pdf} is still a Git LFS pointer. "
+                      "Check checkout lfs:true / git lfs pull."
+                  )
+              if not header.startswith(b"%PDF-"):
+                  raise SystemExit(f"{book_id}: source file is not a valid PDF: {source_pdf}")
+
+              version = int(item.get("pdf_version", 1))
+              if version < 1:
+                  raise SystemExit(f"{book_id}: pdf_version must be >= 1")
+
+              slug = safe_slug(book_id)
+
+              # Read actual page count from the PDF.
+              info = subprocess.run(
+                  ["pdfinfo", str(pdf_path)],
+                  check=True,
+                  capture_output=True,
+                  text=True,
+                  errors="replace",
+              ).stdout
+
+              match = re.search(r"^Pages:\s+(\d+)\s*$", info, re.MULTILINE)
+              if not match:
+                  raise SystemExit(f"{book_id}: unable to read PDF page count")
+
+              page_count = int(match.group(1))
+              if page_count < 1:
+                  raise SystemExit(f"{book_id}: PDF has no pages")
+
+              # Most PDFs already contain their visible cover as page 1.
+              # cover_page is optional; use it only when a specific PDF's cover
+              # is on another page.
+              cover_page = int(item.get("cover_page", 1))
+              if cover_page < 1 or cover_page > page_count:
+                  raise SystemExit(
+                      f"{book_id}: cover_page {cover_page} is outside 1..{page_count}"
+                  )
+
+              release_pdf_name = f"{slug}-v{version}.pdf"
+              release_cover_name = f"{slug}-cover-v{version}.jpg"
+              generated_cover = generated_dir / release_cover_name
+              output_prefix = generated_cover.with_suffix("")
+
+              # Render the PDF's actual cover page to a compact shelf thumbnail.
+              subprocess.run(
+                  [
+                      "pdftoppm",
+                      "-f", str(cover_page),
+                      "-l", str(cover_page),
+                      "-singlefile",
+                      "-jpeg",
+                      "-jpegopt", "quality=88",
+                      "-scale-to", "1200",
+                      str(pdf_path),
+                      str(output_prefix),
+                  ],
+                  check=True,
+              )
+
+              if not generated_cover.is_file() or generated_cover.stat().st_size == 0:
+                  raise SystemExit(f"{book_id}: failed to generate cover")
+
+              # Populate fields expected by the existing release builder.
+              # Users no longer need to maintain these fields manually.
+              item["pdf_url"] = release_pdf_name
+              item["pdf_version"] = version
+              item["pdf_sha256"] = ""
+              item["pdf_size"] = pdf_path.stat().st_size
+              item["page_count"] = page_count
+              item["cover_url"] = release_cover_name
+              item["cover_version"] = version
+              item["source_cover"] = generated_cover.relative_to(ROOT).as_posix()
+
+              # Friendly defaults keep catalog entries short.
+              item.setdefault("subtitle", "")
+              item.setdefault("author", "Talkami Learning")
+              item.setdefault("description", item.get("subtitle") or title)
+              item.setdefault("badge", "PDF")
+              item.setdefault("language", "zh-CN")
+              item.setdefault("level", "beginner")
+
+              # Comment fields are for maintainers only.
+              for key in list(item.keys()):
+                  if key == "_comment" or key.startswith("_comment_"):
+                      item.pop(key, None)
+
+              print(
+                  f"Prepared {book_id}: {page_count} pages, "
+                  f"cover page {cover_page}, {pdf_path.stat().st_size} bytes"
+              )
+
+          CATALOG.write_text(
+              json.dumps(data, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8",
+          )
+          PY
+
       - name: Validate JSON and build release assets
         env:
           RELEASE_VERSION: ${{ inputs.version }}
         run: python scripts/build_release.py
 
+      - name: Verify generated book release assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          catalog = Path("dist/books-catalog.json")
+          if not catalog.is_file():
+              print("No dist/books-catalog.json; skipping book asset verification.")
+              raise SystemExit(0)
+
+          import re
+
+          def re_full_sha256(value):
+              return re.fullmatch(r"[0-9a-f]{64}", value) is not None
+
+          data = json.loads(catalog.read_text(encoding="utf-8"))
+          for item in data.get("items", []):
+              for key in ("pdf_url", "cover_url"):
+                  name = str(item.get(key, "")).strip()
+                  if not name:
+                      raise SystemExit(f"{item.get('id')}: missing {key}")
+                  asset = Path("dist") / name
+                  if not asset.is_file() or asset.stat().st_size == 0:
+                      raise SystemExit(f"{item.get('id')}: missing release asset {name}")
+
+              if int(item.get("page_count", 0)) < 1:
+                  raise SystemExit(f"{item.get('id')}: invalid page_count")
+              if int(item.get("pdf_size", 0)) < 1:
+                  raise SystemExit(f"{item.get('id')}: invalid pdf_size")
+
+              sha = str(item.get("pdf_sha256", "")).strip().lower()
+              if not re_full_sha256(sha):
+                  raise SystemExit(f"{item.get('id')}: invalid pdf_sha256")
+
+          PY
+
       - name: Create GitHub Release
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: content-v${{ inputs.version }}
+        shell: bash
         run: |
+          set -euo pipefail
+
           if gh release view "$TAG" >/dev/null 2>&1; then
             echo "Release $TAG already exists. Please run again with a new version."
             exit 1
           fi
 
-          gh release create "$TAG" dist/* \
+          shopt -s nullglob
+          assets=(dist/*)
+          if [ "${#assets[@]}" -eq 0 ]; then
+            echo "No release assets found in dist/"
+            exit 1
+          fi
+
+          gh release create "$TAG" "${assets[@]}" \
             --title "Talkami learning content $TAG" \
             --generate-notes
