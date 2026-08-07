@@ -56,7 +56,7 @@ jobs:
           PY
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -90,7 +90,7 @@ jobs:
           if not isinstance(items, list):
               raise SystemExit("content/books/catalog.json: items must be an array")
 
-          generated_dir = ROOT / ".generated/books/covers"
+          generated_dir = ROOT / "content/books/generated-covers"
           generated_dir.mkdir(parents=True, exist_ok=True)
 
           seen_ids = set()
@@ -177,7 +177,9 @@ jobs:
               generated_cover = generated_dir / release_cover_name
               output_prefix = generated_cover.with_suffix("")
 
-              # Render the PDF's actual cover page to a compact shelf thumbnail.
+              # Render the PDF's own cover page to a compact shelf thumbnail.
+              # The temporary image stays under content/ because the existing
+              # release validator intentionally only accepts source assets there.
               subprocess.run(
                   [
                       "pdftoppm",
