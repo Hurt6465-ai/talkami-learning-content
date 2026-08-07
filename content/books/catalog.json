@@ -5,12 +5,12 @@
   "subtitle": "官方 PDF 按需下载，支持离线阅读和本地导入。",
   "items": [
     {
-      "id": "book_chinese_starter",
+      "id": "book_hsk2_textbook",
       "title": "新HSK2 教材",
       "subtitle": "从“你好”到完整自我介绍",
       "author": "Talkami Learning",
       "description": "从“你好”到完整自我介绍",
-      "badge": "A1",
+      "badge": "HSK",
       "language": "zh-CN",
       "level": "beginner",
       "cover_url": "book-chinese-starter-cover-v1.webp",
@@ -19,7 +19,7 @@
       "pdf_version": 1,
       "pdf_sha256": "",
       "pdf_size": 0,
-      "page_count": 5,
+      "page_count": 186,
       "source_cover": "content/books/covers/book-chinese-starter-cover-v1.webp",
       "source_pdf": "content/books/pdfs/新HSK2 教材.pdf"
     },
