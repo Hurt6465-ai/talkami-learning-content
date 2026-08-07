@@ -25,7 +25,7 @@
     },
     {
       "id": "book_travel_chinese",
-      "title": "旅行中文口袋书",
+      "title": "新HSK教程1",
       "subtitle": "机场、酒店、问路和点餐",
       "author": "Talkami Learning",
       "description": "机场、酒店、问路和点餐",
@@ -40,7 +40,7 @@
       "pdf_size": 0,
       "page_count": 6,
       "source_cover": "content/books/covers/book-travel-chinese-cover-v1.webp",
-      "source_pdf": "content/books/pdfs/book-travel-chinese-v1.pdf"
+      "source_pdf": "content/books/large-pdfs/新HSK教程11.pdf"
     },
     {
       "id": "book_hsk1_workbook",
