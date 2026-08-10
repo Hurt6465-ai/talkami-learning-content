@@ -25,10 +25,10 @@
     },
     {
       "id": "travel_words",
-      "title": "旅行出行",
+      "title": "HSK2",
       "subtitle": "交通、酒店和方向词汇",
       "preview": "护照 / 机场 / 地铁",
-      "badge": "15词",
+      "badge": "HSK",
       "target": "word",
       "level": "travel_words",
       "cover_url": "travel-words-cover-v1.webp",
@@ -38,7 +38,7 @@
       "data_sha256": "",
       "item_count": 15,
       "source_cover": "content/words/covers/travel_words_v1.webp",
-      "source_data": "content/words/packs/travel_words_v1.json"
+      "source_data": "content/words/packs/hsk2.json"
     },
     {
       "id": "food_words",
