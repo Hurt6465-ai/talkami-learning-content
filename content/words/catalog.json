@@ -41,13 +41,13 @@
       "source_data": "content/words/packs/hsk2.json"
     },
     {
-      "id": "food_words",
+      "id": "travel_words",
       "title": "餐饮美食",
       "subtitle": "点餐、饮品和口味词汇",
       "preview": "菜单 / 米饭 / 买单",
       "badge": "15词",
       "target": "word",
-      "level": "food_words",
+      "level": "travel_words",
       "cover_url": "food-words-cover-v1.webp",
       "cover_version": 1,
       "data_url": "food-words-v1.json",
