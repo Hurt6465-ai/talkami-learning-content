@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "type": "pattern_pack",
+  "category_id": "pattern_cat_02",
+  "title": "有、在与方位",
+  "subtitle": "15 个句型",
+  "version": 1,
+  "updated_at": "2026-08-11T06:20:00Z",
+  "item_count": 15,
+  "items": [
+    {
+      "id": "pattern_015",
+      "number": "015",
+      "title": "在或不在某地",
+      "formula": "人/物 + 在/不在 + 地点",
+      "introduction": "说明人或东西的位置；位置否定用“不在”。",
+      "example": "他不在公司。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "在",
+        "语序"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_017",
+      "number": "017",
+      "title": "方位",
+      "formula": "名词 + 上/下/里/外/前/后",
+      "introduction": "说位置时，常要带“上、里、旁边”等方位词。",
+      "example": "书在桌子上。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_019",
+      "number": "019",
+      "title": "去向",
+      "formula": "主语 + 去 + 地点",
+      "introduction": "动词“去”后面直接说目的地。",
+      "example": "我去学校。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_020",
+      "number": "020",
+      "title": "到达",
+      "formula": "主语 + 到 + 地点 + 了",
+      "introduction": "“到”可作主要动词。",
+      "example": "我到家了。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "了",
+        "从/到",
+        "语序"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_021",
+      "number": "021",
+      "title": "回到",
+      "formula": "主语 + 回 + 地点",
+      "introduction": "“回”后常直接接地点。",
+      "example": "我回家。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "从/到"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_146",
+      "number": "146",
+      "title": "两物位置",
+      "formula": "A + 在 + B + 的 + 方位词",
+      "introduction": "“的”可在熟悉短语中省略。",
+      "example": "银行在学校的旁边。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "在"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_148",
+      "number": "148",
+      "title": "起点终点",
+      "formula": "从 + 地点A + 到 + 地点B",
+      "introduction": "可表示空间范围。",
+      "example": "从这里到车站怎么走？",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "从/到"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_150",
+      "number": "150",
+      "title": "方向",
+      "formula": "往/向 + 地点/方向 + 动词",
+      "introduction": "“往”更口语，“向”也可表示对象。",
+      "example": "请往前走。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_151",
+      "number": "151",
+      "title": "某处都是",
+      "formula": "地点 + 都是 + 名词",
+      "introduction": "强调数量多或范围全。",
+      "example": "街上都是人。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "语序"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_152",
+      "number": "152",
+      "title": "包含",
+      "formula": "名词 + 有 + 数量/部分",
+      "introduction": "表示整体包含部分。",
+      "example": "这本书有十章。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_153",
+      "number": "153",
+      "title": "可用设施",
+      "formula": "地点 + 可以 + 动词",
+      "introduction": "说明场所功能。",
+      "example": "这里可以停车。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "语序"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_154",
+      "number": "154",
+      "title": "禁止行为",
+      "formula": "地点 + 不能/不可以 + 动词",
+      "introduction": "“不可以”语气更明确。",
+      "example": "这里不能抽烟。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "语序"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_012",
+      "number": "012",
+      "title": "有和没有",
+      "formula": "主语 + 有/没有 + 名词",
+      "introduction": "表示拥有或不拥有；“有”的否定是“没有”，不能说“不有”。",
+      "example": "我没有车。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_018",
+      "number": "018",
+      "title": "说明来源",
+      "formula": "主语 + 从 + 地点 + 来 / 来自 + 地点",
+      "introduction": "两种说法都表示来源；“从……来”更口语，“来自”稍正式。",
+      "example": "我从日本来。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "从/到",
+        "语序"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_147",
+      "number": "147",
+      "title": "说明距离",
+      "formula": "A + 离 + B + 很近/很远/有 + 距离",
+      "introduction": "既可以说远近，也可以说具体距离。",
+      "example": "我家离公司很近。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "离"
+      ],
+      "target": "ai_pattern"
+    }
+  ]
+}

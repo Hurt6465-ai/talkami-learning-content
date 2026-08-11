@@ -1,0 +1,766 @@
+{
+  "schema_version": 1,
+  "type": "pattern_pack",
+  "category_id": "pattern_cat_08",
+  "title": "补语",
+  "subtitle": "58 个句型",
+  "version": 1,
+  "updated_at": "2026-08-11T06:20:00Z",
+  "item_count": 58,
+  "items": [
+    {
+      "id": "pattern_079",
+      "number": "079",
+      "title": "来得及",
+      "formula": "来得及/来不及 + 动词",
+      "introduction": "表示时间够不够。",
+      "example": "现在还来得及。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_158",
+      "number": "158",
+      "title": "能否承受或完成",
+      "formula": "动词 + 得了/不了 + 宾语/小句",
+      "introduction": "读liǎo，表示能不能完成、承受或处理；“受得了/受不了”很常用。",
+      "example": "这么多我吃不了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "了",
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_191",
+      "number": "191",
+      "title": "负担得起",
+      "formula": "动词 + 得起/不起 + 宾语",
+      "introduction": "表示经济、能力或条件上能不能承担，最常见的是“买得起/买不起”。",
+      "example": "我买不起这个。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_320",
+      "number": "320",
+      "title": "可能动",
+      "formula": "动词 + 得/不 + 动",
+      "introduction": "表示有无力气让人或东西移动。",
+      "example": "我搬不动箱子。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_321",
+      "number": "321",
+      "title": "方向可能补语",
+      "formula": "动词 + 得/不 + 进来/出去/回来/过去",
+      "introduction": "表示动作能不能实现某个方向。",
+      "example": "门锁了，我进不去。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "过",
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_333",
+      "number": "333",
+      "title": "一般可能补语",
+      "formula": "动词 + 得/不 + 结果补语",
+      "introduction": "表示动作能不能达到结果，常见有“懂、完、到、见、清楚”等。",
+      "example": "我听不懂。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_395",
+      "number": "395",
+      "title": "可能下",
+      "formula": "动词 + 得/不 + 下",
+      "introduction": "表示空间、数量或心理上能不能容纳。",
+      "example": "这里放不下桌子。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_443",
+      "number": "443",
+      "title": "可能住",
+      "formula": "动词 + 得/不 + 住",
+      "introduction": "表示能不能固定、记住或忍住。",
+      "example": "我记不住名字。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_444",
+      "number": "444",
+      "title": "可能开",
+      "formula": "动词 + 得/不 + 开",
+      "introduction": "表示能不能打开、分开或离开。",
+      "example": "我打不开门。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_467",
+      "number": "467",
+      "title": "可能应付",
+      "formula": "动词 + 得/不 + 过来",
+      "introduction": "表示数量、工作或精力能不能应付。",
+      "example": "我忙不过来。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "过",
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_478",
+      "number": "478",
+      "title": "可能着",
+      "formula": "动词 + 得/不 + 着（zháo）",
+      "introduction": "表示能不能达到、找到或碰到。",
+      "example": "我找不着钥匙。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "着",
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_230",
+      "number": "230",
+      "title": "得上/不上",
+      "formula": "赶/用/顾 + 得上/不上 + 人/事物",
+      "introduction": "表示能不能赶到、派上用场，或有没有时间照顾到。",
+      "example": "我赶不上火车。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_434",
+      "number": "434",
+      "title": "带宾语状态",
+      "formula": "动词 + 宾语 + 动词 + 得 + 补语",
+      "introduction": "动作后面有对象时，常把动词再说一次。",
+      "example": "他说中文说得很流利。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_435",
+      "number": "435",
+      "title": "程度得很",
+      "formula": "形容词 + 得很",
+      "introduction": "口语表示程度高。",
+      "example": "他高兴得很。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_454",
+      "number": "454",
+      "title": "比较状态",
+      "formula": "A + 动词 + 得 + 比 + B + 形容词",
+      "introduction": "比较动作表现。",
+      "example": "他跑得比我快。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "得",
+        "比"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_346",
+      "number": "346",
+      "title": "状态补语",
+      "formula": "动词 + 得 + 形容词/怎么样/不 + 形容词",
+      "introduction": "用“得”说明动作做得怎么样，也可用“怎么样”提问或用“不”否定。",
+      "example": "他说得很好。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_290",
+      "number": "290",
+      "title": "强烈程度",
+      "formula": "动词/形容词 + 得 + 不行/要命/不得了",
+      "introduction": "很口语，表示程度特别高。",
+      "example": "我累得不行。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "了",
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_419",
+      "number": "419",
+      "title": "程度造成结果",
+      "formula": "动词/形容词 + 得 + 小句",
+      "introduction": "“得”后面直接说这个动作或状态造成了什么结果。",
+      "example": "我累得不想动。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_229",
+      "number": "229",
+      "title": "结果成",
+      "formula": "动词 + 成 + 结果",
+      "introduction": "表示动作以后变成什么。",
+      "example": "他把中文翻译成英文。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_248",
+      "number": "248",
+      "title": "动作做完",
+      "formula": "动词 + 完（+了）",
+      "introduction": "表示动作全部完成。",
+      "example": "我吃完了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "了"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_305",
+      "number": "305",
+      "title": "结果好",
+      "formula": "动词 + 好",
+      "introduction": "表示完成并达到可用状态。",
+      "example": "饭做好了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_306",
+      "number": "306",
+      "title": "结果到",
+      "formula": "动词 + 到",
+      "introduction": "表示达到目标或获得。",
+      "example": "我找到钥匙了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "从/到"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_307",
+      "number": "307",
+      "title": "结果见",
+      "formula": "看/听 + 见",
+      "introduction": "感官结果。",
+      "example": "我看见他了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_322",
+      "number": "322",
+      "title": "极了",
+      "formula": "形容词 + 极了",
+      "introduction": "表示程度非常高，语气强。",
+      "example": "好极了！",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "了"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_323",
+      "number": "323",
+      "title": "结果懂",
+      "formula": "听/看 + 懂",
+      "introduction": "表示理解。",
+      "example": "我听懂了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_324",
+      "number": "324",
+      "title": "结果会",
+      "formula": "学 + 会",
+      "introduction": "表示掌握技能。",
+      "example": "我学会开车了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_325",
+      "number": "325",
+      "title": "结果错",
+      "formula": "动词 + 错",
+      "introduction": "表示动作错误。",
+      "example": "我说错了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_326",
+      "number": "326",
+      "title": "结果对",
+      "formula": "动词 + 对",
+      "introduction": "表示动作正确。",
+      "example": "你答对了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_327",
+      "number": "327",
+      "title": "弄清或说清",
+      "formula": "动词 + 清/清楚",
+      "introduction": "表示把内容分明、听明白、看明白或说明白。",
+      "example": "请说清楚。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_328",
+      "number": "328",
+      "title": "结果干净",
+      "formula": "动词 + 干净",
+      "introduction": "使对象变干净。",
+      "example": "把桌子擦干净。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_329",
+      "number": "329",
+      "title": "结果走",
+      "formula": "动词 + 走",
+      "introduction": "表示离开原处。",
+      "example": "他把书拿走了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_330",
+      "number": "330",
+      "title": "结果掉",
+      "formula": "动词 + 掉",
+      "introduction": "表示去除或消失。",
+      "example": "把垃圾扔掉。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_331",
+      "number": "331",
+      "title": "结果开",
+      "formula": "动词 + 开",
+      "introduction": "表示打开、分开或启动。",
+      "example": "请把门打开。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_332",
+      "number": "332",
+      "title": "结果住",
+      "formula": "动词 + 住",
+      "introduction": "表示固定、停止、牢记。",
+      "example": "记住我的话。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_339",
+      "number": "339",
+      "title": "结果破",
+      "formula": "动词 + 破",
+      "introduction": "表示东西被弄坏、弄破。",
+      "example": "杯子打破了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_340",
+      "number": "340",
+      "title": "结果醒",
+      "formula": "动词 + 醒",
+      "introduction": "表示从睡眠或昏迷中醒来。",
+      "example": "我睡醒了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_341",
+      "number": "341",
+      "title": "结果够",
+      "formula": "动词 + 够",
+      "introduction": "表示数量或程度达到需要。",
+      "example": "这些钱够用了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_353",
+      "number": "353",
+      "title": "结果满",
+      "formula": "动词 + 满",
+      "introduction": "表示达到满的状态。",
+      "example": "水装满了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_365",
+      "number": "365",
+      "title": "结果早晚",
+      "formula": "动词 + 早/晚 + 了",
+      "introduction": "表示做某事的时间过早或过晚。",
+      "example": "你来早了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "了"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_375",
+      "number": "375",
+      "title": "结果丢",
+      "formula": "动词 + 丢",
+      "introduction": "表示东西因为动作而丢失。",
+      "example": "我把钥匙弄丢了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_394",
+      "number": "394",
+      "title": "结果着",
+      "formula": "动词 + 着（zháo）",
+      "introduction": "表示动作成功达到目的，如找到、睡着。",
+      "example": "孩子睡着了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "着"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_400",
+      "number": "400",
+      "title": "结果倒",
+      "formula": "动词 + 倒",
+      "introduction": "表示人或东西倒下。",
+      "example": "他摔倒了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_401",
+      "number": "401",
+      "title": "放上去",
+      "formula": "动词 + 上 + 宾语",
+      "introduction": "表示穿上、贴上、加上或放上某物。",
+      "example": "请穿上外套。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_430",
+      "number": "430",
+      "title": "结果死",
+      "formula": "动词 + 死",
+      "introduction": "可表示极端程度或死亡。",
+      "example": "我快累死了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_442",
+      "number": "442",
+      "title": "结果光",
+      "formula": "动词 + 光",
+      "introduction": "表示全部用完、吃完或拿完。",
+      "example": "饭吃光了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_491",
+      "number": "491",
+      "title": "结果散",
+      "formula": "动词 + 散",
+      "introduction": "表示人群、东西或状态分开。",
+      "example": "人群散开了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_492",
+      "number": "492",
+      "title": "结果坏",
+      "formula": "动词 + 坏",
+      "introduction": "表示动作或状态让人、东西受到很大影响。",
+      "example": "我累坏了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_493",
+      "number": "493",
+      "title": "拿起开始",
+      "formula": "动词 + 起 + 宾语",
+      "introduction": "表示把东西拿起，或开始提到某事。",
+      "example": "他拿起手机。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_112",
+      "number": "112",
+      "title": "趋向补语",
+      "formula": "动词 + 来/去；动词 + 上/下/进/出/回/过 + 来/去",
+      "introduction": "“来”朝向说话人，“去”远离说话人；前面还可加上、下、进、出、回、过。",
+      "example": "他走进来了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "过"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_264",
+      "number": "264",
+      "title": "返回处所",
+      "formula": "动词 + 回 + 处所",
+      "introduction": "表示动作返回原来的地方。",
+      "example": "我走回家。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_288",
+      "number": "288",
+      "title": "进入处所",
+      "formula": "动词 + 进 + 处所",
+      "introduction": "表示动作进入某个地方。",
+      "example": "他走进房间。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_289",
+      "number": "289",
+      "title": "离开处所",
+      "formula": "动词 + 出 + 处所",
+      "introduction": "表示动作从某个地方出来。",
+      "example": "她走出教室。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "离"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_345",
+      "number": "345",
+      "title": "起来开始",
+      "formula": "动词/形容词 + 起来",
+      "introduction": "表示开始并持续。",
+      "example": "大家笑起来了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_354",
+      "number": "354",
+      "title": "经过处所",
+      "formula": "动词 + 过 + 处所",
+      "introduction": "表示经过或越过某个地方。",
+      "example": "我走过公园。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [
+        "过"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_402",
+      "number": "402",
+      "title": "下/下来",
+      "formula": "动词 + 下/下来 + 宾语",
+      "introduction": "可表示取下、摘下，也可表示记录、固定或保留下来。",
+      "example": "请记下号码。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_431",
+      "number": "431",
+      "title": "下去继续",
+      "formula": "动词 + 下去",
+      "introduction": "表示动作或状态继续下去。",
+      "example": "请说下去。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_432",
+      "number": "432",
+      "title": "出来显现",
+      "formula": "动词 + 出来",
+      "introduction": "表示识别或产生。",
+      "example": "我听出来了。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_433",
+      "number": "433",
+      "title": "下来固定",
+      "formula": "动词 + 下来",
+      "introduction": "表示固定、记录或持续成功。",
+      "example": "请记下来。",
+      "teaching_type": "complement",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    }
+  ]
+}

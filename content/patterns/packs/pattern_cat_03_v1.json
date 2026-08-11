@@ -1,0 +1,570 @@
+{
+  "schema_version": 1,
+  "type": "pattern_pack",
+  "category_id": "pattern_cat_03",
+  "title": "时间、副词与顺序",
+  "subtitle": "42 个句型",
+  "version": 1,
+  "updated_at": "2026-08-11T06:20:00Z",
+  "item_count": 42,
+  "items": [
+    {
+      "id": "pattern_338",
+      "number": "338",
+      "title": "一下子",
+      "formula": "一下子 + 动词/形容词 + 了",
+      "introduction": "表示事情突然、很快发生。",
+      "example": "他一下子笑了。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_163",
+      "number": "163",
+      "title": "尽量……",
+      "formula": "主语 + 尽量 + 动词",
+      "introduction": "表示在条件允许的范围内努力做到。",
+      "example": "请尽量早点来。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_177",
+      "number": "177",
+      "title": "才……就……",
+      "formula": "主语 + 才 + 时间/数量 + 就 + 动词",
+      "introduction": "表示时间很早、数量很少，事情就发生了，常带意外。",
+      "example": "他才八点就来了。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "才",
+        "就"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_022",
+      "number": "022",
+      "title": "时间在主语后",
+      "formula": "主语 + 时间 + 动词",
+      "introduction": "最常见时间位置。",
+      "example": "我明天上班。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "在",
+        "语序"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_023",
+      "number": "023",
+      "title": "时间在句首",
+      "formula": "时间 + 主语 + 动词",
+      "introduction": "强调时间或承接上下文。",
+      "example": "明天我不上班。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "在",
+        "语序"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_024",
+      "number": "024",
+      "title": "地点状语",
+      "formula": "主语 + 在 + 地点 + 动词",
+      "introduction": "先说“在哪里”，再说动作。",
+      "example": "我在家吃饭。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "在",
+        "语序"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_025",
+      "number": "025",
+      "title": "太…了",
+      "formula": "太 + 形容词 + 了",
+      "introduction": "表示程度很高，可以夸奖，也可以抱怨。",
+      "example": "太贵了。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "了"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_031",
+      "number": "031",
+      "title": "也",
+      "formula": "主语 + 也 + 动词/形容词",
+      "introduction": "放在后面的说明前。",
+      "example": "我也喜欢。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_032",
+      "number": "032",
+      "title": "都",
+      "formula": "复数主语/范围 + 都 + 谓语",
+      "introduction": "表示范围内全部。",
+      "example": "我们都知道。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_033",
+      "number": "033",
+      "title": "一起",
+      "formula": "主语 + 跟/和 + 人 + 一起 + 动词",
+      "introduction": "“一起”通常在动词前。",
+      "example": "我跟朋友一起吃饭。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_156",
+      "number": "156",
+      "title": "时间地点顺序",
+      "formula": "主语 + 时间 + 在 + 地点 + 动词",
+      "introduction": "通常“时间在地点前”。",
+      "example": "我明天在家休息。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "在",
+        "语序"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_162",
+      "number": "162",
+      "title": "动作方式",
+      "formula": "主语 + 副词 + 动词",
+      "introduction": "副词放在动词前。",
+      "example": "请慢慢说。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_164",
+      "number": "164",
+      "title": "稍微",
+      "formula": "主语 + 有点儿 + 形容词",
+      "introduction": "常用于不太理想的情况。",
+      "example": "我有点儿累。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_165",
+      "number": "165",
+      "title": "一点儿",
+      "formula": "动词/形容词 + 一点儿",
+      "introduction": "放在形容词或动词后。",
+      "example": "请慢一点儿。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_166",
+      "number": "166",
+      "title": "不太",
+      "formula": "主语 + 不太 + 形容词/动词",
+      "introduction": "委婉否定。",
+      "example": "我不太明白。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_168",
+      "number": "168",
+      "title": "还",
+      "formula": "主语 + 还 + 动词/形容词",
+      "introduction": "表示继续、补充或尚未。",
+      "example": "他还在睡觉。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_169",
+      "number": "169",
+      "title": "只",
+      "formula": "主语 + 只 + 动词/数量",
+      "introduction": "表示限制。",
+      "example": "我只喝水。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_170",
+      "number": "170",
+      "title": "才",
+      "formula": "主语 + 才 + 动词",
+      "introduction": "表示晚、少或条件严格。",
+      "example": "他十点才来。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "才"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_172",
+      "number": "172",
+      "title": "就",
+      "formula": "主语 + 就 + 动词",
+      "introduction": "表示早、快或自然结果。",
+      "example": "他八点就来了。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "就"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_174",
+      "number": "174",
+      "title": "已经",
+      "formula": "主语 + 已经 + 动词 + 了",
+      "introduction": "“已经”常和“了”搭配。",
+      "example": "我已经吃饭了。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_178",
+      "number": "178",
+      "title": "马上",
+      "formula": "主语 + 马上 + 动词 / 就要 + 动词 + 了",
+      "introduction": "表示即将。",
+      "example": "我马上回来。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了",
+        "就"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_179",
+      "number": "179",
+      "title": "刚",
+      "formula": "主语 + 刚 + 动词",
+      "introduction": "表示刚刚发生，通常不用句末“了”。",
+      "example": "我刚到。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_181",
+      "number": "181",
+      "title": "刚才",
+      "formula": "主语 + 刚才 + 动词 + 了",
+      "introduction": "“刚才”是时间名词，可搭配“了”。",
+      "example": "我刚才给你打电话了。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了",
+        "才"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_182",
+      "number": "182",
+      "title": "一直",
+      "formula": "主语 + 一直 + 动词/形容词",
+      "introduction": "表示动作或状态一直没有停止。",
+      "example": "我一直在等你。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_183",
+      "number": "183",
+      "title": "常常",
+      "formula": "主语 + 常常/经常 + 动词",
+      "introduction": "表示习惯频率。",
+      "example": "我经常运动。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_184",
+      "number": "184",
+      "title": "有时候",
+      "formula": "主语 + 有时候 + 动词",
+      "introduction": "表示不固定频率。",
+      "example": "我有时候自己做饭。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_201",
+      "number": "201",
+      "title": "又",
+      "formula": "主语 + 又 + 动词/形容词 + 了",
+      "introduction": "表示已发生的重复。",
+      "example": "他又迟到了。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了",
+        "又"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_202",
+      "number": "202",
+      "title": "再",
+      "formula": "主语 + 再 + 动词",
+      "introduction": "表示未来或未发生的重复。",
+      "example": "请再试一次。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "再"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_205",
+      "number": "205",
+      "title": "差不多",
+      "formula": "主语 + 差不多 + 动词/形容词/数量",
+      "introduction": "表示接近或相似。",
+      "example": "我们差不多到了。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_206",
+      "number": "206",
+      "title": "终于",
+      "formula": "主语 + 终于 + 动词 + 了",
+      "introduction": "表示经过等待后实现。",
+      "example": "我终于找到你了。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_381",
+      "number": "381",
+      "title": "一…就…",
+      "formula": "一 + 动词1 + 就 + 动词2",
+      "introduction": "表示两个动作紧接发生。",
+      "example": "我一到家就睡觉。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "就"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_379",
+      "number": "379",
+      "title": "事情发生在",
+      "formula": "事情 + 发生在 + 时间/地点",
+      "introduction": "说明事件发生的时间或地点，“发生在”比“在……发生”更自然。",
+      "example": "事故发生在晚上。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "在"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_175",
+      "number": "175",
+      "title": "早就……了",
+      "formula": "主语 + 早就 + 动词 + 了",
+      "introduction": "表示事情比现在早很多就已经发生。",
+      "example": "我早就知道了。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了",
+        "就"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_203",
+      "number": "203",
+      "title": "顺便",
+      "formula": "主语 + 顺便 + 动词",
+      "introduction": "做主要事情时，同时做另一件方便的小事。",
+      "example": "我顺便买点儿菜。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_080",
+      "number": "080",
+      "title": "先……再/然后……",
+      "formula": "先 + 动词1，再/然后 + 动词2",
+      "introduction": "清楚说明两个动作的先后顺序。",
+      "example": "先洗手，再吃饭。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "再"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_099",
+      "number": "099",
+      "title": "然后和接着",
+      "formula": "然后/接着 + 小句",
+      "introduction": "都表示下一步；“接着”更强调紧接着继续。",
+      "example": "然后我回家了。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "着"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_119",
+      "number": "119",
+      "title": "最后",
+      "formula": "最后 + 小句",
+      "introduction": "说明过程的最后一步或最终结果。",
+      "example": "最后我同意了。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_185",
+      "number": "185",
+      "title": "还要",
+      "formula": "主语 + 还要 + 名词/动词",
+      "introduction": "表示除了已有的，还需要或还要做。",
+      "example": "我还要一杯水。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_258",
+      "number": "258",
+      "title": "只好",
+      "formula": "主语 + 只好 + 动词",
+      "introduction": "没有更好办法，只能这样做。",
+      "example": "我只好回家。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_285",
+      "number": "285",
+      "title": "还会",
+      "formula": "主语 + 还会 + 动词",
+      "introduction": "表示除了前面说的能力，还有另一项。",
+      "example": "她还会唱歌。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_312",
+      "number": "312",
+      "title": "再也不",
+      "formula": "主语 + 再也不 + 动词 + 了",
+      "introduction": "表示以后永远不再做。",
+      "example": "我再也不迟到了。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了",
+        "再"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_440",
+      "number": "440",
+      "title": "差不多该",
+      "formula": "差不多该 + 动词 + 了",
+      "introduction": "表示时间快到了，应该开始做了。",
+      "example": "我们差不多该走了。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了"
+      ],
+      "target": "ai_pattern"
+    }
+  ]
+}

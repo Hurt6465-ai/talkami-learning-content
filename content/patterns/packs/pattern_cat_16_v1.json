@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "type": "pattern_pack",
+  "category_id": "pattern_cat_16",
+  "title": "存现与特殊结构",
+  "subtitle": "5 个句型",
+  "version": 1,
+  "updated_at": "2026-08-11T06:20:00Z",
+  "item_count": 5,
+  "items": [
+    {
+      "id": "pattern_014",
+      "number": "014",
+      "title": "某地有或没有",
+      "formula": "地点 + 有/没有 + 人/物",
+      "introduction": "表示某个地方存在或不存在人、物。",
+      "example": "房间里没有人。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "语序"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_376",
+      "number": "376",
+      "title": "存在状态",
+      "formula": "地点 + 动词 + 着 + 名词",
+      "introduction": "介绍某处持续存在的状态。",
+      "example": "墙上挂着一张照片。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "着",
+        "在",
+        "语序"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_377",
+      "number": "377",
+      "title": "出现",
+      "formula": "地点 + 来/出现 + 了 + 名词",
+      "introduction": "新出现的人或东西通常放在句末。",
+      "example": "门口来了一位客人。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了",
+        "语序"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_378",
+      "number": "378",
+      "title": "消失/离开",
+      "formula": "地点 + 离开/搬走 + 了 + 人/物",
+      "introduction": "表示某地的人或东西离开、减少了。",
+      "example": "村里搬走了很多人。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了",
+        "离",
+        "语序"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_380",
+      "number": "380",
+      "title": "范围内存在",
+      "formula": "范围 + 有 + 人/物 + 动词",
+      "introduction": "“有+名词+动词”很常用。",
+      "example": "我们班有人会日语。",
+      "teaching_type": "word_order",
+      "difficulty": "medium",
+      "focus_tags": [
+        "在"
+      ],
+      "target": "ai_pattern"
+    }
+  ]
+}

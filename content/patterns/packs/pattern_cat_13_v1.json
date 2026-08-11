@@ -1,0 +1,619 @@
+{
+  "schema_version": 1,
+  "type": "pattern_pack",
+  "category_id": "pattern_cat_13",
+  "title": "复句与关联词",
+  "subtitle": "41 个句型",
+  "version": 1,
+  "updated_at": "2026-08-11T06:20:00Z",
+  "item_count": 41,
+  "items": [
+    {
+      "id": "pattern_371",
+      "number": "371",
+      "title": "要不是……就……",
+      "formula": "要不是 + 条件，就 + 不同结果",
+      "introduction": "表示如果没有前面的情况，结果会不同，常谈已经发生的事。",
+      "example": "要不是你，我就迟到了。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "就",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_374",
+      "number": "374",
+      "title": "早知道……就……",
+      "formula": "早知道 + 情况，就 + 不同做法/结果",
+      "introduction": "对已经发生的事情表示后悔或反思。",
+      "example": "早知道下雨，我就不来了。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "就",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_208",
+      "number": "208",
+      "title": "幸好/幸亏",
+      "formula": "幸好/幸亏 + 有利情况，才/不然 + 结果",
+      "introduction": "说明因为一个有利条件，才避免了坏结果。",
+      "example": "幸亏你提醒我，我才没迟到。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "才",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_359",
+      "number": "359",
+      "title": "因为所以",
+      "formula": "因为 + 原因，所以 + 结果",
+      "introduction": "口语可省略其中一个关联词。",
+      "example": "因为下雨，所以我没去。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_422",
+      "number": "422",
+      "title": "因为才/所以才",
+      "formula": "因为 + 原因，主语 + 才 + 结果 / 原因，所以才 + 结果",
+      "introduction": "用“才”强调结果正是由前面的原因造成。",
+      "example": "因为你帮我，我才成功。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "才",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_159",
+      "number": "159",
+      "title": "不过",
+      "formula": "小句，不过 + 小句",
+      "introduction": "先说一个情况，再补充限制或不同意见。",
+      "example": "我想去，不过没时间。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "过",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_160",
+      "number": "160",
+      "title": "万一",
+      "formula": "万一 + 意外情况，怎么办/就 + 结果",
+      "introduction": "担心意外情况时，用来问办法或说明后果。",
+      "example": "万一下雨怎么办？",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "就",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_195",
+      "number": "195",
+      "title": "不然",
+      "formula": "小句，不然/要不然 + 结果",
+      "introduction": "提醒如果不这样做，会出现后果。",
+      "example": "快走，不然会迟到。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_234",
+      "number": "234",
+      "title": "以后就",
+      "formula": "小句 + 以后，就 + 结果",
+      "introduction": "表示一件事完成后，下一件事发生。",
+      "example": "下课以后，我就回家。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "就",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_292",
+      "number": "292",
+      "title": "一开始后来",
+      "formula": "一开始 + 小句，后来 + 小句",
+      "introduction": "对比开始时和后来发生的变化。",
+      "example": "一开始很难，后来就好了。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_342",
+      "number": "342",
+      "title": "有的有的",
+      "formula": "有的 + A，有的 + B",
+      "introduction": "把一组人或东西分成不同情况。",
+      "example": "有的人走，有的人留。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_363",
+      "number": "363",
+      "title": "连动目的",
+      "formula": "主语 + 去/来 + 地点 + 动词",
+      "introduction": "前一动作表示移动，后一动作表示目的。",
+      "example": "我去超市买东西。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_373",
+      "number": "373",
+      "title": "既然就",
+      "formula": "既然 + 已知情况，就 + 结论/建议",
+      "introduction": "根据已经确定的事实提出结论。",
+      "example": "既然来了，就坐吧。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "就",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_398",
+      "number": "398",
+      "title": "免得",
+      "formula": "主语 + 动词，免得 + 不好结果",
+      "introduction": "做前面的事，是为了避免后面的麻烦。",
+      "example": "快穿衣服，免得感冒。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "得",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_399",
+      "number": "399",
+      "title": "不是就是",
+      "formula": "不是 + A，就是 + B",
+      "introduction": "表示通常只有这两种可能。",
+      "example": "他不是在家，就是在公司。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "就",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_450",
+      "number": "450",
+      "title": "为了才",
+      "formula": "为了 + 目的，主语 + 才 + 动词",
+      "introduction": "表示为了达到目的才做某事。",
+      "example": "为了见你，我才来。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了",
+        "才",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_451",
+      "number": "451",
+      "title": "与其不如",
+      "formula": "与其 + 做法A，不如 + 做法B",
+      "introduction": "比较两种做法，认为B更好。",
+      "example": "与其等，不如先走。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_458",
+      "number": "458",
+      "title": "纠正对比",
+      "formula": "不是 + A，而是 + B",
+      "introduction": "先否定误解，再说明真实情况。",
+      "example": "他不是老师，而是医生。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "比",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_484",
+      "number": "484",
+      "title": "除了都",
+      "formula": "除了 + A + 以外，其他 + 都 + 谓语",
+      "introduction": "把A排除，剩下的全部一样。",
+      "example": "除了我以外，大家都来了。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_494",
+      "number": "494",
+      "title": "好让",
+      "formula": "主语 + 动词，好让 + 人 + 动词",
+      "introduction": "前面的动作是为了让后面更容易发生。",
+      "example": "我开窗，好让空气进来。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "让/叫",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_497",
+      "number": "497",
+      "title": "宁可也不",
+      "formula": "宁可 + A，也不 + B",
+      "introduction": "宁愿选择A，也坚决不选择B。",
+      "example": "我宁可走路，也不坐车。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_500",
+      "number": "500",
+      "title": "之所以是因为",
+      "formula": "之所以 + 结果，是因为 + 原因",
+      "introduction": "先说结果，再重点解释原因。",
+      "example": "我之所以来，是因为你。",
+      "teaching_type": "compound",
+      "difficulty": "hard",
+      "focus_tags": [
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_348",
+      "number": "348",
+      "title": "同时具备两项",
+      "formula": "主语 + 又 + A + 又 + B / 既 + A + 又 + B",
+      "introduction": "表示同时有两个特点或做两件事；“既……又……”稍正式。",
+      "example": "他又聪明又努力。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "又",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_464",
+      "number": "464",
+      "title": "连…都…",
+      "formula": "连 + 极端项 + 都/也 + 谓语",
+      "introduction": "强调意外或极端。",
+      "example": "连孩子都知道。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_361",
+      "number": "361",
+      "title": "要是……就好了",
+      "formula": "要是 + 愿望条件 + 就好了",
+      "introduction": "表达希望现实变成另一种情况。",
+      "example": "要是今天不下雨就好了。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了",
+        "就",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_465",
+      "number": "465",
+      "title": "无论都",
+      "formula": "无论/不管 + 条件，都 + 结果",
+      "introduction": "结果不受条件影响。",
+      "example": "不管多忙，我都来。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_137",
+      "number": "137",
+      "title": "……的时候",
+      "formula": "（正在）+ 动词 + 的时候，主句",
+      "introduction": "说明主句发生时的时间背景；加“正在”强调动作当时在进行。",
+      "example": "我吃饭的时候，他来了。",
+      "teaching_type": "compound",
+      "difficulty": "easy",
+      "focus_tags": [
+        "在",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_171",
+      "number": "171",
+      "title": "直到……才……",
+      "formula": "主语 + 直到 + 时间/事件 + 才 + 动词",
+      "introduction": "表示动作到很晚或某个条件出现后才发生。",
+      "example": "我直到十点才回家。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "才",
+        "从/到",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_180",
+      "number": "180",
+      "title": "刚……就……",
+      "formula": "主语 + 刚 + 动词1 + 就 + 动词2",
+      "introduction": "表示第一件事刚发生，第二件事马上发生。",
+      "example": "我刚到他就走了。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "就",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_204",
+      "number": "204",
+      "title": "等……再……",
+      "formula": "等 + 条件/动作 + 以后，再 + 动词",
+      "introduction": "先等前面的条件完成，然后再做后面的事。",
+      "example": "等雨停了再走。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "再",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_194",
+      "number": "194",
+      "title": "如果/要是",
+      "formula": "如果/要是 + 条件（的话），就 + 结果",
+      "introduction": "提出条件和结果；“要是、的话”更口语。",
+      "example": "要是有空的话，就来吧。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "就",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_461",
+      "number": "461",
+      "title": "只要就",
+      "formula": "只要 + 条件，就 + 结果",
+      "introduction": "这个条件做到，后面的结果通常就会出现。",
+      "example": "只要努力，就会进步。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "就",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_462",
+      "number": "462",
+      "title": "只有才",
+      "formula": "只有 + 条件，才 + 结果",
+      "introduction": "必须满足这个条件，后面的结果才会出现。",
+      "example": "只有练习，才能说得好。",
+      "teaching_type": "compound",
+      "difficulty": "hard",
+      "focus_tags": [
+        "才",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_469",
+      "number": "469",
+      "title": "除非",
+      "formula": "除非 + 条件，才 + 结果 / 不然 + 后果",
+      "introduction": "表示必须满足这个条件；也可说明不满足条件会有什么后果。",
+      "example": "除非你来，我才去。",
+      "teaching_type": "compound",
+      "difficulty": "hard",
+      "focus_tags": [
+        "才",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_476",
+      "number": "476",
+      "title": "每当就",
+      "formula": "每当 + 情况 + 就 + 结果",
+      "introduction": "表示某种情况一出现，结果就跟着出现。",
+      "example": "每当下雨，我就回家。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "就",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_362",
+      "number": "362",
+      "title": "除了还",
+      "formula": "除了 + A，还/也 + B",
+      "introduction": "表示添加或排除。",
+      "example": "除了中文，他还会英语。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_370",
+      "number": "370",
+      "title": "让步条件",
+      "formula": "即使/就算/哪怕 + 条件，也 + 结果",
+      "introduction": "条件再困难或再极端，结果仍然不变；“就算、哪怕”更口语。",
+      "example": "就算下雨，我也去。",
+      "teaching_type": "compound",
+      "difficulty": "hard",
+      "focus_tags": [
+        "就",
+        "让/叫",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_372",
+      "number": "372",
+      "title": "再……也……",
+      "formula": "再 + 形容词/动词 + 也 + 结果",
+      "introduction": "表示条件即使进一步变化，后面的结果仍然不变。",
+      "example": "再忙也要吃饭。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "再",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_360",
+      "number": "360",
+      "title": "虽然但是",
+      "formula": "虽然 + 让步，但是/可是 + 结果",
+      "introduction": "后句常有“还、还是、却”。",
+      "example": "虽然很累，但是我还得工作。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "让/叫",
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_266",
+      "number": "266",
+      "title": "陈述选择",
+      "formula": "或者 + A，或者 + B / 要么 + A，要么 + B",
+      "introduction": "陈述可选办法时用“或者”；“要么……要么……”语气更明确。",
+      "example": "要么走，要么等。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_463",
+      "number": "463",
+      "title": "不但而且",
+      "formula": "不但/不仅 + A，而且/还 + B",
+      "introduction": "后项进一步。",
+      "example": "他不但会中文，还会日语。",
+      "teaching_type": "compound",
+      "difficulty": "medium",
+      "focus_tags": [
+        "前后句关系"
+      ],
+      "target": "ai_pattern"
+    }
+  ]
+}

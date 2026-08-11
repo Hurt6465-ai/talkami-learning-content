@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "type": "pattern_pack",
+  "category_id": "pattern_cat_09",
+  "title": "比较句",
+  "subtitle": "18 个句型",
+  "version": 1,
+  "updated_at": "2026-08-11T06:20:00Z",
+  "item_count": 18,
+  "items": [
+    {
+      "id": "pattern_356",
+      "number": "356",
+      "title": "没有那么",
+      "formula": "A + 没有 + B + 那么 + 形容词",
+      "introduction": "常用“不如”的口语表达。",
+      "example": "我没有他那么忙。",
+      "teaching_type": "comparison",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_382",
+      "number": "382",
+      "title": "越早越好",
+      "formula": "越 + 形容词 + 越好",
+      "introduction": "常用于要求和建议。",
+      "example": "越快越好。",
+      "teaching_type": "comparison",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_192",
+      "number": "192",
+      "title": "比较差距大小",
+      "formula": "A + 比 + B + 形容词 + 一点儿/得多/多了",
+      "introduction": "“一点儿”表示差别小，“得多、多了”表示差别大。",
+      "example": "这个比那个贵一点儿。",
+      "teaching_type": "comparison",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了",
+        "得",
+        "比"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_417",
+      "number": "417",
+      "title": "还不如",
+      "formula": "主语 + 还不如 + 动词",
+      "introduction": "表示换一个做法可能更好。",
+      "example": "我还不如回家。",
+      "teaching_type": "comparison",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_291",
+      "number": "291",
+      "title": "“比”字比较",
+      "formula": "A + 比 + B +（更）+ 形容词",
+      "introduction": "比较差异时直接说高、快、贵等；“更”可进一步强调。",
+      "example": "今天比昨天更冷。",
+      "teaching_type": "comparison",
+      "difficulty": "medium",
+      "focus_tags": [
+        "比"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_193",
+      "number": "193",
+      "title": "差不多一样",
+      "formula": "A + 跟/和 + B + 差不多",
+      "introduction": "表示两者很接近，但不一定完全一样。",
+      "example": "我们两个差不多。",
+      "teaching_type": "comparison",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_232",
+      "number": "232",
+      "title": "动作不如",
+      "formula": "A + 没有 + B + 动词 + 得 + 形容词",
+      "introduction": "比较两个人做同一件事时谁表现得更好。",
+      "example": "我没有他跑得快。",
+      "teaching_type": "comparison",
+      "difficulty": "medium",
+      "focus_tags": [
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_233",
+      "number": "233",
+      "title": "哪个更",
+      "formula": "A + 和 + B + 哪个更 + 形容词",
+      "introduction": "在两个对象中比较哪一个更怎么样。",
+      "example": "苹果和香蕉哪个更甜？",
+      "teaching_type": "comparison",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_265",
+      "number": "265",
+      "title": "像一样",
+      "formula": "A + 像 + B + 一样 + 形容词/动词",
+      "introduction": "表示A和B在某方面很像。",
+      "example": "她像妈妈一样温柔。",
+      "teaching_type": "comparison",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_421",
+      "number": "421",
+      "title": "多少数量",
+      "formula": "A + 比 + B + 多/少 + 数量",
+      "introduction": "直接说明数量差多少。",
+      "example": "他比我多买了两本书。",
+      "teaching_type": "comparison",
+      "difficulty": "medium",
+      "focus_tags": [
+        "比"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_449",
+      "number": "449",
+      "title": "早晚多少",
+      "formula": "A + 比 + B + 早/晚 + 时量",
+      "introduction": "说明时间早或晚多少。",
+      "example": "我比他早来十分钟。",
+      "teaching_type": "comparison",
+      "difficulty": "medium",
+      "focus_tags": [
+        "比"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_459",
+      "number": "459",
+      "title": "不如",
+      "formula": "A + 不如 + B + 形容词/动词",
+      "introduction": "表示A不及B。",
+      "example": "我不如他跑得快。",
+      "teaching_type": "comparison",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_460",
+      "number": "460",
+      "title": "越…越…",
+      "formula": "越 + 条件 + 越 + 结果",
+      "introduction": "两个程度同步变化。",
+      "example": "越学越有意思。",
+      "teaching_type": "comparison",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_483",
+      "number": "483",
+      "title": "相比更",
+      "formula": "跟/和 + B + 相比，A + 更 + 形容词",
+      "introduction": "先说比较对象，再说A更怎么样。",
+      "example": "跟以前相比，现在更好了。",
+      "teaching_type": "comparison",
+      "difficulty": "medium",
+      "focus_tags": [
+        "比"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_488",
+      "number": "488",
+      "title": "有那么吗",
+      "formula": "A + 有 + B + 这么/那么 + 形容词 + 吗",
+      "introduction": "询问A是否达到B的程度。",
+      "example": "他有你那么高吗？",
+      "teaching_type": "comparison",
+      "difficulty": "medium",
+      "focus_tags": [
+        "吗"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_499",
+      "number": "499",
+      "title": "不比差",
+      "formula": "A + 不比 + B + 形容词",
+      "introduction": "表示A不一定比B差，常含委婉肯定。",
+      "example": "我不比他差。",
+      "teaching_type": "comparison",
+      "difficulty": "medium",
+      "focus_tags": [
+        "比"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_358",
+      "number": "358",
+      "title": "逐渐变化",
+      "formula": "主语 + 越来越 + 形容词/动词 / 一天比一天 + 形容词",
+      "introduction": "表示同一事物随着时间逐渐变化。",
+      "example": "天气越来越冷。",
+      "teaching_type": "comparison",
+      "difficulty": "medium",
+      "focus_tags": [
+        "比"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_357",
+      "number": "357",
+      "title": "一样和不一样",
+      "formula": "A + 跟/和 + B +（不）一样（+ 形容词）",
+      "introduction": "表示两个对象相同或不同；相同时可继续说明“多高、多大”等方面。",
+      "example": "我跟他一样高。",
+      "teaching_type": "comparison",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    }
+  ]
+}
