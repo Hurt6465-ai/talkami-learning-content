@@ -8,12 +8,12 @@
   "items": [
     {
       "id": "hsk1_demo",
-      "title": "HSK 1 基础词汇",
+      "title": "HSK 1",
       "subtitle": "30 个高频入门词",
       "preview": "你好 / 朋友 / 学习",
       "badge": "HSK",
       "target": "word",
-      "level": "hsk1_demo",
+      "level": "hsk1",
       "cover_url": "hsk1-basic-cover-v2.webp",
       "cover_version": 2,
       "data_url": "hsk1-basic-v2.json",
@@ -21,7 +21,7 @@
       "data_sha256": "",
       "item_count": 30,
       "source_cover": "content/words/covers/hsk1.webp",
-      "source_data": "content/words/packs/hsk1_basic_v2.json"
+      "source_data": "content/words/packs/hsk1.json"
     },
     {
       "id": "travel_words",
