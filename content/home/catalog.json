@@ -1,0 +1,57 @@
+{
+  "type": "learning_home",
+  "version": 1,
+  "updated_at": "2026-08-11T09:00:00Z",
+  "hero": {
+    "image_url": "learning-home-hero-v1.webp",
+    "image_version": 1,
+    "source_image": "content/home/assets/learning-home-hero-v1.webp",
+    "slides": [
+      {
+        "id": "spoken_90_day",
+        "title": "90天汉语口语班",
+        "title_en": "90-Day Chinese Speaking Course",
+        "title_my": "ရက် ၉၀ တရုတ်စကားပြောသင်တန်း",
+        "subtitle": "系统课程 · AI口语陪练",
+        "subtitle_en": "Structured lessons · AI speaking practice",
+        "subtitle_my": "စနစ်တကျသင်ခန်းစာများ · AI စကားပြောလေ့ကျင့်မှု",
+        "price": "¥--",
+        "price_en": "¥--",
+        "price_my": "¥--",
+        "note": "价格开放后更新",
+        "note_en": "Pricing will be updated when enrollment opens",
+        "note_my": "စာရင်းသွင်းမှုဖွင့်ချိန်တွင် ဈေးနှုန်းကို အပ်ဒိတ်လုပ်မည်"
+      },
+      {
+        "id": "ai_partner",
+        "title": "AI语伴陪练",
+        "title_en": "AI Language Practice Partner",
+        "title_my": "AI ဘာသာစကားလေ့ကျင့်ဖော်",
+        "subtitle": "每日对话 · 发音纠正",
+        "subtitle_en": "Everyday conversation · Pronunciation support",
+        "subtitle_my": "နေ့စဉ်စကားပြော · အသံထွက်အကူအညီ",
+        "price": "¥--/月",
+        "price_en": "¥-- per month",
+        "price_my": "¥-- တစ်လလျှင်",
+        "note": "随时开始学习",
+        "note_en": "Start anytime",
+        "note_my": "အချိန်မရွေး စတင်နိုင်သည်"
+      },
+      {
+        "id": "small_group",
+        "title": "精品小班课",
+        "title_en": "Advanced Small-Group Course",
+        "title_my": "အဆင့်မြင့် အုပ်စုငယ်သင်တန်း",
+        "subtitle": "教师带练 · 阶段测评",
+        "subtitle_en": "Teacher-led · Level assessment",
+        "subtitle_my": "ဆရာဦးဆောင်သင်ကြားမှု · အဆင့်စစ်ဆေးမှု",
+        "price": "¥--",
+        "price_en": "¥--",
+        "price_my": "¥--",
+        "note": "小班名额有限",
+        "note_en": "Limited small-group places",
+        "note_my": "အုပ်စုငယ်နေရာ အကန့်အသတ်ရှိသည်"
+      }
+    ]
+  }
+}
