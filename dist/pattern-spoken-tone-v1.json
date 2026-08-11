@@ -1,0 +1,349 @@
+{
+  "schema_version": 1,
+  "type": "pattern_pack",
+  "category_id": "pattern_cat_14",
+  "title": "口语语气与回应",
+  "subtitle": "23 个句型",
+  "version": 1,
+  "updated_at": "2026-08-11T06:20:00Z",
+  "item_count": 23,
+  "items": [
+    {
+      "id": "pattern_101",
+      "number": "101",
+      "title": "赶紧/赶快……",
+      "formula": "赶紧/赶快 + 动词",
+      "introduction": "催促自己或别人立刻行动。",
+      "example": "赶紧回家吧。",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_412",
+      "number": "412",
+      "title": "动词什么动词",
+      "formula": "动词 + 什么 + 动词",
+      "introduction": "口语反问，表示没有必要这样做，常带催促或不耐烦。",
+      "example": "急什么急？",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_082",
+      "number": "082",
+      "title": "没关系/没事/没问题",
+      "formula": "没关系/没事/没问题",
+      "introduction": "回应道歉、安慰别人或表示可以处理。三者语气和场景略有不同。",
+      "example": "没关系。",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_049",
+      "number": "049",
+      "title": "还是……吧",
+      "formula": "主语 + 还是 + 动词 + 吧",
+      "introduction": "比较过以后提出较合适的建议。",
+      "example": "我们还是走吧。",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "吧",
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_086",
+      "number": "086",
+      "title": "要不……",
+      "formula": "要不 + 建议/小句",
+      "introduction": "口语中提出另一个办法或建议。",
+      "example": "要不我们坐车吧。",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_027",
+      "number": "027",
+      "title": "可……了",
+      "formula": "主语 + 可 + 形容词 + 了",
+      "introduction": "很口语，带感情地强调程度，比单说“很”更有语气。",
+      "example": "他可帅了。",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "了",
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_028",
+      "number": "028",
+      "title": "挺……的",
+      "formula": "主语 + 挺 + 形容词 + 的",
+      "introduction": "很口语，表示程度比较高，语气通常自然、友好。",
+      "example": "这个挺好看的。",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_030",
+      "number": "030",
+      "title": "多么……啊",
+      "formula": "多/多么 + 形容词 + 啊",
+      "introduction": "用来感叹程度高；口语里“多好啊、多漂亮啊”很常见。",
+      "example": "多漂亮啊！",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_173",
+      "number": "173",
+      "title": "那就……",
+      "formula": "那就 + 小句",
+      "introduction": "根据前面的情况作出决定或给出结果。",
+      "example": "那就明天见。",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "就",
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_145",
+      "number": "145",
+      "title": "别忘了/记得",
+      "formula": "别忘了/记得 + 动词",
+      "introduction": "提醒别人一定要做某事。",
+      "example": "别忘了带钥匙。",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "了",
+        "得",
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_176",
+      "number": "176",
+      "title": "都……了，还……",
+      "formula": "都 + 情况 + 了，还 + 动词/形容词",
+      "introduction": "表示情况已经到了某个程度，后面的行为仍不符合预期。",
+      "example": "都十点了，还不睡？",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "了",
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_038",
+      "number": "038",
+      "title": "千万别……",
+      "formula": "千万别/不要 + 动词",
+      "introduction": "强烈提醒或警告对方不要做某事。",
+      "example": "千万别迟到。",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_048",
+      "number": "048",
+      "title": "吧建议",
+      "formula": "动词/小句 + 吧",
+      "introduction": "让建议、请求或推测听起来更柔和。",
+      "example": "我们走吧。",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "吧",
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_081",
+      "number": "081",
+      "title": "就行了",
+      "formula": "动词/小句 + 就行了",
+      "introduction": "表示做到这个程度就可以，不需要更多。",
+      "example": "这样做就行了。",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "了",
+        "就",
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_110",
+      "number": "110",
+      "title": "算了",
+      "formula": "算了，别/不 + 动词 + 了",
+      "introduction": "表示放弃、停止争论或不再计较。",
+      "example": "算了，别说了。",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "了",
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_125",
+      "number": "125",
+      "title": "啊呀语气",
+      "formula": "小句 + 啊/呀",
+      "introduction": "可表示感叹、提醒、催促或让语气更自然。",
+      "example": "快来呀！",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_197",
+      "number": "197",
+      "title": "就好了",
+      "formula": "动词/小句 + 就好了",
+      "introduction": "表示希望事情达到某个简单结果。",
+      "example": "早点来就好了。",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "了",
+        "就",
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_268",
+      "number": "268",
+      "title": "呢持续",
+      "formula": "小句 + 呢",
+      "introduction": "表示动作正在继续，或加强当前语气。",
+      "example": "我在吃饭呢。",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "呢",
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_453",
+      "number": "453",
+      "title": "嘛语气",
+      "formula": "小句 + 嘛",
+      "introduction": "表示事情很明显、很正常，有时带一点不耐烦。",
+      "example": "别急嘛。",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "嘛",
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_085",
+      "number": "085",
+      "title": "征求同意",
+      "formula": "建议/请求 + 好吗/行吗/可以吗",
+      "introduction": "用于商量、请求或征求同意；“行吗”最口语。",
+      "example": "我们明天见，好吗？",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "吗",
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_100",
+      "number": "100",
+      "title": "快点儿",
+      "formula": "快点儿 + 动词",
+      "introduction": "催促别人动作快一些。",
+      "example": "快点儿走。",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_102",
+      "number": "102",
+      "title": "慢点儿",
+      "formula": "慢点儿 + 动词",
+      "introduction": "让别人慢一些，常用于提醒。",
+      "example": "慢点儿说。",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_140",
+      "number": "140",
+      "title": "当然",
+      "formula": "当然 + 小句",
+      "introduction": "表示事情很明显，或爽快同意。",
+      "example": "当然可以。",
+      "teaching_type": "tone",
+      "difficulty": "easy",
+      "focus_tags": [
+        "口语场景"
+      ],
+      "target": "ai_pattern"
+    }
+  ]
+}

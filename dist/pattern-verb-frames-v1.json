@@ -1,0 +1,280 @@
+{
+  "schema_version": 1,
+  "type": "pattern_pack",
+  "category_id": "pattern_cat_11",
+  "title": "常用动词框架",
+  "subtitle": "21 个句型",
+  "version": 1,
+  "updated_at": "2026-08-11T06:20:00Z",
+  "item_count": 21,
+  "items": [
+    {
+      "id": "pattern_097",
+      "number": "097",
+      "title": "帮助别人",
+      "formula": "主语 + 帮/帮助 + 人 + 动词",
+      "introduction": "“帮”更口语，“帮助”稍正式。",
+      "example": "我帮你开门。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_118",
+      "number": "118",
+      "title": "让/叫人做",
+      "formula": "主语 + 让/叫 + 人 + 动词",
+      "introduction": "表示要求、允许或促使某人做事；“叫”更口语。礼貌邀请另用“请 + 人 + 动词”。",
+      "example": "妈妈让我睡觉。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "让/叫"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_098",
+      "number": "098",
+      "title": "请人做",
+      "formula": "主语 + 请 + 人 + 动词",
+      "introduction": "礼貌地让别人做某事。",
+      "example": "我请你进来。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_115",
+      "number": "115",
+      "title": "告诉别人",
+      "formula": "主语 + 告诉 + 人 + 事情",
+      "introduction": "先说告诉谁，再说告诉什么。",
+      "example": "我告诉你一件事。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_116",
+      "number": "116",
+      "title": "问问题",
+      "formula": "主语 + 问 + 人 + 问题",
+      "introduction": "先说问谁，再说问什么。",
+      "example": "我问他一个问题。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_252",
+      "number": "252",
+      "title": "教别人",
+      "formula": "主语 + 教 + 人 + 内容/技能",
+      "introduction": "先说教谁，再说教什么。",
+      "example": "老师教我中文。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_253",
+      "number": "253",
+      "title": "借给别人",
+      "formula": "主语 + 借给 + 人 + 东西",
+      "introduction": "表示把自己的东西暂时给别人用。",
+      "example": "我借给他一支笔。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "给"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_254",
+      "number": "254",
+      "title": "向别人借",
+      "formula": "主语 + 向/跟 + 人 + 借 + 东西",
+      "introduction": "表示从别人那里借来东西。",
+      "example": "我跟他借了一支笔。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_255",
+      "number": "255",
+      "title": "带人去",
+      "formula": "主语 + 带 + 人 + 去 + 地点/动词",
+      "introduction": "表示领着某人去某地或做某事。",
+      "example": "我带你去车站。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_282",
+      "number": "282",
+      "title": "送东西",
+      "formula": "主语 + 送 + 人 + 东西",
+      "introduction": "表示把东西作为礼物给别人。",
+      "example": "我送他一本书。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_283",
+      "number": "283",
+      "title": "陪人做",
+      "formula": "主语 + 陪 + 人 + 动词",
+      "introduction": "表示和某人一起做，主要是陪伴。",
+      "example": "我陪你去医院。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_310",
+      "number": "310",
+      "title": "还给别人",
+      "formula": "主语 + 还给 + 人 + 东西",
+      "introduction": "表示把借来的东西还回去。",
+      "example": "我还给他一本书。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "给"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_311",
+      "number": "311",
+      "title": "买给别人",
+      "formula": "主语 + 给 + 人 + 买 + 东西",
+      "introduction": "先说给谁买，再说买什么。",
+      "example": "妈妈给我买了衣服。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "给"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_336",
+      "number": "336",
+      "title": "请客",
+      "formula": "主语 + 请 + 人 + 吃/喝 + 东西",
+      "introduction": "表示自己付钱请别人吃喝。",
+      "example": "我请你吃饭。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_350",
+      "number": "350",
+      "title": "带给别人",
+      "formula": "主语 + 带给 + 人 + 东西",
+      "introduction": "表示把东西带来并给某人。",
+      "example": "我带给你一些水果。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "给"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_438",
+      "number": "438",
+      "title": "留给别人",
+      "formula": "主语 + 留给 + 人 + 东西",
+      "introduction": "表示保留某物，让某人以后使用。",
+      "example": "我留给你一块蛋糕。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "给"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_474",
+      "number": "474",
+      "title": "允许人做",
+      "formula": "主语 + 允许 + 人 + 动词",
+      "introduction": "表示同意某人做某事。",
+      "example": "妈妈允许我出去。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_475",
+      "number": "475",
+      "title": "建议人做",
+      "formula": "主语 + 建议 + 人 + 动词",
+      "introduction": "表示给某人提出做法。",
+      "example": "老师建议我休息。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_486",
+      "number": "486",
+      "title": "向人说明",
+      "formula": "主语 + 向 + 人 + 说明/解释/道歉",
+      "introduction": "“向”常用于说明、解释、道歉等。",
+      "example": "我向他道歉。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_317",
+      "number": "317",
+      "title": "管……叫……",
+      "formula": "A + 管 + B + 叫 + 称呼",
+      "introduction": "口语中说明人们怎样称呼某人或某物。",
+      "example": "我们管他叫老王。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "让/叫"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_364",
+      "number": "364",
+      "title": "给人东西/做事",
+      "formula": "主语 + 给 + 人 + 名词/动词",
+      "introduction": "“给”既能表示给东西，也能表示替谁做事。",
+      "example": "我给你一本书。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "给"
+      ],
+      "target": "ai_pattern"
+    }
+  ]
+}

@@ -1,0 +1,784 @@
+{
+  "schema_version": 1,
+  "type": "pattern_pack",
+  "category_id": "pattern_cat_06",
+  "title": "疑问、反问与确认",
+  "subtitle": "62 个句型",
+  "version": 1,
+  "updated_at": "2026-08-11T06:20:00Z",
+  "item_count": 62,
+  "items": [
+    {
+      "id": "pattern_293",
+      "number": "293",
+      "title": "疑问词表示任指",
+      "formula": "谁/什么/哪儿 + 都/也 + 谓语",
+      "introduction": "疑问词不一定表示提问；和“都、也”搭配，可表示任何人、任何东西或任何地方。",
+      "example": "我什么都吃。",
+      "teaching_type": "question",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_104",
+      "number": "104",
+      "title": "为什么不/怎么不",
+      "formula": "主语 + 为什么不/怎么不 + 动词",
+      "introduction": "既可追问原因，也可提出建议；“怎么不”更口语，语气有时更强。",
+      "example": "你怎么不说话？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_415",
+      "number": "415",
+      "title": "哪有……",
+      "formula": "哪有 + 小句/名词",
+      "introduction": "口语中反驳对方，表示“没有这回事”或“没那么夸张”。",
+      "example": "哪有这么贵？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_416",
+      "number": "416",
+      "title": "怎么能……呢",
+      "formula": "主语 + 怎么能 + 动词 + 呢",
+      "introduction": "强烈反问，表示不应该或不可能这样做。",
+      "example": "你怎么能这样说呢？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [
+        "呢"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_029",
+      "number": "029",
+      "title": "怎么这么……",
+      "formula": "主语 + 怎么这么 + 形容词",
+      "introduction": "表示惊讶、感叹或埋怨。",
+      "example": "今天怎么这么热？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_274",
+      "number": "274",
+      "title": "问持续时间",
+      "formula": "动作 + 多久/多长时间",
+      "introduction": "两者都询问持续时间；“多长时间”更完整。",
+      "example": "你等了多久？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_013",
+      "number": "013",
+      "title": "问价格",
+      "formula": "名词 + 多少钱",
+      "introduction": "买东西时最常用的价格问法。",
+      "example": "这个多少钱？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_047",
+      "number": "047",
+      "title": "怎么办",
+      "formula": "主语/事情 + 怎么办",
+      "introduction": "询问遇到问题该怎么处理。",
+      "example": "现在怎么办？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_056",
+      "number": "056",
+      "title": "吗问句",
+      "formula": "陈述句 + 吗",
+      "introduction": "用了“吗”，通常就不再说“去不去、好不好”。",
+      "example": "你是学生吗？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [
+        "吗"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_057",
+      "number": "057",
+      "title": "呢问情况",
+      "formula": "名词/代词 + 呢",
+      "introduction": "可追问同类信息或询问去向。",
+      "example": "你呢？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [
+        "呢"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_058",
+      "number": "058",
+      "title": "正反问动词",
+      "formula": "主语 + 动词 + 不 + 动词",
+      "introduction": "这是日常口语中很常见的问法。",
+      "example": "你去不去？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_059",
+      "number": "059",
+      "title": "正反问形容词",
+      "formula": "主语 + 形容词 + 不 + 形容词",
+      "introduction": "形容词直接重叠。",
+      "example": "这个贵不贵？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_060",
+      "number": "060",
+      "title": "是不是",
+      "formula": "主语 + 是不是 + 名词/小句",
+      "introduction": "用于确认判断。",
+      "example": "你是不是老师？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_061",
+      "number": "061",
+      "title": "有没有",
+      "formula": "主语/地点 + 有没有 + 名词",
+      "introduction": "问“有还是没有”。",
+      "example": "你有没有时间？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_062",
+      "number": "062",
+      "title": "谁作主语",
+      "formula": "谁 + 动词",
+      "introduction": "“谁”放在原来要问的位置，不用倒装。",
+      "example": "谁来了？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_063",
+      "number": "063",
+      "title": "谁作宾语",
+      "formula": "主语 + 动词 + 谁",
+      "introduction": "不需要倒装。",
+      "example": "你找谁？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_064",
+      "number": "064",
+      "title": "谁的",
+      "formula": "谁的 + 名词",
+      "introduction": "用来询问东西是谁的。",
+      "example": "这是谁的书？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_065",
+      "number": "065",
+      "title": "什么宾语",
+      "formula": "主语 + 动词 + 什么",
+      "introduction": "最常用疑问词之一。",
+      "example": "你吃什么？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_066",
+      "number": "066",
+      "title": "什么名词",
+      "formula": "什么 + 名词",
+      "introduction": "询问类别。",
+      "example": "你喜欢什么电影？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_067",
+      "number": "067",
+      "title": "为什么",
+      "formula": "主语 + 为什么 + 谓语",
+      "introduction": "用来询问事情发生的原因。",
+      "example": "你为什么迟到？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_068",
+      "number": "068",
+      "title": "怎么方式",
+      "formula": "主语 + 怎么 + 动词",
+      "introduction": "用来询问做事的方法或方式。",
+      "example": "这个字怎么读？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_069",
+      "number": "069",
+      "title": "怎么了",
+      "formula": "人/物 + 怎么了",
+      "introduction": "询问状态或故障。",
+      "example": "你怎么了？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [
+        "了"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_070",
+      "number": "070",
+      "title": "怎么样评价",
+      "formula": "名词/小句 + 怎么样",
+      "introduction": "评价或建议。",
+      "example": "这个怎么样？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_071",
+      "number": "071",
+      "title": "哪里位置",
+      "formula": "人/物 + 在哪里",
+      "introduction": "“哪里”也可说“哪儿”。",
+      "example": "你在哪里？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [
+        "在"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_072",
+      "number": "072",
+      "title": "去哪里",
+      "formula": "主语 + 去 + 哪里",
+      "introduction": "用来询问要去什么地方。",
+      "example": "你去哪里？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_073",
+      "number": "073",
+      "title": "从哪里来",
+      "formula": "主语 + 从哪里 + 来",
+      "introduction": "用来询问一个人从哪里来。",
+      "example": "你从哪里来？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [
+        "从/到"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_074",
+      "number": "074",
+      "title": "哪个选择",
+      "formula": "哪个 + 名词",
+      "introduction": "在几个已知选项里选一个。",
+      "example": "你要哪个？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_075",
+      "number": "075",
+      "title": "什么时候",
+      "formula": "主语 + 什么时候 + 动词",
+      "introduction": "询问日期或时段。",
+      "example": "你什么时候回来？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_076",
+      "number": "076",
+      "title": "几点",
+      "formula": "事情 + 几点 + 动词",
+      "introduction": "询问具体钟点。",
+      "example": "你几点下班？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_077",
+      "number": "077",
+      "title": "几数量",
+      "formula": "几 + 量词 + 名词",
+      "introduction": "通常预期数量较小。",
+      "example": "你有几个孩子？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_078",
+      "number": "078",
+      "title": "多少数量",
+      "formula": "多少 + 名词/量词",
+      "introduction": "数量不限。",
+      "example": "这里有多少人？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_103",
+      "number": "103",
+      "title": "问年龄",
+      "formula": "主语 + 几岁",
+      "introduction": "多用于问孩子年龄；问成年人常说“多大”。",
+      "example": "你几岁？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_105",
+      "number": "105",
+      "title": "还有吗",
+      "formula": "还有 + 名词/内容 + 吗",
+      "introduction": "询问是否还有别的或更多。",
+      "example": "还有别的吗？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [
+        "吗"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_120",
+      "number": "120",
+      "title": "有没有别的",
+      "formula": "有没有别的 + 名词",
+      "introduction": "寻找其他选择。",
+      "example": "有没有别的颜色？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_121",
+      "number": "121",
+      "title": "跟谁",
+      "formula": "主语 + 跟谁 + 动词",
+      "introduction": "询问一起行动或交流的对象。",
+      "example": "你跟谁去？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_141",
+      "number": "141",
+      "title": "给谁",
+      "formula": "主语 + 给谁 + 名词/动词",
+      "introduction": "询问东西给谁，或替谁做。",
+      "example": "你给谁打电话？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [
+        "给"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_142",
+      "number": "142",
+      "title": "往哪边",
+      "formula": "往哪边 + 动词",
+      "introduction": "询问方向。",
+      "example": "往哪边走？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_226",
+      "number": "226",
+      "title": "怎么会",
+      "formula": "主语 + 怎么会 + 动词/形容词",
+      "introduction": "表示惊讶、不相信或追问原因。",
+      "example": "他怎么会知道？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_259",
+      "number": "259",
+      "title": "问频率",
+      "formula": "主语 + 多久 + 动词 + 一次",
+      "introduction": "询问隔多长时间做一次。",
+      "example": "你多久去一次？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_260",
+      "number": "260",
+      "title": "如果怎么办",
+      "formula": "要是/如果 + 条件 + 怎么办",
+      "introduction": "询问某种情况发生后的处理办法。",
+      "example": "如果下雨怎么办？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_271",
+      "number": "271",
+      "title": "有没有做",
+      "formula": "主语 + 有没有 + 动词",
+      "introduction": "询问过去是否发生。",
+      "example": "你有没有吃饭？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_272",
+      "number": "272",
+      "title": "怎么回事",
+      "formula": "怎么回事？",
+      "introduction": "询问发生了什么。",
+      "example": "这是怎么回事？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_273",
+      "number": "273",
+      "title": "哪些复数",
+      "formula": "哪些 + 名词",
+      "introduction": "询问多个对象。",
+      "example": "你去过哪些地方？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_275",
+      "number": "275",
+      "title": "多少次",
+      "formula": "动作 + 多少次",
+      "introduction": "询问频次。",
+      "example": "你去过多少次？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_276",
+      "number": "276",
+      "title": "哪一天",
+      "formula": "事情 + 哪天 + 动词",
+      "introduction": "口语常用“哪天”。",
+      "example": "你哪天有空？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_277",
+      "number": "277",
+      "title": "哪一种",
+      "formula": "哪种 + 名词",
+      "introduction": "询问类别中的选择。",
+      "example": "你喜欢哪种颜色？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_278",
+      "number": "278",
+      "title": "哪边",
+      "formula": "哪边 + 谓语",
+      "introduction": "询问方向或一侧。",
+      "example": "洗手间在哪边？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_287",
+      "number": "287",
+      "title": "打算怎么做",
+      "formula": "主语 + 打算怎么 + 动词",
+      "introduction": "询问对方准备采用什么办法。",
+      "example": "你打算怎么做？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_313",
+      "number": "313",
+      "title": "问每天几次",
+      "formula": "主语 + 一天/每周 + 动词 + 几次",
+      "introduction": "直接询问固定时间内的次数。",
+      "example": "你每天吃几次药？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_314",
+      "number": "314",
+      "title": "“不是……吗”反问",
+      "formula": "不是 + 小句 + 吗 / 陈述句，不是吗",
+      "introduction": "提醒对方原本知道的事实，或用反问要求确认。",
+      "example": "你不是去过了吗？",
+      "teaching_type": "question",
+      "difficulty": "hard",
+      "focus_tags": [
+        "吗"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_315",
+      "number": "315",
+      "title": "从哪到哪",
+      "formula": "从哪里 + 到哪里",
+      "introduction": "询问路线、范围或起点终点。",
+      "example": "从哪里到哪里？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [
+        "从/到"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_316",
+      "number": "316",
+      "title": "怎么称呼",
+      "formula": "主语 + 怎么称呼 + 人",
+      "introduction": "礼貌询问应该怎样叫对方。",
+      "example": "我怎么称呼您？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_351",
+      "number": "351",
+      "title": "没做吗",
+      "formula": "主语 + 没 + 动词 + 吗",
+      "introduction": "询问过去是否没做，常带惊讶。",
+      "example": "你没吃饭吗？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [
+        "吗"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_411",
+      "number": "411",
+      "title": "凭什么",
+      "formula": "主语 + 凭什么 + 动词",
+      "introduction": "带质疑语气。",
+      "example": "你凭什么这么说？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_413",
+      "number": "413",
+      "title": "到底",
+      "formula": "主语 + 到底 + 疑问词/谓语",
+      "introduction": "加强追问。",
+      "example": "你到底想要什么？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [
+        "从/到"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_414",
+      "number": "414",
+      "title": "难道反问",
+      "formula": "难道 + 小句 + 吗",
+      "introduction": "带明显反问。",
+      "example": "难道你不知道吗？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [
+        "吗"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_418",
+      "number": "418",
+      "title": "怎么可能",
+      "formula": "主语 + 怎么可能 + 动词",
+      "introduction": "强烈表示不相信。",
+      "example": "这怎么可能？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_495",
+      "number": "495",
+      "title": "为谁",
+      "formula": "主语 + 为谁 + 动词",
+      "introduction": "询问动作是为了谁，稍正式。",
+      "example": "你为谁工作？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_084",
+      "number": "084",
+      "title": "问做什么",
+      "formula": "主语 + 干什么/做什么",
+      "introduction": "两者都问动作内容；“干什么”更口语，“做什么”更中性。",
+      "example": "你在干什么？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_279",
+      "number": "279",
+      "title": "句尾确认",
+      "formula": "陈述句 + 对不对/是吗",
+      "introduction": "说完一个判断后，请对方确认；“是吗”也可表示惊讶。",
+      "example": "你明天走，对不对？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [
+        "吗"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_083",
+      "number": "083",
+      "title": "询问程度",
+      "formula": "主语 + 多 + 形容词",
+      "introduction": "用“多高、多大、多远、多长、多重、多快、多早、多晚”等询问程度。",
+      "example": "你家离这里多远？",
+      "teaching_type": "question",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_087",
+      "number": "087",
+      "title": "选择问句",
+      "formula": "A + 还是 + B",
+      "introduction": "疑问句在两个或多个选项中选择时，用“还是”。",
+      "example": "你喝茶还是咖啡？",
+      "teaching_type": "question",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    }
+  ]
+}

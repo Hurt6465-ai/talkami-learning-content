@@ -1,0 +1,355 @@
+{
+  "schema_version": 1,
+  "type": "pattern_pack",
+  "category_id": "pattern_cat_05",
+  "title": "体貌与动作形式",
+  "subtitle": "25 个句型",
+  "version": 1,
+  "updated_at": "2026-08-11T06:20:00Z",
+  "item_count": 25,
+  "items": [
+    {
+      "id": "pattern_053",
+      "number": "053",
+      "title": "动作完成",
+      "formula": "主语 + 动词 + 了 + 宾语",
+      "introduction": "动词后“了”表示动作完成。",
+      "example": "我买了水果。",
+      "teaching_type": "function_word",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_055",
+      "number": "055",
+      "title": "尝试短暂",
+      "formula": "动词 + 一下",
+      "introduction": "使语气更自然、委婉。",
+      "example": "你看一下。",
+      "teaching_type": "function_word",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_241",
+      "number": "241",
+      "title": "持续状态",
+      "formula": "主语 + 动词 + 着 + 宾语",
+      "introduction": "表示动作结果持续。",
+      "example": "他拿着手机。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "着"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_242",
+      "number": "242",
+      "title": "刚完成",
+      "formula": "主语 + 刚 + 动词 + 完/到",
+      "introduction": "“刚”后常接结果。",
+      "example": "我刚吃完。",
+      "teaching_type": "function_word",
+      "difficulty": "medium",
+      "focus_tags": [
+        "从/到"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_243",
+      "number": "243",
+      "title": "快要发生",
+      "formula": "快/快要/就要 + 动词 + 了",
+      "introduction": "“快要”一般不和具体时间同用。",
+      "example": "快下雨了。",
+      "teaching_type": "function_word",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了",
+        "就"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_244",
+      "number": "244",
+      "title": "马上发生",
+      "formula": "马上就 + 动词",
+      "introduction": "口语承诺高频。",
+      "example": "我马上就来。",
+      "teaching_type": "function_word",
+      "difficulty": "medium",
+      "focus_tags": [
+        "就"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_246",
+      "number": "246",
+      "title": "边做边做",
+      "formula": "一边 + 动词1 + 一边 + 动词2",
+      "introduction": "两个动作同时进行。",
+      "example": "他一边吃饭一边看电视。",
+      "teaching_type": "function_word",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_247",
+      "number": "247",
+      "title": "动作持续",
+      "formula": "主语 + 一直在 + 动词",
+      "introduction": "强调持续进行。",
+      "example": "她一直在学习。",
+      "teaching_type": "function_word",
+      "difficulty": "medium",
+      "focus_tags": [
+        "在"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_269",
+      "number": "269",
+      "title": "以前常做",
+      "formula": "主语 + 以前 + 常常 + 动词",
+      "introduction": "描述过去习惯。",
+      "example": "我以前常常熬夜。",
+      "teaching_type": "function_word",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_270",
+      "number": "270",
+      "title": "原来如此",
+      "formula": "原来 + 小句",
+      "introduction": "表示新发现或恍然大悟。",
+      "example": "原来你在这里。",
+      "teaching_type": "function_word",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_388",
+      "number": "388",
+      "title": "伴随动作",
+      "formula": "主语 + 动词1 + 着 + 动词2",
+      "introduction": "第一个动作是伴随状态。",
+      "example": "他笑着说。",
+      "teaching_type": "function_word",
+      "difficulty": "medium",
+      "focus_tags": [
+        "着"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_403",
+      "number": "403",
+      "title": "持续到现在",
+      "formula": "主语 + 动词 + 了 + 时量 + 了",
+      "introduction": "动作通常还在继续。",
+      "example": "我学中文学了两年了。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "了",
+        "在",
+        "从/到"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_404",
+      "number": "404",
+      "title": "多久没做",
+      "formula": "主语 + 时量 + 没 + 动词 + 了",
+      "introduction": "表示截至现在的空档。",
+      "example": "我三年没回家了。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "了"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_405",
+      "number": "405",
+      "title": "双音节重叠",
+      "formula": "ABAB",
+      "introduction": "部分双音节动词可重叠。",
+      "example": "我们讨论讨论这个问题。",
+      "teaching_type": "function_word",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_406",
+      "number": "406",
+      "title": "反复动作",
+      "formula": "动词 + 来 + 动词 + 去",
+      "introduction": "表示反复或来回。",
+      "example": "他走来走去。",
+      "teaching_type": "function_word",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_407",
+      "number": "407",
+      "title": "交替变化",
+      "formula": "一会儿 + A，一会儿 + B",
+      "introduction": "表示短时间内两种动作或状态交替。",
+      "example": "天气一会儿冷，一会儿热。",
+      "teaching_type": "function_word",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_408",
+      "number": "408",
+      "title": "状态保持",
+      "formula": "主语 + 还 + 动词/形容词 + 着呢",
+      "introduction": "口语强调状态仍然存在。",
+      "example": "他还睡着呢。",
+      "teaching_type": "function_word",
+      "difficulty": "medium",
+      "focus_tags": [
+        "着",
+        "呢"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_409",
+      "number": "409",
+      "title": "现在不再",
+      "formula": "主语 + 现在 + 不再 + 动词",
+      "introduction": "对比过去和现在。",
+      "example": "我现在不再喝酒了。",
+      "teaching_type": "function_word",
+      "difficulty": "medium",
+      "focus_tags": [
+        "再",
+        "在"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_410",
+      "number": "410",
+      "title": "总算实现",
+      "formula": "主语 + 总算 + 动词 + 了",
+      "introduction": "口语表示终于。",
+      "example": "我们总算到了。",
+      "teaching_type": "function_word",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_389",
+      "number": "389",
+      "title": "动着动着就……",
+      "formula": "主语 + 动词1 + 着 + 动词1 + 着 + 就 + 动词2",
+      "introduction": "表示动作持续过程中，突然或自然发生了另一件事。",
+      "example": "我看着看着就睡着了。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "着",
+        "就"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_136",
+      "number": "136",
+      "title": "开始做",
+      "formula": "主语 + 开始 + 动词（+了）",
+      "introduction": "表示动作或状态开始；“了”突出已经开始。",
+      "example": "我们开始上课了。",
+      "teaching_type": "function_word",
+      "difficulty": "easy",
+      "focus_tags": [
+        "了"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_245",
+      "number": "245",
+      "title": "单音节动词重叠",
+      "formula": "AA / A一A / A了A",
+      "introduction": "表示动作短暂、尝试或轻松；“A了A”表示已经简单做过一下。",
+      "example": "你想一想。",
+      "teaching_type": "function_word",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_054",
+      "number": "054",
+      "title": "句末“了”表示变化",
+      "formula": "主语/小句 + 了",
+      "introduction": "句末“了”说明出现了新情况，或状态发生了变化；它不等于所有过去时。",
+      "example": "天冷了。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "了"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_240",
+      "number": "240",
+      "title": "经历体“过”",
+      "formula": "主语 +（曾经）+ 动词 + 过；主语 + 没 + 动词 + 过",
+      "introduction": "“过”表示过去经验；否定用“没……过”，“曾经”可加强过去经历。",
+      "example": "我去过北京。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "过"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_016",
+      "number": "016",
+      "title": "正在进行",
+      "formula": "主语 + 在/正在 + 动词（+呢）",
+      "introduction": "表示动作正在进行。“正在”强调更强，句末“呢”让当前语气更明显。",
+      "example": "我正在吃饭呢。",
+      "teaching_type": "function_word",
+      "difficulty": "medium",
+      "focus_tags": [
+        "呢",
+        "在"
+      ],
+      "target": "ai_pattern"
+    }
+  ]
+}

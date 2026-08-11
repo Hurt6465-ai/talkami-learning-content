@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "type": "pattern_pack",
+  "category_id": "pattern_cat_10",
+  "title": "把字句、被字句与“是……的”",
+  "subtitle": "24 个句型",
+  "version": 1,
+  "updated_at": "2026-08-11T06:20:00Z",
+  "item_count": 24,
+  "items": [
+    {
+      "id": "pattern_347",
+      "number": "347",
+      "title": "把字句基本结构",
+      "formula": "主语 + 把 + 宾语 + 动词 + 结果/地点/数量等",
+      "introduction": "“把”把明确宾语提前；动词后通常还要有结果、地点、数量或动态成分。",
+      "example": "请把门关上。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "把"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_231",
+      "number": "231",
+      "title": "“是……的”问句",
+      "formula": "主语 + 是 + 谁/怎么/在哪儿/什么时候 + 动词 + 的",
+      "introduction": "询问已经发生事情的施事、方式、地点或时间。",
+      "example": "你是怎么来的？",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "在"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_349",
+      "number": "349",
+      "title": "“是……的”强调",
+      "formula": "主语 + 是 + 时间/地点/方式/人物 + 动词 + 的",
+      "introduction": "用于已经发生的事情，强调时间、地点、方式或做事的人。",
+      "example": "我是昨天来的。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_482",
+      "number": "482",
+      "title": "强调原因或目的",
+      "formula": "主语 + 是因为/为了 + 原因/目的 + 才 + 动词 + 的",
+      "introduction": "用“是……的”突出做事的原因或目的。",
+      "example": "我是为了你才来的。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "了",
+        "才"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_344",
+      "number": "344",
+      "title": "把字位置",
+      "formula": "主语 + 把 + 宾语 + 动词 + 在/到 + 地点",
+      "introduction": "说明处理以后东西到了哪里。",
+      "example": "我把书放在桌上。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "把",
+        "在",
+        "从/到"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_355",
+      "number": "355",
+      "title": "是不是强调",
+      "formula": "主语 + 是不是 + 强调部分 + 动词 + 的",
+      "introduction": "询问已发生事情的时间、地点、方式等。",
+      "example": "你是不是坐车来的？",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_369",
+      "number": "369",
+      "title": "把字给予",
+      "formula": "主语 + 把 + 宾语 + 动词 + 给 + 人",
+      "introduction": "说明把某物处理后给了谁。",
+      "example": "我把礼物送给他。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "把",
+        "给"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_396",
+      "number": "396",
+      "title": "把字句的完成",
+      "formula": "主语 + 把 + 明确宾语 + 动词 + 了",
+      "introduction": "“了”可以使把字句完整，但初学时优先使用“关上、写完、放好”等结果补语更自然。",
+      "example": "我把饭吃了。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "把",
+        "了"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_397",
+      "number": "397",
+      "title": "把字变成",
+      "formula": "主语 + 把 + 宾语 + 动词 + 成 + 结果",
+      "introduction": "说明处理后变成什么。",
+      "example": "他把水冻成冰。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "把"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_420",
+      "number": "420",
+      "title": "把字方向",
+      "formula": "主语 + 把 + 宾语 + 动词 + 来/去",
+      "introduction": "说明把东西朝说话人方向或远离说话人移动。",
+      "example": "把书拿过来。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "把"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_445",
+      "number": "445",
+      "title": "把字短动作",
+      "formula": "主语 + 把 + 宾语 + 动词 + 一下",
+      "introduction": "用于礼貌、短暂地处理某物。",
+      "example": "请把门开一下。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "把"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_447",
+      "number": "447",
+      "title": "没被",
+      "formula": "受到影响的人/物 + 没被 + 动词",
+      "introduction": "否定过去发生的被动动作。",
+      "example": "他没被发现。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "被",
+        "从/到"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_448",
+      "number": "448",
+      "title": "不是强调",
+      "formula": "主语 + 不是 + 强调部分 + 动词 + 的",
+      "introduction": "否定已发生事情的时间、地点、方式或人物。",
+      "example": "我不是昨天来的。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_455",
+      "number": "455",
+      "title": "把字否定",
+      "formula": "主语 + 没/别 + 把 + 宾语 + 动词",
+      "introduction": "否定词放“把”前。",
+      "example": "我没把作业写完。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "把"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_456",
+      "number": "456",
+      "title": "把字能愿",
+      "formula": "主语 + 能愿动词 + 把 + 宾语 + 动词",
+      "introduction": "“能、会、想、要”等词放“把”前。",
+      "example": "你能把声音调小一点吗？",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "把"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_468",
+      "number": "468",
+      "title": "被放到",
+      "formula": "受到影响的人/物 + 被 + 动词 + 到/在 + 地点",
+      "introduction": "说明被动动作后的地点。",
+      "example": "杯子被放在桌上。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "被",
+        "在",
+        "从/到"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_479",
+      "number": "479",
+      "title": "给字被动",
+      "formula": "受到影响的人/物 + 给 + 动词 + 了",
+      "introduction": "很口语，常表示不希望的事情发生了。",
+      "example": "手机给弄丢了。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "被",
+        "了",
+        "给",
+        "从/到"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_480",
+      "number": "480",
+      "title": "被变成",
+      "formula": "受到影响的人/物 + 被 + 动词 + 成 + 结果",
+      "introduction": "说明被处理以后变成什么。",
+      "example": "这本书被翻译成英文。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "被",
+        "从/到"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_481",
+      "number": "481",
+      "title": "被弄得",
+      "formula": "受到影响的人/物 + 被 + 动词 + 得 + 状态",
+      "introduction": "说明被某件事弄成什么状态。",
+      "example": "我被他气得不说话了。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "被",
+        "得",
+        "从/到"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_487",
+      "number": "487",
+      "title": "可能被",
+      "formula": "受到影响的人/物 + 会/可能被 + 动词",
+      "introduction": "表示将来或可能发生的被动情况。",
+      "example": "这里可能被关闭。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "被",
+        "从/到"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_496",
+      "number": "496",
+      "title": "把字状态",
+      "formula": "主语 + 把 + 宾语 + 动词 + 得 + 状态",
+      "introduction": "说明处理后造成什么状态。",
+      "example": "他把房间打扫得很干净。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "把",
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_498",
+      "number": "498",
+      "title": "把字持续",
+      "formula": "主语 + 把 + 宾语 + 动词 + 着",
+      "introduction": "表示让某物保持某种状态。",
+      "example": "你把门开着。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "把",
+        "着"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_446",
+      "number": "446",
+      "title": "让/叫字被动",
+      "formula": "受事 + 让/叫 + 施事 + 动词",
+      "introduction": "口语中用“让、叫”表示被动，常说明受到某种影响。",
+      "example": "书叫他拿走了。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "被",
+        "让/叫"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_457",
+      "number": "457",
+      "title": "被字句基本形式",
+      "formula": "受事 + 被 +（施事）+ 动词 + 其他成分",
+      "introduction": "先说受影响的人或东西；不知道或不想说施事时可以省略。",
+      "example": "手机被偷了。",
+      "teaching_type": "function_word",
+      "difficulty": "hard",
+      "focus_tags": [
+        "被"
+      ],
+      "target": "ai_pattern"
+    }
+  ]
+}

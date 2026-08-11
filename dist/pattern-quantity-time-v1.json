@@ -1,0 +1,625 @@
+{
+  "schema_version": 1,
+  "type": "pattern_pack",
+  "category_id": "pattern_cat_07",
+  "title": "数量、时间与范围",
+  "subtitle": "49 个句型",
+  "version": 1,
+  "updated_at": "2026-08-11T06:20:00Z",
+  "item_count": 49,
+  "items": [
+    {
+      "id": "pattern_295",
+      "number": "295",
+      "title": "每人一个",
+      "formula": "每人/每个 + 数量",
+      "introduction": "表示平均分配给每个人或每个对象。",
+      "example": "每人一个苹果。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_383",
+      "number": "383",
+      "title": "至少",
+      "formula": "主语 + 至少 + 数量/动词",
+      "introduction": "表示最低限度。",
+      "example": "每天至少睡七个小时。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_088",
+      "number": "088",
+      "title": "数量名词",
+      "formula": "数词 + 量词 + 名词",
+      "introduction": "汉语数量通常需要量词。",
+      "example": "三本书。",
+      "teaching_type": "quantity",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_089",
+      "number": "089",
+      "title": "指示量词",
+      "formula": "这/那 + 量词 + 名词",
+      "introduction": "“这/那”后常接量词。",
+      "example": "这本书。",
+      "teaching_type": "quantity",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_090",
+      "number": "090",
+      "title": "一些",
+      "formula": "一些 + 名词",
+      "introduction": "表示不确定复数。",
+      "example": "我买了一些水果。",
+      "teaching_type": "quantity",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_091",
+      "number": "091",
+      "title": "一点儿数量",
+      "formula": "一点儿 + 名词",
+      "introduction": "多用于不可数或少量。",
+      "example": "我想喝一点儿水。",
+      "teaching_type": "quantity",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_092",
+      "number": "092",
+      "title": "一共",
+      "formula": "一共 + 数量",
+      "introduction": "表示总数。",
+      "example": "一共多少钱？",
+      "teaching_type": "quantity",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_093",
+      "number": "093",
+      "title": "日期",
+      "formula": "年 + 月 + 日/号",
+      "introduction": "口语日期常用“号”。",
+      "example": "今天是七月二十二号。",
+      "teaching_type": "quantity",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_094",
+      "number": "094",
+      "title": "星期",
+      "formula": "星期 + 数词/天",
+      "introduction": "星期日也可说星期天。",
+      "example": "今天星期三。",
+      "teaching_type": "quantity",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_106",
+      "number": "106",
+      "title": "每个时间单位",
+      "formula": "每 + 时间单位 + 动词",
+      "introduction": "表示固定频率，如每天、每周、每年。",
+      "example": "我每天学习。",
+      "teaching_type": "quantity",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_107",
+      "number": "107",
+      "title": "最近",
+      "formula": "最近 + 小句",
+      "introduction": "说明离现在不远的一段时间。",
+      "example": "最近我很忙。",
+      "teaching_type": "quantity",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_108",
+      "number": "108",
+      "title": "一会儿",
+      "formula": "一会儿 + 动词",
+      "introduction": "表示过很短时间做，或动作持续很短。",
+      "example": "我一会儿回来。",
+      "teaching_type": "quantity",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_111",
+      "number": "111",
+      "title": "钟点",
+      "formula": "数字 + 点 + 分",
+      "introduction": "“两点”不用“二点”。",
+      "example": "现在三点半。",
+      "teaching_type": "quantity",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_123",
+      "number": "123",
+      "title": "这几天",
+      "formula": "这几天 + 小句",
+      "introduction": "说明最近几天的情况。",
+      "example": "这几天很冷。",
+      "teaching_type": "quantity",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_124",
+      "number": "124",
+      "title": "前几天",
+      "formula": "前几天 + 小句",
+      "introduction": "说明不久以前发生的事。",
+      "example": "前几天我见过他。",
+      "teaching_type": "quantity",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_190",
+      "number": "190",
+      "title": "到时候",
+      "formula": "到时候 + 小句",
+      "introduction": "表示到了那个时间再说或再做。",
+      "example": "到时候再说。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [
+        "从/到"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_227",
+      "number": "227",
+      "title": "固定次数",
+      "formula": "主语 + 每天/每周 + 动词 + 数量 + 次",
+      "introduction": "说明在固定时间内做多少次。",
+      "example": "我每天吃三次药。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_228",
+      "number": "228",
+      "title": "以后再做",
+      "formula": "以后/下次 + 再 + 动词",
+      "introduction": "表示这次不做，留到未来再做。",
+      "example": "下次再来。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [
+        "再"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_261",
+      "number": "261",
+      "title": "每次都",
+      "formula": "每次 + 动词/小句 + 都 + 结果",
+      "introduction": "表示每一次都会出现同样结果。",
+      "example": "我每次去都下雨。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_263",
+      "number": "263",
+      "title": "最多最少",
+      "formula": "最多/最少 + 数量",
+      "introduction": "表示数量的上限或下限。",
+      "example": "最多十个人。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_294",
+      "number": "294",
+      "title": "每",
+      "formula": "每 + 量词 + 名词 + 都",
+      "introduction": "“每”常与“都”呼应。",
+      "example": "每个人都知道。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_297",
+      "number": "297",
+      "title": "“多”的位置",
+      "formula": "整十/百 + 多 + 量词 + 名词；数词 + 量词 + 多 + 名词",
+      "introduction": "“三十多岁、一百多块”表示超过整十或整百；“两个多月、三年多”表示超过一个具体数量。",
+      "example": "他三十多岁。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_299",
+      "number": "299",
+      "title": "几百几千",
+      "formula": "几 + 百/千/万",
+      "introduction": "表示不确定的大数。",
+      "example": "这里有几百人。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_300",
+      "number": "300",
+      "title": "第几",
+      "formula": "第 + 数词/几",
+      "introduction": "序数前用“第”。",
+      "example": "今天是第一天。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_301",
+      "number": "301",
+      "title": "时量",
+      "formula": "动词 + 了 + 时量",
+      "introduction": "表示持续时间。",
+      "example": "我等了半个小时。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_302",
+      "number": "302",
+      "title": "动量次",
+      "formula": "动词 + 了/过 + 数量 + 次",
+      "introduction": "“次”最通用。",
+      "example": "我去过三次。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [
+        "了",
+        "过"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_303",
+      "number": "303",
+      "title": "动量遍",
+      "formula": "动词 + 数量 + 遍",
+      "introduction": "“遍”表示完整做一遍。",
+      "example": "请再说一遍。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_304",
+      "number": "304",
+      "title": "动量趟",
+      "formula": "动词 + 数量 + 趟",
+      "introduction": "“趟”常用于去一次、来一次或跑一趟。",
+      "example": "我去了一趟银行。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_318",
+      "number": "318",
+      "title": "从现在起",
+      "formula": "从现在起 + 小句",
+      "introduction": "表示从此刻开始。",
+      "example": "从现在起别迟到。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [
+        "在",
+        "从/到"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_319",
+      "number": "319",
+      "title": "大部分",
+      "formula": "大部分 + 名词/范围 + 都 + 谓语",
+      "introduction": "表示多数，但不是全部。",
+      "example": "大部分人都同意。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_352",
+      "number": "352",
+      "title": "“半”的位置",
+      "formula": "半 + 量词 + 名词；数词 + 量词 + 半 + 名词",
+      "introduction": "“半个小时、半天”把“半”放前面；“一个半小时、两年半”把“半”放在量词后。",
+      "example": "我等了一个半小时。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_424",
+      "number": "424",
+      "title": "带宾语时量",
+      "formula": "动词 + 宾语 + 动词 + 了 + 时量",
+      "introduction": "动作后面有对象时，常把动词再说一次。",
+      "example": "我学中文学了两年。",
+      "teaching_type": "quantity",
+      "difficulty": "hard",
+      "focus_tags": [
+        "了"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_425",
+      "number": "425",
+      "title": "人称宾语时量",
+      "formula": "动词 + 人 + 时量",
+      "introduction": "对象是人时，时间可以放在人后面。",
+      "example": "我等了你半个小时。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_426",
+      "number": "426",
+      "title": "动量顿",
+      "formula": "动词 + 数量 + 顿",
+      "introduction": "用于饭或某些强烈动作。",
+      "example": "我们吃了一顿饭。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_427",
+      "number": "427",
+      "title": "分数",
+      "formula": "数量 + 分之 + 数量",
+      "introduction": "分母在前，分子在后。",
+      "example": "三分之一的人来了。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_428",
+      "number": "428",
+      "title": "百分比",
+      "formula": "百分之 + 数量",
+      "introduction": "常用于数据。",
+      "example": "百分之八十的人同意。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [
+        "比"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_429",
+      "number": "429",
+      "title": "不到/超过",
+      "formula": "不到/超过 + 数量",
+      "introduction": "表示界限。",
+      "example": "不到十分钟就到了。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [
+        "过",
+        "从/到"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_441",
+      "number": "441",
+      "title": "每隔一段时间",
+      "formula": "每隔 + 时量 + 动词",
+      "introduction": "表示中间间隔固定时间。",
+      "example": "我每隔两天去一次。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_471",
+      "number": "471",
+      "title": "倍数",
+      "formula": "A + 是 + B + 的 + 数量 + 倍",
+      "introduction": "表示一个数量是另一个数量的几倍。",
+      "example": "今年收入是去年的两倍。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_477",
+      "number": "477",
+      "title": "其中",
+      "formula": "其中 + 数量/一部分 + 谓语",
+      "introduction": "从前面说的整体里再指出一部分。",
+      "example": "其中三个人来了。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_490",
+      "number": "490",
+      "title": "少数",
+      "formula": "少数 + 名词/人 + 谓语",
+      "introduction": "表示数量很少的一部分。",
+      "example": "少数人不同意。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_122",
+      "number": "122",
+      "title": "过一段时间",
+      "formula": "过 + 时量 / 时量 + 以后 + 小句",
+      "introduction": "表示从现在或某个时间起，再过一段时间。",
+      "example": "过几天再说。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [
+        "过"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_149",
+      "number": "149",
+      "title": "时间范围",
+      "formula": "从 + 时间A + 到 + 时间B",
+      "introduction": "表示持续范围。",
+      "example": "我从九点工作到五点。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [
+        "从/到"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_155",
+      "number": "155",
+      "title": "距离时间",
+      "formula": "离 + 时间/事件 + 还有 + 时量",
+      "introduction": "表示未来倒计时。",
+      "example": "离考试还有三天。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [
+        "离"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_157",
+      "number": "157",
+      "title": "动作以前和以后",
+      "formula": "动词 + 以前/以后，主句",
+      "introduction": "把一个动作当作时间界线，说明之前或之后发生什么。",
+      "example": "吃饭以前先洗手。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_262",
+      "number": "262",
+      "title": "时间点以前和以后",
+      "formula": "时间点/时量 + 以前/以后",
+      "introduction": "说明某个时间点或一段时间之前、之后。",
+      "example": "五点以后有空。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_296",
+      "number": "296",
+      "title": "约数",
+      "formula": "大约/大概 + 数量 / 数量 + 左右",
+      "introduction": "表示估计数量；“左右”放在数量后面。",
+      "example": "大约十个人。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_298",
+      "number": "298",
+      "title": "最……之一",
+      "formula": "主语 + 是 + 最 + 形容词 + 的 + 名词 + 之一",
+      "introduction": "表示属于最突出的一组，但不是唯一一个。",
+      "example": "他是最好的学生之一。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_343",
+      "number": "343",
+      "title": "一个接一个",
+      "formula": "一个接一个 + 动词/出现",
+      "introduction": "表示动作或人、物连续不断。",
+      "example": "大家一个接一个进来。",
+      "teaching_type": "quantity",
+      "difficulty": "medium",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    }
+  ]
+}

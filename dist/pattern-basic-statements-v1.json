@@ -1,0 +1,579 @@
+{
+  "schema_version": 1,
+  "type": "pattern_pack",
+  "category_id": "pattern_cat_01",
+  "title": "基础陈述与判断",
+  "subtitle": "45 个句型",
+  "version": 1,
+  "updated_at": "2026-08-11T06:20:00Z",
+  "item_count": 45,
+  "items": [
+    {
+      "id": "pattern_005",
+      "number": "005",
+      "title": "身份、国籍和职业",
+      "formula": "主语 + 是 + 身份/国籍/职业",
+      "introduction": "“是”后面接身份、国籍、职业、名称等名词。",
+      "example": "她是医生。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_001",
+      "number": "001",
+      "title": "陈述动作",
+      "formula": "主语 + 动词",
+      "introduction": "不管是谁做，动词形式都不变。",
+      "example": "他来了。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_002",
+      "number": "002",
+      "title": "陈述动作和对象",
+      "formula": "主语 + 动词 + 宾语",
+      "introduction": "动作后面直接说对象。",
+      "example": "我喜欢咖啡。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "语序"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_004",
+      "number": "004",
+      "title": "否定性质",
+      "formula": "主语 + 不 + 形容词",
+      "introduction": "说一般情况或现在状态，用“不”。",
+      "example": "这个不贵。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_006",
+      "number": "006",
+      "title": "否定身份",
+      "formula": "主语 + 不是 + 名词",
+      "introduction": "“是”的否定是“不是”。",
+      "example": "我不是学生。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_007",
+      "number": "007",
+      "title": "称呼姓名",
+      "formula": "主语 + 叫 + 名字",
+      "introduction": "用来介绍自己或别人的名字。",
+      "example": "我叫安娜。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "让/叫"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_008",
+      "number": "008",
+      "title": "说明姓氏",
+      "formula": "主语 + 姓 + 姓氏",
+      "introduction": "“姓”后直接接姓氏。",
+      "example": "我姓王。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_009",
+      "number": "009",
+      "title": "说明年龄",
+      "formula": "主语 + 数字 + 岁",
+      "introduction": "年龄前通常不用“是”。",
+      "example": "我二十岁。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_010",
+      "number": "010",
+      "title": "表达喜欢",
+      "formula": "主语 + 喜欢 + 名词/动词短语",
+      "introduction": "“喜欢”后可接名词或动作。",
+      "example": "我喜欢音乐。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_011",
+      "number": "011",
+      "title": "表达想法",
+      "formula": "主语 + 想 + 动词",
+      "introduction": "“想”常表示愿望。",
+      "example": "我想回家。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_095",
+      "number": "095",
+      "title": "说明价格",
+      "formula": "名词 + 数量 + 钱",
+      "introduction": "说价格时常不用“是”，直接报多少钱。",
+      "example": "这个十块钱。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_096",
+      "number": "096",
+      "title": "居住地点",
+      "formula": "主语 + 住在 + 地点",
+      "introduction": "说明长期或当前住在哪里。",
+      "example": "我住在东京。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "在",
+        "语序"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_113",
+      "number": "113",
+      "title": "日期判断",
+      "formula": "今天/明天 + 是 + 日期/星期",
+      "introduction": "说明今天、明天是哪一天。",
+      "example": "今天是星期三。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_114",
+      "number": "114",
+      "title": "现在几点",
+      "formula": "现在 + 是 + 时间",
+      "introduction": "直接说明当前时间。",
+      "example": "现在是三点。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "在"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_126",
+      "number": "126",
+      "title": "所属关系",
+      "formula": "名词1 + 是 + 名词2 + 的",
+      "introduction": "中心名词已知时可省略。",
+      "example": "这本书是我的。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_127",
+      "number": "127",
+      "title": "表达需要",
+      "formula": "主语 + 需要 + 名词/动词短语",
+      "introduction": "比“要”更明确，也稍微正式一点。",
+      "example": "我需要帮助。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_128",
+      "number": "128",
+      "title": "表达计划",
+      "formula": "主语 + 打算 + 动词",
+      "introduction": "用于已有计划。",
+      "example": "我打算明天走。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_129",
+      "number": "129",
+      "title": "表达希望",
+      "formula": "主语 + 希望 + 小句",
+      "introduction": "后面常接一整句话。",
+      "example": "我希望你能来。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_130",
+      "number": "130",
+      "title": "表达认为",
+      "formula": "主语 + 觉得 + 小句",
+      "introduction": "日常说话多用“觉得”，比“认为”自然。",
+      "example": "我觉得这个很好。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_131",
+      "number": "131",
+      "title": "表达知道",
+      "formula": "主语 + 知道 + 小句/名词",
+      "introduction": "后面出现“谁、哪儿、什么时候”时，仍用普通语序。",
+      "example": "我知道这件事。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_132",
+      "number": "132",
+      "title": "表达认识",
+      "formula": "主语 + 认识 + 人",
+      "introduction": "“认识”用于人或熟悉的地方。",
+      "example": "我认识他。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_133",
+      "number": "133",
+      "title": "表达明白",
+      "formula": "主语 + 明白 + 名词/小句",
+      "introduction": "强调理解意思。",
+      "example": "我明白你的意思。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_134",
+      "number": "134",
+      "title": "表达相信",
+      "formula": "主语 + 相信 + 人/小句",
+      "introduction": "可接人或判断内容。",
+      "example": "我相信你。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_135",
+      "number": "135",
+      "title": "表达害怕",
+      "formula": "主语 + 怕 + 名词/动词短语",
+      "introduction": "口语中“怕”比“害怕”更常用。",
+      "example": "我怕狗。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_143",
+      "number": "143",
+      "title": "表达继续",
+      "formula": "主语 + 继续 + 动词",
+      "introduction": "表示动作不中断。",
+      "example": "请继续说。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_144",
+      "number": "144",
+      "title": "表达停止",
+      "formula": "主语 + 别/不要 + 再 + 动词",
+      "introduction": "常用于制止重复动作。",
+      "example": "别再说了。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "再"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_161",
+      "number": "161",
+      "title": "从事工作",
+      "formula": "主语 + 做 + 工作/职业",
+      "introduction": "日常询问或说明做什么工作。",
+      "example": "我做销售。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "从/到"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_249",
+      "number": "249",
+      "title": "变得",
+      "formula": "主语 + 变得 + 形容词",
+      "introduction": "表示状态发生明显变化。",
+      "example": "天气变得更冷了。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_250",
+      "number": "250",
+      "title": "容易做",
+      "formula": "主语 + 容易 + 动词",
+      "introduction": "表示做某事不难或很容易发生。",
+      "example": "这个字容易写。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_251",
+      "number": "251",
+      "title": "难做",
+      "formula": "主语 + 难 + 动词",
+      "introduction": "表示做某事有困难。",
+      "example": "这个字难写。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_280",
+      "number": "280",
+      "title": "外貌特点",
+      "formula": "主语 + 长得 + 形容词/像…",
+      "introduction": "“长得”专门说明人的外貌。",
+      "example": "她长得很漂亮。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_281",
+      "number": "281",
+      "title": "适合",
+      "formula": "主语 + 适合 + 人/事情",
+      "introduction": "说明某物、时间或方法合不合适。",
+      "example": "这个时间适合我。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_308",
+      "number": "308",
+      "title": "变成",
+      "formula": "主语 + 变成/成了 + 名词",
+      "introduction": "表示人或东西变成另一种身份或状态。",
+      "example": "水变成冰了。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "了"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_309",
+      "number": "309",
+      "title": "习惯",
+      "formula": "主语 + 习惯 + 名词/动词短语",
+      "introduction": "表示对某种生活或做法已经适应。",
+      "example": "我习惯早起。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_334",
+      "number": "334",
+      "title": "说明尺寸",
+      "formula": "主语 + 有 + 数量 + 形容词",
+      "introduction": "用数量说明高度、长度、重量等。",
+      "example": "这张桌子有一米长。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_335",
+      "number": "335",
+      "title": "担任角色",
+      "formula": "主语 + 当 + 职业/角色",
+      "introduction": "口语里“当”常表示做某种职业或角色。",
+      "example": "他当老师。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_366",
+      "number": "366",
+      "title": "表达担心",
+      "formula": "主语 + 担心 + 人/事情/小句",
+      "introduction": "后面常接一整句话。",
+      "example": "我担心你。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_367",
+      "number": "367",
+      "title": "表达同意",
+      "formula": "主语 + 同意 + 名词/小句",
+      "introduction": "后面可以接事情，也可以接一整句话。",
+      "example": "我同意你的意见。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_368",
+      "number": "368",
+      "title": "表达决定",
+      "formula": "主语 + 决定 + 动词",
+      "introduction": "表示作出选择。",
+      "example": "我决定留下来。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_436",
+      "number": "436",
+      "title": "值得",
+      "formula": "主语 + 值得 + 动词",
+      "introduction": "表示这件事有做的价值。",
+      "example": "这本书值得看。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "得"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_437",
+      "number": "437",
+      "title": "忙着做",
+      "formula": "主语 + 忙着 + 动词",
+      "introduction": "表示正忙于某件事。",
+      "example": "我忙着做饭。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "着"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_472",
+      "number": "472",
+      "title": "归属",
+      "formula": "主语 + 属于 + 人/类别",
+      "introduction": "说明东西归谁，或属于哪一类。",
+      "example": "这本书属于我。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_473",
+      "number": "473",
+      "title": "急着做",
+      "formula": "主语 + 急着 + 动词",
+      "introduction": "表示很着急，想马上做。",
+      "example": "他急着回家。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [
+        "着"
+      ],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_003",
+      "number": "003",
+      "title": "形容词陈述与程度",
+      "formula": "主语 +（很/非常/特别）+ 形容词",
+      "introduction": "形容词可以直接作谓语；口语中常加“很”。“非常、特别”才明确表示程度高。",
+      "example": "今天天气很好。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    },
+    {
+      "id": "pattern_223",
+      "number": "223",
+      "title": "感官判断",
+      "formula": "主语 + 看/听/闻/尝起来 + 形容词",
+      "introduction": "根据看到、听到、闻到或尝到的感觉作判断。",
+      "example": "这个办法听起来不错。",
+      "teaching_type": "word_order",
+      "difficulty": "easy",
+      "focus_tags": [],
+      "target": "ai_pattern"
+    }
+  ]
+}
