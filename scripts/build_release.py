@@ -65,6 +65,7 @@ CLAIMED_ASSETS = {
     "patterns-catalog.json",
     "books-catalog.json",
     "learning-path-catalog.json",
+    "learning-home.json",
     "content-metadata.json",
 }
 BUILD_STATS: dict[str, int] = {
@@ -75,6 +76,7 @@ BUILD_STATS: dict[str, int] = {
     "pattern_categories": 0,
     "patterns": 0,
     "books": 0,
+    "home_slides": 0,
     "learning_packages": 0,
     "courses": 0,
     "units": 0,
@@ -560,6 +562,61 @@ def build_patterns() -> None:
         fail("Generated patterns-catalog.json exceeds 2 MiB")
     BUILD_STATS["pattern_categories"] += len(result_categories)
     BUILD_STATS["patterns"] += leaf_count
+
+
+def build_home() -> None:
+    source_path = CONTENT / "home" / "catalog.json"
+    if not source_path.is_file():
+        return
+    source = require_dict(load_json(source_path), "learning home catalog")
+    if source.get("type") != "learning_home":
+        fail("learning home catalog type must be learning_home")
+    require_version(source.get("version"), "learning home version")
+    updated_at = require_text(source.get("updated_at"), "learning home updated_at", 40)
+    if not UPDATED_AT.fullmatch(updated_at):
+        fail("learning home updated_at must use UTC ISO format, e.g. 2026-08-11T09:00:00Z")
+
+    hero = require_dict(source.get("hero"), "learning home hero")
+    source_image = source_file(hero.get("source_image"), "learning home hero source_image")
+    ensure_normal_file(source_image, "learning home hero image")
+    if source_image.suffix.lower() not in IMAGE_EXTENSIONS:
+        fail(f"learning home hero must be an image: {source_image}")
+    if source_image.stat().st_size <= 0 or source_image.stat().st_size > 5 * 1024 * 1024:
+        fail("learning home hero image must be between 1 byte and 5 MiB")
+    image_name = claim_asset(hero.get("image_url"), "learning home image_url")
+    image_version = require_version(hero.get("image_version"), "learning home image_version")
+
+    slides = require_list(hero.get("slides"), "learning home slides", 1, 8)
+    seen_ids: set[str] = set()
+    for index, raw in enumerate(slides, start=1):
+        slide = require_dict(raw, f"learning home slide #{index}")
+        slide_id = require_safe_id(slide.get("id"), f"learning home slide #{index} id")
+        if slide_id in seen_ids:
+            fail(f"Duplicate learning home slide id: {slide_id}")
+        seen_ids.add(slide_id)
+        require_text(slide.get("title"), f"learning home slide {slide_id} title", 80)
+        optional_text(slide.get("subtitle"), f"learning home slide {slide_id} subtitle", 160)
+        optional_text(slide.get("price"), f"learning home slide {slide_id} price", 60)
+        optional_text(slide.get("note"), f"learning home slide {slide_id} note", 160)
+        for suffix in ("en", "my"):
+            optional_text(slide.get(f"title_{suffix}"), f"learning home slide {slide_id} title_{suffix}", 100)
+            optional_text(slide.get(f"subtitle_{suffix}"), f"learning home slide {slide_id} subtitle_{suffix}", 180)
+            optional_text(slide.get(f"price_{suffix}"), f"learning home slide {slide_id} price_{suffix}", 80)
+            optional_text(slide.get(f"note_{suffix}"), f"learning home slide {slide_id} note_{suffix}", 180)
+
+    output_image = DIST / image_name
+    shutil.copy2(source_image, output_image)
+    result = copy.deepcopy(source)
+    result_hero = require_dict(result.get("hero"), "generated learning home hero")
+    result_hero.pop("source_image", None)
+    result_hero["image_url"] = image_name
+    result_hero["image_version"] = image_version
+    result_hero["image_size"] = output_image.stat().st_size
+    result_hero["image_sha256"] = sha256(output_image)
+    write_json(DIST / "learning-home.json", result)
+    if (DIST / "learning-home.json").stat().st_size > MAX_CATALOG_BYTES:
+        fail("Generated learning-home.json exceeds 2 MiB")
+    BUILD_STATS["home_slides"] += len(slides)
 
 def build_books() -> None:
     source_path = CONTENT / "books" / "catalog.json"
@@ -1103,6 +1160,7 @@ def main() -> None:
     build_words()
     build_speaking()
     build_patterns()
+    build_home()
     build_books()
     packages = package_metadata()
     build_learning_path(packages)
