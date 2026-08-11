@@ -62,6 +62,7 @@ EXECUTABLE_EXTENSIONS = {".apk", ".aab", ".dex", ".so", ".jar", ".class", ".sh"}
 CLAIMED_ASSETS = {
     "words-catalog.json",
     "speaking-catalog.json",
+    "patterns-catalog.json",
     "books-catalog.json",
     "learning-path-catalog.json",
     "content-metadata.json",
@@ -71,6 +72,8 @@ BUILD_STATS: dict[str, int] = {
     "words": 0,
     "speaking_packs": 0,
     "phrases": 0,
+    "pattern_categories": 0,
+    "patterns": 0,
     "books": 0,
     "learning_packages": 0,
     "courses": 0,
@@ -389,6 +392,174 @@ def build_speaking() -> None:
 
     write_json(DIST / "speaking-catalog.json", result)
 
+
+PATTERN_TYPES = {
+    "word_order", "function_word", "complement", "comparison", "compound",
+    "question", "discourse", "tone", "quantity",
+}
+PATTERN_DIFFICULTIES = {"easy", "medium", "hard"}
+PATTERN_PROMPT_PLACEHOLDERS = {
+    "{{number}}", "{{title}}", "{{formula}}", "{{introduction}}", "{{example}}",
+    "{{teaching_type}}", "{{difficulty}}", "{{focus_tags}}",
+}
+
+
+def _validate_pattern_leaf(item: dict[str, Any], category_id: str,
+                           seen_numbers: set[int]) -> None:
+    item_id = require_safe_id(item.get("id"), f"pattern id in {category_id}")
+    number = require_text(item.get("number"), f"pattern number for {item_id}", 6)
+    if not re.fullmatch(r"[0-9]{3,4}", number):
+        fail(f"Pattern number must use zero-padded digits: {item_id} -> {number}")
+    if item_id != f"pattern_{number}":
+        fail(f"Pattern id must match number: expected pattern_{number}, got {item_id}")
+    number_value = int(number)
+    if number_value in seen_numbers:
+        fail(f"Duplicate pattern number: {number}")
+    seen_numbers.add(number_value)
+    if item.get("target") != "ai_pattern":
+        fail(f"Pattern {item_id} must use target=ai_pattern")
+    require_text(item.get("title"), f"pattern title for {item_id}", 160)
+    require_text(item.get("formula"), f"pattern formula for {item_id}", 500)
+    require_text(item.get("introduction"), f"pattern introduction for {item_id}", 1200)
+    require_text(item.get("example"), f"pattern example for {item_id}", 800)
+    teaching_type = require_text(item.get("teaching_type"), f"teaching_type for {item_id}", 40)
+    if teaching_type not in PATTERN_TYPES:
+        fail(f"Unsupported teaching_type for {item_id}: {teaching_type}")
+    difficulty = require_text(item.get("difficulty"), f"difficulty for {item_id}", 20)
+    if difficulty not in PATTERN_DIFFICULTIES:
+        fail(f"Unsupported difficulty for {item_id}: {difficulty}")
+    tags = require_list(item.get("focus_tags", []), f"focus_tags for {item_id}", 0, 8)
+    normalized_tags: set[str] = set()
+    for tag_index, tag in enumerate(tags, start=1):
+        value = require_text(tag, f"focus tag #{tag_index} for {item_id}", 60)
+        if value in normalized_tags:
+            fail(f"Duplicate focus tag for {item_id}: {value}")
+        normalized_tags.add(value)
+    if item.get("children"):
+        fail(f"Pattern leaf must not contain children: {item_id}")
+
+
+def build_patterns() -> None:
+    source_path = CONTENT / "patterns" / "catalog.json"
+    if not source_path.is_file():
+        return
+    source = require_dict(load_json(source_path), "pattern catalog")
+    require_version(source.get("version"), "pattern catalog version")
+    updated_at = require_text(source.get("updated_at"), "pattern catalog updated_at", 40)
+    if not UPDATED_AT.fullmatch(updated_at):
+        fail("pattern catalog updated_at must use UTC ISO format, for example 2026-08-11T06:20:00Z")
+    if source.get("type") != "patterns":
+        fail("pattern catalog type must be patterns")
+    expected_count = require_int(source.get("item_count"), "pattern item_count", 1, 5000)
+    items = require_list(source.get("items"), "pattern catalog items", 1, 100)
+    validate_catalog_ids(items, "pattern")
+    declared_pack_count = require_int(source.get("pack_count", len(items)),
+                                      "pattern pack_count", 1, 100)
+    if declared_pack_count != len(items):
+        fail(f"Pattern pack_count mismatch: catalog={declared_pack_count}, actual={len(items)}")
+
+    result = copy.deepcopy(source)
+    prompt = require_dict(result.get("prompt_template"), "pattern prompt_template")
+    require_version(prompt.get("version"), "pattern prompt version")
+    prompt_url = safe_asset_name(prompt.get("url"), "pattern prompt url")
+    if not prompt_url.lower().endswith(".txt"):
+        fail("pattern prompt url must end with .txt")
+    claim_asset(prompt_url, "pattern prompt release asset")
+    source_prompt_value = prompt.pop("source_prompt", "")
+    source_prompt = source_file(source_prompt_value, "pattern prompt")
+    ensure_normal_file(source_prompt, "pattern prompt")
+    if source_prompt.stat().st_size <= 0 or source_prompt.stat().st_size > 128 * 1024:
+        fail("pattern prompt must be between 1 byte and 128 KiB")
+    try:
+        prompt_text = source_prompt.read_text(encoding="utf-8")
+    except UnicodeDecodeError as exc:
+        fail(f"pattern prompt must be UTF-8: {exc}")
+    missing = sorted(token for token in PATTERN_PROMPT_PLACEHOLDERS if token not in prompt_text)
+    if missing:
+        fail("pattern prompt is missing placeholders: " + ", ".join(missing))
+    output_prompt = DIST / prompt_url
+    shutil.copy2(source_prompt, output_prompt)
+    prompt["sha256"] = sha256(output_prompt)
+    prompt["size"] = output_prompt.stat().st_size
+
+    seen_numbers: set[int] = set()
+    leaf_count = 0
+    used_output_names: set[str] = set()
+    result_categories = result.get("items", [])
+
+    for category_index, category in enumerate(result_categories, start=1):
+        require_dict(category, f"pattern category #{category_index}")
+        category_id = require_safe_id(category.get("id"), f"pattern category #{category_index} id")
+        require_text(category.get("title"), f"pattern category title for {category_id}", 120)
+        if category.get("target") != "pattern_pack":
+            fail(f"Pattern category {category_id} must use target=pattern_pack")
+        if category.get("children"):
+            fail(f"Pattern catalog must contain pack descriptors only; remove children from {category_id}")
+
+        source_data_value = category.pop("source_data", "")
+        data_url = safe_asset_name(category.get("data_url"), f"data_url for {category_id}")
+        if not data_url.lower().endswith(".json"):
+            fail(f"Pattern pack data_url must end with .json: {data_url}")
+        if data_url.lower() in used_output_names:
+            fail(f"Duplicate pattern release asset name: {data_url}")
+        used_output_names.add(data_url.lower())
+        claim_asset(data_url, f"pattern release asset for {category_id}")
+
+        source_data = source_file(source_data_value, f"pattern pack for {category_id}")
+        ensure_normal_file(source_data, f"pattern pack for {category_id}")
+        if source_data.stat().st_size <= 0 or source_data.stat().st_size > MAX_CATALOG_BYTES:
+            fail(f"Pattern pack must be between 1 byte and 2 MiB: {source_data}")
+        pack = require_dict(load_json(source_data), f"pattern pack {source_data}")
+        if pack.get("type") != "pattern_pack":
+            fail(f"Pattern pack type must be pattern_pack: {source_data}")
+        if pack.get("category_id") != category_id:
+            fail(f"Pattern pack category_id must equal catalog id for {category_id}")
+        pack_version = require_version(pack.get("version"), f"pattern pack version for {category_id}")
+        pack_updated_at = require_text(pack.get("updated_at"), f"pattern pack updated_at for {category_id}", 40)
+        if not UPDATED_AT.fullmatch(pack_updated_at):
+            fail(f"Pattern pack updated_at must use UTC ISO format: {source_data}")
+        patterns = require_list(pack.get("items"), f"patterns in {source_data}", 1, 500)
+        declared_count = require_int(pack.get("item_count", len(patterns)),
+                                     f"pattern pack item_count for {category_id}", 1, 500)
+        if declared_count != len(patterns):
+            fail(f"Pattern pack item_count mismatch for {category_id}: {declared_count} vs {len(patterns)}")
+
+        local_ids: set[str] = set()
+        for item in patterns:
+            item = require_dict(item, f"pattern in {category_id}")
+            item_id = require_safe_id(item.get("id"), f"pattern id in {category_id}")
+            if item_id in local_ids:
+                fail(f"Duplicate pattern id inside {category_id}: {item_id}")
+            local_ids.add(item_id)
+            _validate_pattern_leaf(item, category_id, seen_numbers)
+
+        output_data = DIST / data_url
+        shutil.copy2(source_data, output_data)
+        category["data_sha256"] = sha256(output_data)
+        category["item_count"] = len(patterns)
+        category["data_version"] = pack_version
+        badge = optional_text(category.get("badge", ""), f"pattern category badge for {category_id}", 40)
+        if badge:
+            digits = "".join(ch for ch in badge if ch.isdigit())
+            if digits and int(digits) != len(patterns):
+                fail(f"Pattern category badge count mismatch for {category_id}: {badge} vs {len(patterns)}")
+        leaf_count += len(patterns)
+
+    if leaf_count != expected_count:
+        fail(f"Pattern item_count mismatch: catalog={expected_count}, actual={leaf_count}")
+    expected_numbers = set(range(1, expected_count + 1))
+    if seen_numbers != expected_numbers:
+        missing_numbers = sorted(expected_numbers - seen_numbers)[:20]
+        extra_numbers = sorted(seen_numbers - expected_numbers)[:20]
+        fail(f"Pattern numbers must be continuous from 001 to {expected_count:03d}; "
+             f"missing={missing_numbers}, extra={extra_numbers}")
+
+    output = DIST / "patterns-catalog.json"
+    write_json(output, result)
+    if output.stat().st_size > MAX_CATALOG_BYTES:
+        fail("Generated patterns-catalog.json exceeds 2 MiB")
+    BUILD_STATS["pattern_categories"] += len(result_categories)
+    BUILD_STATS["patterns"] += leaf_count
 
 def build_books() -> None:
     source_path = CONTENT / "books" / "catalog.json"
@@ -931,6 +1102,7 @@ def main() -> None:
     DIST.mkdir(parents=True)
     build_words()
     build_speaking()
+    build_patterns()
     build_books()
     packages = package_metadata()
     build_learning_path(packages)
