@@ -6,7 +6,8 @@
     "words": "words-catalog.json",
     "speaking": "speaking-catalog.json",
     "learning_path": "learning-path-catalog.json",
-    "books": "books-catalog.json"
+    "books": "books-catalog.json",
+    "patterns": "patterns-catalog.json"
   },
   "package_read_timeout_ms": 180000,
   "max_package_bytes": 209715200,
