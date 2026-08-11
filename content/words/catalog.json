@@ -20,7 +20,7 @@
       "data_version": 2,
       "data_sha256": "",
       "item_count": 30,
-      "source_cover": "content/words/covers/hsk1_basic_v2.webp",
+      "source_cover": "content/words/covers/hsk1.webp",
       "source_data": "content/words/packs/hsk1_basic_v2.json"
     },
     {
@@ -37,25 +37,25 @@
       "data_version": 1,
       "data_sha256": "",
       "item_count": 15,
-      "source_cover": "content/words/covers/travel_words_v1.webp",
+      "source_cover": "content/words/covers/hsk2.webp",
       "source_data": "content/words/packs/hsk2.json"
     },
     {
-      "id": "food_words",
+      "id": "HSK3",
       "title": "餐饮美食",
       "subtitle": "点餐、饮品和口味词汇",
       "preview": "菜单 / 米饭 / 买单",
-      "badge": "15词",
+      "badge": "HSK",
       "target": "word",
-      "level": "food_words",
+      "level": "hsk3",
       "cover_url": "food-words-cover-v1.webp",
       "cover_version": 1,
       "data_url": "food-words-v1.json",
       "data_version": 1,
       "data_sha256": "",
       "item_count": 15,
-      "source_cover": "content/words/covers/food_words_v1.webp",
-      "source_data": "content/words/packs/food_words_v1.json"
+      "source_cover": "content/words/covers/hsk3.webp",
+      "source_data": "content/words/packs/hsk3.json"
     },
     {
       "id": "work_words",
