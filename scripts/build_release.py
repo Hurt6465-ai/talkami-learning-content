@@ -67,6 +67,7 @@ CLAIMED_ASSETS = {
     "learning-path-catalog.json",
     "learning-home.json",
     "content-metadata.json",
+    "ai-course-catalog.json",
 }
 BUILD_STATS: dict[str, int] = {
     "word_packs": 0,
@@ -82,6 +83,8 @@ BUILD_STATS: dict[str, int] = {
     "units": 0,
     "lessons": 0,
     "exercises": 0,
+    "ai_course_categories": 0,
+    "ai_course_scenes": 0,
 }
 
 
@@ -926,6 +929,31 @@ def deterministic_zip(directory: Path, output: Path, files: list[Path]) -> None:
             fail(f"Duplicate ZIP entry names in {output.name}")
 
 
+def deterministic_zip_json(output: Path, entry_name: str, value: Any) -> None:
+    """Write one compact JSON entry with an ASCII-safe name into a deterministic ZIP."""
+    safe_asset_name(entry_name, "ZIP entry name")
+    try:
+        entry_name.encode("ascii")
+    except UnicodeEncodeError:
+        fail(f"ZIP entry name must be ASCII: {entry_name}")
+    payload = compact_json_bytes(value)
+    with zipfile.ZipFile(output, "w", compression=zipfile.ZIP_DEFLATED,
+                         compresslevel=9, strict_timestamps=True) as archive:
+        info = zipfile.ZipInfo(entry_name, date_time=(1980, 1, 1, 0, 0, 0))
+        info.compress_type = zipfile.ZIP_DEFLATED
+        info.create_system = 3
+        info.external_attr = (0o100644 & 0xFFFF) << 16
+        archive.writestr(info, payload, compress_type=zipfile.ZIP_DEFLATED, compresslevel=9)
+    if output.stat().st_size <= 0 or output.stat().st_size > MAX_PACKAGE_BYTES:
+        fail(f"Built package ZIP has invalid size: {output}")
+    with zipfile.ZipFile(output, "r") as archive:
+        bad = archive.testzip()
+        if bad:
+            fail(f"Corrupt ZIP entry after building {output.name}: {bad}")
+        if archive.namelist() != [entry_name]:
+            fail(f"Unexpected AI course ZIP layout: {output.name}")
+
+
 def package_metadata() -> dict[str, dict[str, Any]]:
     packages: dict[str, dict[str, Any]] = {}
     packages_root = CONTENT / "packages"
@@ -1135,6 +1163,209 @@ def build_learning_path(packages: dict[str, dict[str, Any]]) -> None:
         fail(f"Generated learning-path-catalog.json exceeds 2 MiB")
 
 
+
+def _contains_myanmar(text: str) -> bool:
+    return any("\u1000" <= ch <= "\u109f" or "\uaa60" <= ch <= "\uaa7f" for ch in text)
+
+
+def build_ai_course() -> None:
+    """Build a total AI course catalog and 60 independently downloadable category ZIPs.
+
+    Git source filenames use Chinese + pinyin for maintainers. Release asset names and ZIP
+    internal entry names are ASCII-only to avoid URL/ZIP filename mojibake on Android/Windows.
+    The total catalog contains 12 parts, 60 categories, and all 240 second-level scene titles.
+    """
+    root = CONTENT / "ai_course"
+    catalog_path = root / "总目录_zong_mulu.json"
+    if not catalog_path.is_file():
+        return
+
+    source = require_dict(load_json(catalog_path), "AI course total catalog")
+    require_version(source.get("v"), "AI course catalog version")
+    catalog_title = require_text(source.get("title"), "AI course catalog Myanmar title", 180)
+    if not _contains_myanmar(catalog_title):
+        fail("AI course catalog title must contain Myanmar script")
+    require_text(source.get("zh"), "AI course catalog Chinese note", 160)
+
+    parts = require_list(source.get("parts"), "AI course catalog parts", 1, 20)
+    items = require_list(source.get("items"), "AI course catalog items", 1, 100)
+    if len(items) != 60:
+        fail(f"AI course catalog must contain 60 categories, got {len(items)}")
+
+    part_item_ids: list[str] = []
+    seen_part_ids: set[str] = set()
+    for index, part_raw in enumerate(parts, start=1):
+        part = require_dict(part_raw, f"AI course part #{index}")
+        part_id = require_text(part.get("id"), f"AI course part id #{index}", 8)
+        if part_id in seen_part_ids:
+            fail(f"Duplicate AI course part id: {part_id}")
+        seen_part_ids.add(part_id)
+        title_my = require_text(part.get("title"), f"Myanmar title for part {part_id}", 180)
+        if not _contains_myanmar(title_my):
+            fail(f"AI course part title must contain Myanmar script: {part_id}")
+        require_text(part.get("zh"), f"Chinese note for part {part_id}", 120)
+        ids = require_list(part.get("items"), f"category ids in part {part_id}", 1, 20)
+        for item_id in ids:
+            part_item_ids.append(require_text(item_id, f"category id in part {part_id}", 8))
+
+    result = copy.deepcopy(source)
+    seen_ids: set[str] = set()
+    used_assets: set[str] = set()
+    category_ids: list[str] = []
+
+    for index, item in enumerate(result.get("items", []), start=1):
+        item = require_dict(item, "AI course catalog item")
+        item_id = require_text(item.get("id"), f"AI course item id #{index}", 8)
+        expected_id = f"{index:02d}"
+        if item_id != expected_id:
+            fail(f"AI course id/order mismatch: expected {expected_id}, got {item_id}")
+        if item_id in seen_ids:
+            fail(f"Duplicate AI course item id: {item_id}")
+        seen_ids.add(item_id)
+        category_ids.append(item_id)
+
+        title_my = require_text(item.get("title"), f"Myanmar title for {item_id}", 180)
+        if not _contains_myanmar(title_my):
+            fail(f"AI course title must contain Myanmar script: {item_id}")
+        title_zh = require_text(item.get("zh"), f"Chinese note for {item_id}", 120)
+        version = require_version(item.get("v"), f"AI course version for {item_id}")
+
+        source_value = item.pop("file", "")
+        source_data = source_file(source_value, f"AI course source for {item_id}")
+        ensure_normal_file(source_data, "AI course category JSON")
+        if source_data.suffix.lower() != ".json":
+            fail(f"AI course source must be JSON: {source_data}")
+        expected_prefix = f"{item_id}_{title_zh}_"
+        if not source_data.name.startswith(expected_prefix):
+            fail(f"AI course source filename must start with Chinese title + pinyin: {source_data.name}")
+
+        category = require_dict(load_json(source_data), f"AI course category {source_data.name}")
+        if require_version(category.get("v"), f"v in {source_data.name}") != version:
+            fail(f"AI course version mismatch: {item_id}")
+        if require_text(category.get("id"), f"id in {source_data.name}", 8) != item_id:
+            fail(f"AI course category id mismatch: {source_data.name}")
+        if require_text(category.get("title"), f"title in {source_data.name}", 180) != title_my:
+            fail(f"AI course Myanmar title mismatch: {source_data.name}")
+        if require_text(category.get("zh"), f"zh in {source_data.name}", 120) != title_zh:
+            fail(f"AI course Chinese title mismatch: {source_data.name}")
+
+        scenes = require_list(category.get("scenes"), f"scenes in {source_data.name}", 1, 12)
+        summary_scenes = require_list(item.get("scenes"), f"scene summaries for {item_id}", 1, 12)
+        if len(summary_scenes) != len(scenes):
+            fail(f"Scene summary count mismatch for {item_id}")
+
+        scene_ids: set[str] = set()
+        for scene_index, scene_raw in enumerate(scenes, start=1):
+            scene = require_dict(scene_raw, f"scene #{scene_index} in {source_data.name}")
+            scene_id = require_text(scene.get("id"), f"scene id in {source_data.name}", 12)
+            expected_scene_id = f"{item_id}.{scene_index}"
+            if scene_id != expected_scene_id:
+                fail(f"Scene id/order mismatch: expected {expected_scene_id}, got {scene_id}")
+            if scene_id in scene_ids:
+                fail(f"Duplicate scene id: {scene_id}")
+            scene_ids.add(scene_id)
+            scene_title = require_text(scene.get("title"), f"Myanmar scene title {scene_id}", 180)
+            if not _contains_myanmar(scene_title):
+                fail(f"Scene title must contain Myanmar script: {scene_id}")
+            scene_zh = require_text(scene.get("zh"), f"Chinese scene note {scene_id}", 120)
+            require_text(scene.get("teach"), f"teach {scene_id}", 1800)
+            say = require_list(scene.get("say"), f"say {scene_id}", 1, 16)
+            listen = require_list(scene.get("listen"), f"listen {scene_id}", 1, 20)
+            for line in say:
+                require_text(line, f"say line {scene_id}", 260)
+            for line in listen:
+                require_text(line, f"listen line {scene_id}", 260)
+            require_text(scene.get("variants"), f"variants {scene_id}", 1800)
+
+            functions = require_list(scene.get("functions"), f"functions {scene_id}", 2, 4)
+            seen_functions: set[str] = set()
+            for function in functions:
+                name = require_text(function, f"function {scene_id}", 80)
+                if name in seen_functions:
+                    fail(f"Duplicate AI course function in {scene_id}: {name}")
+                seen_functions.add(name)
+
+            patterns = require_list(scene.get("patterns"), f"patterns {scene_id}", 1, 3)
+            for pattern_index, pattern_raw in enumerate(patterns, start=1):
+                pattern = require_dict(pattern_raw, f"pattern #{pattern_index} in {scene_id}")
+                require_text(pattern.get("zh"), f"pattern label {scene_id} #{pattern_index}", 80)
+                require_text(pattern.get("form"), f"pattern form {scene_id} #{pattern_index}", 600)
+                require_text(pattern.get("ex"), f"pattern example {scene_id} #{pattern_index}", 260)
+
+            grammar = scene.get("grammar", [])
+            if grammar is not None:
+                for grammar_index, grammar_raw in enumerate(
+                        require_list(grammar, f"grammar {scene_id}", 0, 2), start=1):
+                    point = require_dict(grammar_raw, f"grammar #{grammar_index} in {scene_id}")
+                    require_text(point.get("point"), f"grammar point {scene_id} #{grammar_index}", 100)
+                    require_text(point.get("note"), f"grammar note {scene_id} #{grammar_index}", 500)
+
+            events = require_list(scene.get("events"), f"events {scene_id}", 2, 4)
+            seen_events: set[str] = set()
+            for event in events:
+                text = require_text(event, f"event {scene_id}", 600)
+                if text in seen_events:
+                    fail(f"Duplicate AI course event in {scene_id}: {text}")
+                seen_events.add(text)
+
+            optional_text(scene.get("safety", ""), f"safety {scene_id}", 800)
+            require_text(scene.get("roles"), f"roles {scene_id}", 600)
+            require_text(scene.get("task"), f"task {scene_id}", 1200)
+
+            summary = require_dict(summary_scenes[scene_index - 1], f"scene summary {scene_id}")
+            if require_text(summary.get("id"), f"summary id {scene_id}", 12) != scene_id:
+                fail(f"Scene summary id mismatch: {scene_id}")
+            if require_text(summary.get("title"), f"summary title {scene_id}", 180) != scene_title:
+                fail(f"Scene summary Myanmar title mismatch: {scene_id}")
+            if require_text(summary.get("zh"), f"summary zh {scene_id}", 120) != scene_zh:
+                fail(f"Scene summary Chinese title mismatch: {scene_id}")
+
+        data_url = safe_asset_name(item.get("zip"), f"AI course ZIP for {item_id}")
+        try:
+            data_url.encode("ascii")
+        except UnicodeEncodeError:
+            fail(f"AI course release ZIP name must be ASCII: {data_url}")
+        if data_url.lower() in used_assets:
+            fail(f"Duplicate AI course ZIP name: {data_url}")
+        used_assets.add(data_url.lower())
+        claim_asset(data_url, f"AI course release asset for {item_id}")
+        zip_path = DIST / data_url
+        deterministic_zip_json(zip_path, "content.json", category)
+        item["entry"] = "content.json"
+        item["sha256"] = sha256(zip_path)
+        item["size"] = zip_path.stat().st_size
+        item["count"] = len(scenes)
+        BUILD_STATS["ai_course_categories"] += 1
+        BUILD_STATS["ai_course_scenes"] += len(scenes)
+
+    if sorted(part_item_ids) != sorted(category_ids) or len(part_item_ids) != len(category_ids):
+        fail("AI course parts must cover all 60 categories exactly once")
+    if BUILD_STATS["ai_course_scenes"] != 240:
+        fail(f"AI course must contain 240 scenes, got {BUILD_STATS['ai_course_scenes']}")
+
+    rules_source = root / "教学规则_jiaoxue_guize.json"
+    rules = require_dict(load_json(rules_source), "AI course teaching rules")
+    rules_version = require_version(rules.get("v"), "AI course rules version")
+    rules_title = require_text(rules.get("title"), "AI course rules Myanmar title", 180)
+    if not _contains_myanmar(rules_title):
+        fail("AI course rules title must contain Myanmar script")
+    require_text(rules.get("zh"), "AI course rules Chinese note", 120)
+    require_list(rules.get("rules"), "AI course rules", 1, 32)
+    require_list(rules.get("flow"), "AI course teaching flow", 1, 16)
+    require_list(rules.get("survival"), "AI course survival phrases", 1, 32)
+    rules_name = claim_asset(f"ai_course_rules_v{rules_version}.json", "AI course rules asset")
+    rules_output = DIST / rules_name
+    shutil.copy2(rules_source, rules_output)
+    result["rules"] = {
+        "v": rules_version,
+        "url": rules_name,
+        "sha256": sha256(rules_output),
+        "size": rules_output.stat().st_size,
+    }
+
+    write_json(DIST / "ai-course-catalog.json", result)
+
+
 def build_metadata() -> None:
     metadata = {
         "schema_version": 1,
@@ -1162,6 +1393,7 @@ def main() -> None:
     build_patterns()
     build_home()
     build_books()
+    build_ai_course()
     packages = package_metadata()
     build_learning_path(packages)
     build_metadata()
