@@ -287,6 +287,106 @@ def validate_unique_records(records: list[dict[str, Any]], id_key: str, order_ke
             seen_orders.add(order)
 
 
+def _load_loose_word_json(path: Path) -> Any:
+    """Load normal JSON or the legacy HSK object-stream format.
+
+    Older HSK source files were maintained as:
+      { ... },
+      { ... },
+      { ... }
+    without a surrounding array.  Keep accepting that maintainer-friendly
+    source format, but always emit valid JSON release assets.
+    """
+    if not path.is_file():
+        fail(f"Missing JSON file: {path}")
+    raw = path.read_text(encoding="utf-8")
+    if not raw.strip():
+        fail(f"Empty JSON file: {path}")
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        pass
+
+    decoder = json.JSONDecoder()
+    values: list[Any] = []
+    cursor = 0
+    length = len(raw)
+    while cursor < length:
+        while cursor < length and (raw[cursor].isspace() or raw[cursor] == ","):
+            cursor += 1
+        if cursor >= length:
+            break
+        # Some legacy exports kept a dangling closing array/object suffix even
+        # though the opening wrapper was removed. Accept only pure trailing
+        # closers here; any other malformed content still fails below.
+        if raw[cursor] in "]}":
+            trailing = raw[cursor:]
+            if all(ch.isspace() or ch in ",]}" for ch in trailing):
+                break
+        try:
+            value, cursor = decoder.raw_decode(raw, cursor)
+        except json.JSONDecodeError as exc:
+            fail(f"Invalid JSON in {path}: {exc}")
+        values.append(value)
+    if not values:
+        fail(f"No word records found in {path}")
+    return values
+
+
+def _word_record_id(value: Any, label: str) -> str:
+    if isinstance(value, bool):
+        fail(f"{label} must be a positive integer or safe text id")
+    if isinstance(value, int):
+        if value <= 0:
+            fail(f"{label} must be greater than zero")
+        return str(value)
+    return require_safe_id(value, label)
+
+
+def _validate_word_records(words: list[Any], source_data: Path, level: str) -> None:
+    seen_ids: set[str] = set()
+    expected_numeric_level = level[3:] if re.fullmatch(r"hsk[1-9]", level, re.IGNORECASE) else ""
+
+    for index, raw_word in enumerate(words, start=1):
+        word = require_dict(raw_word, f"word #{index} in {source_data.name}")
+        word_id = _word_record_id(word.get("id", index), f"word id in {source_data.name}")
+        if word_id in seen_ids:
+            fail(f"Duplicate word id in {source_data.name}: {word_id}")
+        seen_ids.add(word_id)
+
+        # Lightweight HSK source: id / hanzi / burmese / examples / level.
+        if word.get("hanzi") is not None or word.get("burmese") is not None:
+            require_text(word.get("hanzi"), f"hanzi for {word_id}", 260)
+            require_text(word.get("burmese"), f"Myanmar meaning for {word_id}", 1200)
+            optional_text(word.get("pinyin"), f"legacy pinyin for {word_id}", 260)
+            optional_text(word.get("pinyin_override"), f"pinyin override for {word_id}", 260)
+            source_level = optional_text(word.get("level"), f"level for {word_id}", 32)
+            if expected_numeric_level and source_level and source_level != expected_numeric_level:
+                fail(
+                    f"Word level mismatch for {word_id}: expected {expected_numeric_level}, got {source_level}"
+                )
+            examples = require_list(word.get("examples", []), f"examples for {word_id}", 0, 12)
+            for example_index, raw_example in enumerate(examples, start=1):
+                example = require_dict(raw_example, f"example #{example_index} for {word_id}")
+                require_text(example.get("hanzi"), f"example hanzi for {word_id}", 1200)
+                require_text(example.get("burmese"), f"example Myanmar for {word_id}", 2400)
+                optional_text(example.get("pinyin"), f"example pinyin for {word_id}", 1200)
+                optional_text(example.get("pinyin_override"), f"example pinyin override for {word_id}", 1200)
+            continue
+
+        # Existing rich format remains supported. Pinyin is optional because the
+        # web client now generates it from Chinese text.
+        require_text(word.get("word"), f"word text for {word_id}", 260)
+        optional_text(word.get("pinyin_override"), f"pinyin override for {word_id}", 260)
+        optional_text(word.get("pinyin"), f"pinyin for {word_id}", 260)
+        require_text(word.get("meaning_my"), f"Myanmar meaning for {word_id}", 1200)
+        example = optional_text(word.get("example"), f"example for {word_id}", 1200)
+        optional_text(word.get("example_pinyin_override"), f"example pinyin override for {word_id}", 1200)
+        optional_text(word.get("example_pinyin"), f"example pinyin for {word_id}", 1200)
+        if example:
+            optional_text(word.get("example_my"), f"example Myanmar for {word_id}", 2400)
+
+
 def build_words() -> None:
     source_path = CONTENT / "words" / "catalog.json"
     source = require_dict(load_json(source_path), "word catalog")
@@ -308,6 +408,7 @@ def build_words() -> None:
         data_url = safe_asset_name(item.get("data_url"), f"data_url for {item_id}")
         cover_url = safe_asset_name(item.get("cover_url"), f"cover_url for {item_id}")
         require_version(item.get("cover_version"), f"cover_version for {item_id}")
+        catalog_data_version = require_version(item.get("data_version"), f"data_version for {item_id}")
         if Path(cover_url).suffix.lower() not in IMAGE_EXTENSIONS:
             fail(f"Unsupported word cover format: {cover_url}")
 
@@ -321,23 +422,37 @@ def build_words() -> None:
         source_cover = source_file(source_cover_value, "word cover")
         ensure_normal_file(source_data, "word pack")
         ensure_normal_file(source_cover, "word cover")
-        pack = require_dict(load_json(source_data), f"word pack {source_data}")
-        words = require_list(pack.get("items"), f"words in {source_data}", 1)
-        if pack.get("categoryId") != level:
-            fail(f"Word pack categoryId must equal catalog level for {item_id}")
-        version = require_version(pack.get("version"), f"word pack version in {source_data}")
-        validate_unique_records(words, "id", "order", f"word in {source_data.name}")
-        for word in words:
-            word_id = word.get("id")
-            require_text(word.get("word"), f"word text for {word_id}", 260)
-            require_text(word.get("pinyin_override"), f"pinyin for {word_id}", 260)
-            require_text(word.get("meaning_my"), f"Myanmar meaning for {word_id}", 1200)
-            require_text(word.get("example"), f"example for {word_id}", 1200)
-            require_text(word.get("example_pinyin_override"), f"example pinyin for {word_id}", 1200)
+
+        raw_pack = _load_loose_word_json(source_data)
+        if isinstance(raw_pack, dict):
+            words = require_list(raw_pack.get("items"), f"words in {source_data}", 1)
+            declared_level = optional_text(
+                raw_pack.get("categoryId", raw_pack.get("pack_id")),
+                f"word pack category in {source_data}",
+                80,
+            )
+            if declared_level and declared_level != level:
+                fail(f"Word pack categoryId must equal catalog level for {item_id}")
+            version = require_version(raw_pack.get("version", catalog_data_version), f"word pack version in {source_data}")
+            release_pack = copy.deepcopy(raw_pack)
+            release_pack["categoryId"] = level
+            release_pack["version"] = version
+            release_pack["items"] = words
+        elif isinstance(raw_pack, list):
+            words = require_list(raw_pack, f"words in {source_data}", 1)
+            version = catalog_data_version
+            # Keep lightweight HSK release files lightweight too. The catalog
+            # already carries level/version metadata, and the web parser accepts
+            # a top-level array directly.
+            release_pack = words
+        else:
+            fail(f"word pack {source_data} must be an object, array, or legacy object stream")
+
+        _validate_word_records(words, source_data, level)
 
         output_data = DIST / data_url
         output_cover = DIST / cover_url
-        shutil.copy2(source_data, output_data)
+        write_json(output_data, release_pack)
         shutil.copy2(source_cover, output_cover)
         item["data_sha256"] = sha256(output_data)
         item["item_count"] = len(words)
